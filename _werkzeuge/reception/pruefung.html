@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfung · Der Gastgeber · Berghotel Gasterntal</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2224">
+<link rel="icon" href="zeichen-gold.svg">
+<!-- Prüfseite von La Réception (Master Werkzeug-Bau R23, Vorlage Le Bureau des Rivage: studio/pruefung.html). Läuft ohne das Werkzeug:
+     prüft Browser, Server-Teil, Ablage, Wissen, PDF-Satz, zeigt die mitgeschriebenen Browserfehler und erklärt jedes Stichwort (Sehen · Grund · Tun). -->
+<style>
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:400 700;font-display:swap;src:url('../../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+:root{--navy:#1d2224;--nacht:#14181a;--papier:#e9ecec;--weiss:#f6f8f8;--gold:#efe2cb;--messing:#a3865c;--taupe:#6f7a7e;--tinte:#1a1f21;--gut:#3b4423;--gelb:#a07942;--rot:#c5000f;
+  --serif:'Barlow Semi',Arial Narrow,sans-serif;--sans:'Instrument Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.6 var(--sans);color:var(--tinte);background:linear-gradient(rgba(233,236,236,.82),rgba(233,236,236,.82)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='92'%3E%3Cg fill='%231a1f21' fill-opacity='.035'%3E%3Cpath d='M22 14 30 46 22 78 14 46z'/%3E%3Ccircle cx='22' cy='6' r='3'/%3E%3Ccircle cx='22' cy='86' r='3'/%3E%3C/g%3E%3C/svg%3E") 50% 0/44px 92px,var(--papier)}
+.kopf{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px clamp(16px,4vw,56px);color:var(--weiss);background:linear-gradient(rgba(29,34,36,.5),rgba(29,34,36,.5)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='92'%3E%3Cg fill='%23d6bb96' fill-opacity='.09'%3E%3Cpath d='M22 14 30 46 22 78 14 46z'/%3E%3Ccircle cx='22' cy='6' r='3'/%3E%3Ccircle cx='22' cy='86' r='3'/%3E%3C/g%3E%3C/svg%3E") 50% 0/44px 92px,var(--navy);box-shadow:0 0 0 1px rgba(214,187,150,.35)}
+.kopf img{width:58px;height:auto}
+.kopf b{display:block;font:400 22px/1.1 var(--serif)}
+.kopf small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.kopf .re{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.kn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 18px;border:0;border-radius:999px;font:500 13px var(--sans);text-decoration:none;cursor:pointer;color:var(--nacht);background:linear-gradient(180deg,#e1ceb4,#a3865c);box-shadow:0 8px 18px -10px rgba(20,24,26,.6)}
+.kn--linie{color:var(--weiss);background:transparent;box-shadow:inset 0 0 0 1px rgba(214,187,150,.5)}
+main{max-width:1080px;margin:0 auto;padding:28px clamp(16px,4vw,40px) 64px}
+h1{font:400 clamp(30px,4vw,44px)/1.1 var(--serif);color:var(--navy);margin:0 0 6px}
+h2{font:400 26px/1.2 var(--serif);color:var(--navy);margin:38px 0 12px}
+.satz{max-width:70ch;color:#3b3733;margin:0 0 18px}
+.blatt{background:var(--weiss);border-radius:14px;box-shadow:0 0 0 1px rgba(95,106,110,.25),0 16px 30px -22px rgba(20,24,26,.5);overflow:hidden}
+.z{display:grid;grid-template-columns:14px minmax(0,1.1fr) minmax(0,2fr) auto;gap:14px;align-items:center;padding:12px 18px;border-top:1px solid rgba(95,106,110,.18)}
+.z:first-child{border-top:0}
+.z i{width:12px;height:12px;border-radius:50%;background:var(--gut)}
+.z.gelb i{background:var(--gelb)}.z.rot i{background:var(--rot)}
+.z b{font-weight:500}
+.z span{color:#4a453f;overflow-wrap:anywhere}
+.z a{font-size:12px;color:var(--taupe)}
+.gr{font:600 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--taupe);padding:14px 18px 4px;background:rgba(230,215,193,.35)}
+.lex{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.lex article{padding:16px 18px;background:var(--weiss);border-radius:14px;box-shadow:0 0 0 1px rgba(95,106,110,.25);scroll-margin-top:20px}
+.lex article:target{box-shadow:0 0 0 2px var(--messing),0 16px 30px -18px rgba(20,24,26,.5)}
+.lex h3{margin:0 0 6px;font:600 12px var(--sans);letter-spacing:.16em;color:var(--navy)}
+.lex p{margin:4px 0;font-size:14px}.lex p b{font-weight:600;color:var(--taupe)}
+.fl{margin:0;padding:0;list-style:none}
+.fl li{padding:10px 18px;border-top:1px solid rgba(95,106,110,.18);font-size:13px;overflow-wrap:anywhere}
+.fl li:first-child{border-top:0}
+.fl time{color:var(--taupe);margin-right:10px}
+.rep{display:flex;gap:10px;flex-wrap:wrap}
+.rep .kn{background:var(--weiss);box-shadow:inset 0 0 0 1px rgba(95,106,110,.45)}
+.rep .kn.scharf{color:var(--weiss);background:var(--rot);box-shadow:none}
+.leer{padding:14px 18px;color:#5b544c}
+@media (max-width:640px){.z{grid-template-columns:12px minmax(0,1fr);row-gap:2px}.z span,.z a{grid-column:2}.kopf .re{margin-left:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<link rel="stylesheet" href="/werkbank/auftritte.css?v=cbb2007c87">
+</head>
+<body>
+<header class="kopf">
+  <img src="zeichen-gold.svg" width="44" height="92" alt="">
+  <div><b>Prüfung</b><small>Der Gastgeber · Berghotel Gasterntal</small></div>
+  <div class="re"><a class="kn kn--linie" href="./">Zum Gastgeber</a><button class="kn" type="button" id="neu">Neu prüfen</button></div>
+</header>
+<main>
+  <h1>Ist alles in Ordnung?</h1>
+  <p class="satz" id="satz">Die Seite prüft Browser, Server-Teil, Ablage, Wissen und PDF-Satz. Sie läuft auch, wenn der Gastgeber selbst nicht startet.</p>
+  <div class="blatt" id="punkte"><p class="leer">Prüfe …</p></div>
+
+  <h2>Fehler, die der Browser mitgeschrieben hat</h2>
+  <div class="blatt"><ul class="fl" id="fehler"><li>Lade …</li></ul></div>
+
+  <h2>Reparaturen</h2>
+  <p class="satz">Jede Reparatur erst nach einem zweiten Klick. Daten des Hauses (Anfragen, Briefe, Wissen) berührt keine davon. «Alle Daten herunterladen» gibt Anfragen mit Briefen, Fragen, Nachträge und das Wissen des Teams als eine Datei.</p>
+  <div class="rep">
+    <button class="kn" type="button" data-rep="fehler">Fehlerliste leeren</button>
+    <button class="kn" type="button" data-rep="geraet">Ansicht und Namen in diesem Browser zurücksetzen</button>
+    <a class="kn" href="api/export" download>Alle Daten herunterladen</a>
+  </div>
+
+  <h2>Lexikon</h2>
+  <p class="satz">Jede Meldung des Gastgebers beginnt mit einem Stichwort. «Was tun?» in der Meldung führt hierher.</p>
+  <div class="lex" id="lex"></div>
+</main>
+<script src="pruefung.js?v=97f573c072"></script>
+<script src="/werkbank/auftritte.js?v=8f2db02292" data-alles></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Eingang · Studio · Berghotel Gasterntal (17.10.2026). Baut auf studio.css auf (Farbwelt «Tal»: Talwand, helles Holz, Rot der Läden nur als Punkt für Neues).
+   Vorlage: Eingang des Waldhotel Doldenhorn (studio/eingang.css). Vorsatz eg-, damit nichts ins Studio greift. Bewegung nur über transform und opacity. */
+.eg .flaeche{scroll-behavior:smooth}
+.eg-lage{margin-bottom:26px;align-items:stretch}
+.eg-lage>div:first-child{align-self:center}
+.eg-zahlen{display:grid;grid-template-columns:repeat(4,minmax(104px,1fr));gap:10px}
+.eg-zahlen button{display:grid;gap:4px;align-content:center;text-align:left;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(214,187,150,.18),inset 0 1px 0 rgba(255,255,255,.06);color:#fff;transition:background-color .3s,transform .5s var(--e2)}
+.eg-zahlen button:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.eg-zahlen button.an{background:var(--holz);color:var(--tinte);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.eg-zahlen b{font-family:var(--titel);font-weight:600;font-size:2rem;line-height:1}
+.eg-zahlen span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+
+.eg .leiste__l .eg-uhr{display:inline}
+.eg-filter{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.eg-schalter{display:inline-flex;padding:4px;border-radius:999px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie)}
+.eg-schalter button{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:999px;font-size:14px;color:rgba(26,31,33,.7);transition:color .3s,background-color .3s}
+.eg-schalter button:hover{color:var(--tinte)}
+.eg-schalter button.an{background:var(--grund);color:var(--papier)}
+.eg-schalter i{font-style:normal;font-family:var(--mono);font-size:10.5px;opacity:.7}
+.eg-ab-weg{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border-radius:999px;font-size:13.5px;background:var(--kander)}
+.eg-ab-weg svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.5}
+
+.eg-werk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;align-items:start}
+.eg-liste{display:grid;gap:10px}
+.eg-a{display:grid;gap:6px;width:100%;text-align:left;padding:18px 20px 18px 22px;border-radius:20px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie),inset 0 1px 0 #fff;position:relative;overflow:hidden;transition:transform .5s var(--e2),background-color .3s,box-shadow .3s}
+.eg-a:hover{transform:translateY(-2px);background:#fff}
+.eg-a.an{background:#fff;box-shadow:inset 0 0 0 1.5px var(--grund),0 18px 30px -22px rgba(29,34,36,.55)}
+.eg-a.neu::before{content:'';position:absolute;left:0;top:16px;bottom:16px;width:3px;border-radius:0 3px 3px 0;background:var(--laden)}
+.eg-a.fertig{opacity:.7}
+.eg-a b{font-family:var(--titel);font-weight:600;font-size:1.2rem;line-height:1.15}
+.eg-a__k{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.eg-a__k small{margin-left:auto;font-size:12.5px;color:var(--leise)}
+.eg-a__w{font-size:14px;color:rgba(26,31,33,.74)}
+.eg-a__n{font-size:13.5px;line-height:1.45;color:var(--leise);overflow-wrap:anywhere}
+.eg-ab{display:inline-flex;align-items:center;height:22px;padding:0 10px;border-radius:999px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;background:var(--grund);color:var(--holz)}
+.eg-ab--tisch{background:var(--tanne);color:var(--papier)}
+.eg-ab--draussen{background:var(--kander);color:var(--tinte)}
+.eg-ab--sonst{background:rgba(26,31,33,.08);color:var(--tinte)}
+
+.eg-detail{position:sticky;top:20px}
+.eg-d h2{font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1.08;margin-top:14px}
+.eg-d__k{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.eg-d__k small{font-size:13px;color:var(--leise)}
+.eg-d__z{margin-top:8px;font-size:13.5px;color:var(--leise)}
+.eg-d__z a{border-bottom:1px solid currentColor}
+.eg-d__z a:hover{color:var(--tinte)}
+.eg-d__l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px;margin:22px 0 0;padding:16px 0;border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.eg-d__l>div{padding:8px 0;min-width:0}
+.eg-d__l dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.eg-d__l dd{margin:4px 0 0;font-size:15.5px;overflow-wrap:anywhere}
+.eg-d__l dd a{border-bottom:1px solid var(--holz)}
+.eg-d__n{margin-top:18px;display:grid;gap:8px}
+.eg-d__n p{font-size:15.5px;line-height:1.6;overflow-wrap:anywhere;white-space:normal}
+.eg-d__r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+.eg-d__r .kn--linie{color:var(--tinte)}
+.eg-d__r .eg-weg{color:#9f1d19}
+.eg-d__f{margin-top:14px;font-size:13px}
+.eg-d--leer{display:grid;justify-items:center;gap:8px;text-align:center;padding:60px 28px;border-radius:22px;box-shadow:inset 0 0 0 1px var(--linie);color:var(--leise)}
+.eg-d--leer .ik{width:30px;height:30px;color:var(--tanne)}
+.eg-d--leer b{font-family:var(--titel);font-weight:600;font-size:1.3rem;color:var(--tinte)}
+.eg-leer{display:grid;justify-items:start;gap:10px;padding:26px 24px;border-radius:20px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie),inset 0 1px 0 #fff}
+.eg-leer b{font-family:var(--titel);font-weight:600;font-size:1.25rem}
+.eg-leer span{font-size:14px;color:var(--leise)}
+.eg-leer .kn--linie{color:var(--tinte)}
+
+.eg-tuer{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:50;max-width:min(560px,calc(100vw - 32px));background:var(--blatt,#f6f8f8);color:var(--tinte,#1a1f21);border-radius:18px;padding:18px 22px;box-shadow:0 24px 50px -20px rgba(0,0,0,.8);font:15px/1.5 'Instrument Sans',system-ui,sans-serif}
+.eg-tuer h1{font-family:var(--titel,'Arial Narrow',sans-serif);font-weight:600;font-size:1.5rem;line-height:1.1;margin:0 0 6px}
+.eg-tuer--innen{position:static;transform:none;max-width:620px;margin:40px 0;box-shadow:inset 0 0 0 1px var(--linie)}
+.eg-tuer--innen h1{font-size:2.2rem}
+
+@media (max-width:1100px){.eg-lage{display:grid;gap:22px}.eg-zahlen{grid-template-columns:repeat(4,minmax(0,1fr))}}   /* schmaler: Zahlen als volle Reihe unter dem Satz, nichts hängt lose */
+@media (max-width:980px){.eg-werk{grid-template-columns:minmax(0,1fr)}.eg-detail{position:static;scroll-margin-top:12px}}
+@media (max-width:860px){.eg .leiste{flex-wrap:nowrap;min-height:0;padding:9px 12px 9px 16px}.eg .leiste__l small,.eg .leiste__l .eg-uhr{display:none}.eg .leiste__l{flex:1 1 auto;overflow:hidden}.eg .leiste__l b{font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+@media (max-width:520px){
+  .eg-lage{padding:24px 22px}
+  .eg-zahlen{grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:8px}
+  .eg-zahlen button{padding:12px 14px;border-radius:14px}.eg-zahlen b{font-size:1.6rem}
+  .eg-schalter{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}
+  .eg-schalter button{justify-content:center;padding:0 6px;gap:5px;font-size:13px}
+  .eg-d__l{grid-template-columns:minmax(0,1fr)}
+  .eg-a{padding:16px 16px 16px 20px}
+  .eg-a__k small{margin-left:0;width:100%}
+}

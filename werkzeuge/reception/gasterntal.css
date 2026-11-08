@@ -1,0 +1,152 @@
+/* Der Gastgeber · Berghotel Gasterntal: Feinabstimmung nach hell.css (Datei der Vorlage Doldenhorn, dort doldenhorn.css; Werte setzt _bau/kleid.py).
+   Das Kleid kommt aus dem Haus (assets/css/main.css): Talwand im Regen, helles Balkonholz, Papier aus der Kander, Tannengrün als Akzent, Rot der Fensterläden
+   nur als Punkt, Barlow Semi Condensed für Titel, DM Mono für kleine Etiketten, Instrument Sans für Text, die Raute der Laube als Zeichen und Tapete.
+   Kopf, Rand, Leiste und Startbild kommen aus dem Oberflächen-Paket der Werkzeuge (gastgeber.css). Bewegung nur über transform und opacity. */
+
+/* ---------- Kopf: Marke wie im Studio und auf der Website, Caslon in normaler Schreibung statt gesperrter Versalien ---------- */
+.kopf__marke b{font:700 19px/1.05 var(--serif);letter-spacing:.01em;text-transform:none;color:#f6f8f8}
+.kopf__marke small{font-family:var(--mono);letter-spacing:.22em;color:rgba(214,187,150,.75)}
+.kopf__titel{font-weight:700;letter-spacing:.005em}
+/* Die Tannen sind hoch, nicht rund wie das Zeichen des Rivage: nach Höhe setzen und nie schrumpfen lassen (bei 320 px lagen sie unter den runden Knöpfen) */
+.kopf__marke{flex:none}.kopf__marke img{width:auto;height:40px}
+@media (max-width:420px){.kopf__marke img{height:34px}}
+.titel .zier,.titel .mono{letter-spacing:.24em}
+.nw{font-family:var(--sans);font-weight:500;font-size:15.5px}
+.leiste__t b,.quit b,.fenster h2,h2.zw{letter-spacing:0}
+
+/* Betonung in Titeln wie auf der Website: Farbe statt Schräge (main.css: .mk h1 em{font-style:normal}) */
+#ansicht :is(h1,h2,h3) em,.fenster h2 em{font-style:normal}
+
+/* Handy: «Chat ausprobieren» schmaler (Carlton 17.10.2026) */
+@media (max-width:480px){#k-probe{letter-spacing:.07em;font-size:10px;padding-left:12px}}
+/* 320 px: «Chat ausprobieren» ragte 8 px aus dem Bild; dort nur der Knauf (der Name bleibt für Vorleser im Knopf) */
+@media (max-width:360px){#k-probe{font-size:0;letter-spacing:0;padding-left:5px;gap:0}}
+/* Handy in Safari: lange Zeilen in den Karten drückten die Seite breiter als den Bildschirm (Fund Carlton 16.10.2026, gilt auch im Rivage) */
+.gs-hinweis{min-width:0;max-width:100%;overflow:hidden}
+@media (max-width:760px){.gs-hinweis{align-items:stretch}.gs-hinweis #gs-name{max-width:100%}}
+
+/* ---------- Eingang: Abteilungen (E15 des Doldenhorn) ---------- */
+.re-abt{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:6px;margin:0 0 12px;padding:6px;border-radius:18px;background:#fbfcfc;box-shadow:inset 0 0 0 1px rgba(26,31,33,.1),0 14px 26px -22px rgba(29,34,36,.5)}
+.re-abt button{display:flex;align-items:baseline;justify-content:space-between;gap:10px;min-width:0;padding:10px 12px 9px;border:0;border-radius:13px;background:none;text-align:left;color:var(--tinte);cursor:pointer;transition:background-color .3s var(--e1),color .3s var(--e1),transform .4s var(--e2)}
+.re-abt button span{white-space:nowrap;font:500 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.re-abt button i{font:700 19px/1 var(--serif);font-style:normal;color:rgba(26,31,33,.32)}
+.re-abt button i.da{color:var(--tinte)}
+.re-abt button:hover{background:rgba(26,31,33,.04)}
+.re-abt button:active{transform:scale(.97)}
+.re-abt button[aria-pressed="true"]{color:#f6f8f8;background:linear-gradient(#353b40,#262b2f);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -2px 0 #0d1011}
+.re-abt button[aria-pressed="true"] i{color:#efe2cb}
+.re-filter{flex-wrap:wrap}
+.re-angaben dd small{display:block;margin-top:3px;font:400 12.5px/1.3 var(--mono);letter-spacing:.04em;color:rgba(233,236,236,.62);overflow-wrap:anywhere}
+.re-angaben dd{font-size:15.5px;line-height:1.3}
+
+/* ========== Der Brief: Briefpapier des Gasterntal ==========
+   Blatt in kühlem Weiss, ein feiner Rahmen im Balkonholz, die Raute der Laube, Hausname in Barlow Semi, Ort und Etiketten in DM Mono, Text in Instrument Sans,
+   Fusszeile mit Adresse, Telefon und Mail. Gilt für «Gestalten», «Nur Text», PDF und Vorschau; die Mail trägt dasselbe Kleid in reception.js (briefMail). */
+.brief{--ri:16px;--gold:#a3865c;--tinte-brief:#1a1f21;
+  padding:clamp(52px,5.6vw,84px) clamp(38px,5.6vw,86px) clamp(44px,4.6vw,70px);border-radius:3px;color:var(--tinte-brief);
+  background:
+    radial-gradient(120% 70% at 50% -8%,rgba(255,255,255,.75),rgba(255,255,255,0) 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .3 0 0 0 0 .28 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23k)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,#f9fafa,#eff1f2);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 0 0 1px rgba(44,49,54,.16),0 2px 3px rgba(16,19,20,.25),0 22px 36px -14px rgba(0,0,0,.55),0 60px 90px -44px rgba(0,0,0,.8)}
+.brief::before{inset:var(--ri);border:1px solid rgba(163,134,92,.5)}
+.brief::after{display:none}
+.brief__kopf{gap:8px;padding-bottom:0;margin-bottom:28px;border-bottom:0}
+.brief__kopf img{width:34px;margin-bottom:8px}
+.gs--zeichen{--fs:34px;width:calc(34px * var(--s,1))}
+.brief__kopf b,.gs--haus{font-family:var(--serif);font-weight:700;letter-spacing:.02em;text-transform:none;color:#1d2224;padding-left:0}
+.gs--haus{--fs:23px}
+.brief__kopf b{font-size:23px}
+.brief__kopf span,.gs--zeile{font-family:var(--mono);font-style:normal;font-size:9.5px;letter-spacing:.3em;white-space:nowrap;text-transform:uppercase;color:#6f7a7e}
+.gs--zeile{--fs:9.5px;margin-top:8px}
+/* Linien: fein in Gold, die erste mit kleinen Tannen in der Mitte */
+.gs--linie i{height:var(--lst,1px);background:var(--lfb,linear-gradient(90deg,rgba(163,134,92,0),rgba(163,134,92,.62) 16%,rgba(163,134,92,.62) 84%,rgba(163,134,92,0)))}
+.brief__linie{background:linear-gradient(90deg,rgba(163,134,92,0),rgba(163,134,92,.55),rgba(163,134,92,0))}
+/* An / Von */
+.brief__an{gap:10px 36px;margin:2px 0 26px}
+.brief__an dt,.gs--an dt{font:500 9.5px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#6f7a7e}
+.brief__an dd,.gs--an dd{margin-top:5px;font:400 14.5px/1.4 var(--sans);color:#1d2224}
+.brief__an dd small{font:400 12.5px/1.4 var(--sans);color:#5f6a6e}
+.brief__an a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(163,134,92,.55)}
+/* Betreff: kleines Etikett in Mono, Betreff in Caslon */
+.brief__betreff{padding-top:16px;border-top:0;background:linear-gradient(90deg,rgba(163,134,92,.5),rgba(163,134,92,0) 70%) top left/100% 1px no-repeat}
+.brief__betreff dt,.gs-mono{display:block;margin-bottom:6px;font:500 9.5px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#6f7a7e}
+.brief__betreff dd{font:700 21px/1.2 var(--serif);letter-spacing:0;text-transform:none;color:#1d2224}
+.gs--betreff{--fs:21px;font-family:var(--serif);font-weight:700;letter-spacing:0;text-transform:none;line-height:1.2;color:#1d2224}
+.brief--gestalt .brief__betreff{margin:0 0 28px;padding-top:16px;background:linear-gradient(90deg,rgba(163,134,92,.5),rgba(163,134,92,0) 70%) top left/100% 1px no-repeat}
+/* Brieftext in Instrument Sans (wie die Hausmails) */
+.brief__text{font:400 16px/1.7 var(--sans);color:var(--tinte-brief);margin-top:6px}
+.brief__text p{margin:0 0 1.05em}
+.gs--p{--fs:16px;font-family:var(--sans);line-height:1.7;margin:0 0 calc(1.05em + var(--mb,0px));color:var(--tinte-brief)}
+.gs--sign{margin-top:calc(1.4em + var(--mb,0px))}
+.gs--sign::first-line{color:#1d2224;font-weight:600}
+/* Offene Stellen: Markierung in Hellgold, kein Etikett */
+.offen-feld{padding:0 1px;border-radius:0;font-style:normal;color:#5a4731;background:linear-gradient(transparent 56%,rgba(214,187,150,.62) 56%);box-shadow:none;border-bottom:1px dotted rgba(163,134,92,.8)}
+.offen-feld i{display:none}
+.gs .offen-feld::before{content:none}
+/* Schreiben im Satz: nur ein warmer Schimmer und die Schreibmarke in Gold */
+.gs--schreib{background:rgba(214,187,150,.2);box-shadow:0 0 0 6px rgba(214,187,150,.2);border-radius:2px;caret-color:var(--gold)}
+.brief__text textarea,.brief__betreff input{display:block;width:100%;border:0;border-radius:2px;background:transparent;box-shadow:none;resize:none;overflow:hidden;outline:0;caret-color:var(--gold);color:inherit;transition:background-color .3s var(--e1),box-shadow .3s var(--e1);-webkit-appearance:none;appearance:none}
+.brief__text textarea{min-height:420px;padding:0;font:400 16px/1.7 var(--sans)}
+.brief__betreff input{padding:0;font:700 21px/1.2 var(--serif);color:#1d2224}
+.brief__text textarea:hover,.brief__betreff input:hover{background:rgba(214,187,150,.12);box-shadow:0 0 0 8px rgba(214,187,150,.12)}
+.brief__text textarea:focus,.brief__betreff input:focus{background:rgba(214,187,150,.2);box-shadow:0 0 0 8px rgba(214,187,150,.2)}
+/* Siegel: die Tannen auf einer kleinen nachtblauen Scheibe; Fusszeile in Mono */
+.brief__siegel{display:flex;align-items:center;justify-content:center;width:46px;height:46px;margin:30px auto 4px;border-radius:50%;pointer-events:none;background:#1d2224;box-shadow:0 0 0 1px rgba(163,134,92,.7),0 0 0 4px #f6f8f8,0 0 0 5px rgba(163,134,92,.35)}
+.brief__siegel img{width:18px;height:auto}
+.brief__fuss,.gs--fuss{font-family:var(--mono);font-size:10px;line-height:1.9;letter-spacing:.14em;text-transform:uppercase;color:#5f6a6e}
+.brief__fuss{margin-top:16px;padding-top:14px;border-top:0;background:linear-gradient(90deg,rgba(163,134,92,0),rgba(163,134,92,.5),rgba(163,134,92,0)) top center/100% 1px no-repeat}
+.gs--fuss{--fs:10px;margin-top:0;padding-top:14px}
+.brief--leer .brief__kopf{margin-bottom:22px}
+@media (max-width:760px){
+  .brief{--ri:9px;padding:44px 24px 34px}
+  .brief__kopf b{font-size:19px}.gs--haus{--fs:19px}.brief__text,.gs--p,.brief__text textarea{font-size:15px}
+  .brief__betreff dd,.gs--betreff,.brief__betreff input{font-size:18px}
+  .brief__kopf span{font-size:8.5px;letter-spacing:.16em;white-space:normal}.gs--zeile{--fs:8.5px;letter-spacing:.16em;white-space:normal}
+  .brief__an{grid-template-columns:1fr}.gs--fuss,.brief__fuss{font-size:9.5px;letter-spacing:.08em}
+}
+.gs-flaeche .brief{box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 0 0 1px rgba(44,49,54,.18),0 2px 3px rgba(16,19,20,.22),0 22px 40px -18px rgba(29,34,36,.5)}
+
+/* ========== Drucken (⌘P), wie beim Carlton: A4 ohne Ränder des Browsers, nur der Brief, Papierton und Gold immer mit ========== */
+@media print{
+  @page{size:A4;margin:0}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html,body{background:#fff!important;height:auto!important;overflow:visible!important}
+  body.re>*:not(main){display:none!important}
+  .haupt{height:0!important;min-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important}
+  .re-detail,.gs-flaeche,.re-eingang,#ansicht,.re-post,.re-spalte{transform:none!important;position:static!important;filter:none!important}
+  .gs-hinweis,.gs-werk,.gw,.re-post__kopf,.re-post__unten,.re-post__kn,.re-notiz,.re-modus,.re-liste,.re-abt{display:none!important}
+  #brief,.brief--bearb{position:absolute!important;left:0;top:0;width:calc(210mm / .8)!important;max-width:none!important;margin:0!important;zoom:.8;border-radius:0!important;box-shadow:none!important;
+    padding:24mm 26mm 22mm!important;min-height:calc(297mm / .8);break-inside:auto}
+  .gs{box-shadow:none!important;cursor:default!important;background:none!important}
+  .offen-feld{background:none!important;border:0!important;box-shadow:none!important;color:inherit!important;padding:0!important}
+  .gs--schreib,.gs--wahl{box-shadow:none!important;background:none!important}
+  .gs--p,.gs--bild,.gs--an,.brief__siegel,.gs--fuss{break-inside:avoid}
+  .brief--bearb textarea{field-sizing:content;height:auto!important;min-height:0!important;overflow:visible!important}
+  .brief__text textarea:hover,.brief__text textarea:focus,.brief__betreff input:hover,.brief__betreff input:focus{background:transparent!important;box-shadow:none!important}
+}
+
+/* Lange Wörter ohne Leerzeichen brechen um, statt die Seite breiter zu machen (Carlton F38, Prüfung mit 5'000 Zeichen) */
+.re #ansicht :is(.re-n, .re-f, .re-a, .re-d, .sb-z, .sb-offen__z, .wi-l, .re-notiz, #w-antwort, .re-zitat, blockquote, .gs--p, .brief__text, .re-de, .re-gespraech__l) {overflow-wrap:anywhere;min-width:0}
+/* Scrollen zu einem Ziel hält Abstand zu Kopf und Leiste (Carlton 17.10.2026, 1366 × 650) */
+html:has(body.re){scroll-padding-top:92px;scroll-padding-bottom:124px}
+/* Kein Nachrücken der Seite durch den Browser (Scroll-Anker): Beim Antippen eines Knopfs schliesst La Réception die Auswahl im Brief, darunter
+   ändert sich die Höhe, und Firefox schob die Seite dabei um 80 px nach; der Knopf rutschte unter dem Finger weg, Löschen, Wieder offen und Fenster
+   gingen nicht auf (Fund Bau-Prüfung 17.10.2026, Firefox am Handy, steckt so auch im Rivage und Carlton). La Réception hält die Lage selbst (ruhigTauschen). */
+html:has(body.re),body.re{overflow-anchor:none}
+
+/* Kleine Handys (320 px, Fund Bau-Prüfung 17.10.2026, steckt auch im Rivage): «1fr» nahm die Mindestbreite der Karteikarte (Knopfzeile) und schob
+   «Vom Team nachgetragen» 14 px über den Rand. Spalte darf schrumpfen, Knöpfe brechen um. */
+@media (max-width:420px){.re-nliste{grid-template-columns:minmax(0,1fr)}.re-n{padding:26px 18px 20px}.re-n__kn{flex-wrap:wrap}}
+/* Kleine, niedrige Handys (z. B. 320 × 640): Werkzeugleiste oben und «Gestalten» unten liessen keinen Platz für den gewählten Teil, die Ecken lagen
+   unter dem Blatt (Fund Bau-Prüfung 17.10.2026, steckt auch im Rivage). Das Blatt wird niedriger, sein Inhalt rollt in sich. */
+@media (max-width:1100px) and (max-height:720px){.gs-seite{height:26vh}}
+/* 320 px im Safari-Kern: die Auswahl «Bereich» im Feld «Neues Wissen» nimmt die Breite der längsten Möglichkeit («Kandersteg & Ausflüge») und schob
+   den Bereich 24 px über den Rand (Fund Bau-Prüfung 17.10.2026). */
+.wi-neu__leiste .wi-neu__ber{flex:1 1 150px;min-width:0;max-width:100%;width:auto}
+.wi-neu{min-width:0}
+/* «Weniger Bewegung» gilt auch für Zierflächen (R17, Prüf-Chat 17.10.2026): *{animation:none} aus studio.css/hell.css trifft ::before nicht; der Rahmen der Bühne
+   (bueRahmen) und der umlaufende Glanz der Goldknöpfe (ga, endlos) liefen weiter. Steckt so auch im Rivage und Carlton. */
+@media (prefers-reduced-motion:reduce){*::before,*::after{animation:none!important;transition:none!important}}
+/* Startfehler-Tür (R04): Knopf «Prüfung öffnen» ohne Pfeil braucht eigenen Innenabstand (Prüf-Chat 17.10.2026). */
+.start-tuer .kn{padding-inline:24px;margin-top:6px}

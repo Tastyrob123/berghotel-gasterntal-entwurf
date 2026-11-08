@@ -1,0 +1,1790 @@
+{
+ "haus": "Berghotel Gasterntal",
+ "ort": "Selden · 3718 Kandersteg",
+ "satz": "Wo die Natur das Paradies küsst",
+ "satz_karte": "WO DIE NAUR DAS PARADIES KÜSST",
+ "haus_satz": "Im wildromantischen Gasterntal erwartet Sie unser Berghotel.",
+ "betrieb": "Ein Betrieb des Waldhotel Doldenhorn und Landgasthof Ruedihus Kandersteg.",
+ "ton": [
+  "Wo die Natur das Paradies küsst",
+  "Einfache, heimelige Zimmer.",
+  "Gönnen Sie sich 90 Minuten Wärme, Ruhe und Natur",
+  "Selden · 3718 Kandersteg"
+ ],
+ "fotos": [
+  {
+   "k": "haus-profil",
+   "t": {
+    "de": "Das Haus von der Naturstrasse: drei Stockwerke Holz, rote Läden, Fahne, dahinter der Berg"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4032,
+   "h": 3024,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-profil-l.webp",
+   "fs": "../../assets/img/haus-profil-s.webp",
+   "fm": "mini/haus-profil.webp"
+  },
+  {
+   "k": "haus-profil-2",
+   "t": {
+    "de": "Dasselbe Haus, einen Schritt weiter links aufgenommen"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4000,
+   "h": 3000,
+   "art": "haus",
+   "q": "Tourismusbüro Kandersteg, vom Haus geliefert",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-profil-2-l.webp",
+   "fs": "../../assets/img/haus-profil-2-s.webp",
+   "fm": "mini/haus-profil-2.webp"
+  },
+  {
+   "k": "haus-giebel",
+   "t": {
+    "de": "Giebelseite mit Balkon, Geranien und Hausschild, davor Steintische"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4032,
+   "h": 3024,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-giebel-l.webp",
+   "fs": "../../assets/img/haus-giebel-s.webp",
+   "fm": "mini/haus-giebel.webp"
+  },
+  {
+   "k": "haus-pano",
+   "t": {
+    "de": "Giebelseite als breiter Streifen mit Fahne und Bergen"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3168,
+   "h": 1297,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-pano-l.webp",
+   "fs": "../../assets/img/haus-pano-s.webp",
+   "fm": "mini/haus-pano.webp"
+  },
+  {
+   "k": "haus-rueck",
+   "t": {
+    "de": "Rückseite mit gedecktem Sitzplatz, Gegenlicht und Wolken"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2389,
+   "h": 1792,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-rueck-l.webp",
+   "fs": "../../assets/img/haus-rueck-s.webp",
+   "fm": "mini/haus-rueck.webp"
+  },
+  {
+   "k": "feuer-fels",
+   "t": {
+    "de": "Feuerschale und Sonnenschirme vor dem grossen Felsblock beim Haus"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1262,
+   "h": 777,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/feuer-fels-l.webp",
+   "fs": "../../assets/img/feuer-fels-s.webp",
+   "fm": "mini/feuer-fels.webp"
+  },
+  {
+   "k": "haus-eingang",
+   "t": {
+    "de": "Eingang mit Laube, Fahnen und Geranien"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2389,
+   "h": 1792,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-eingang-l.webp",
+   "fs": "../../assets/img/haus-eingang-s.webp",
+   "fm": "mini/haus-eingang.webp"
+  },
+  {
+   "k": "haus-alt",
+   "t": {
+    "de": "Altes Holzhaus mit Holzbeige in der Wiese, Gäste in Liegestühlen"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 1440,
+   "h": 1080,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/haus-alt-l.webp",
+   "fs": "../../assets/img/haus-alt-s.webp",
+   "fm": "mini/haus-alt.webp"
+  },
+  {
+   "k": "stube",
+   "t": {
+    "de": "Gaststube mit Holztischen, Bugholzstühlen und Lampen"
+   },
+   "b": "stube",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1696,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-l.webp",
+   "fs": "../../assets/img/stube-s.webp",
+   "fm": "mini/stube.webp"
+  },
+  {
+   "k": "stube-sessel",
+   "t": {
+    "de": "Stube mit rot karierten Sesseln und grünem Schrank"
+   },
+   "b": "stube",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2389,
+   "h": 1792,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-sessel-l.webp",
+   "fs": "../../assets/img/stube-sessel-s.webp",
+   "fm": "mini/stube-sessel.webp"
+  },
+  {
+   "k": "saeli",
+   "t": {
+    "de": "Säli mit gedeckten Tischen unter der Balkendecke"
+   },
+   "b": "stube",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2389,
+   "h": 1792,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/saeli-l.webp",
+   "fs": "../../assets/img/saeli-s.webp",
+   "fm": "mini/saeli.webp"
+  },
+  {
+   "k": "stube-regal",
+   "t": {
+    "de": "Tisch mit Wiesenblumen vor dem Geschirrregal"
+   },
+   "b": "stube",
+   "s": "sommer",
+   "f": "hoch",
+   "w": 1792,
+   "h": 2389,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-regal-l.webp",
+   "fs": "../../assets/img/stube-regal-s.webp",
+   "fm": "mini/stube-regal.webp"
+  },
+  {
+   "k": "z-lager",
+   "t": {
+    "de": "Dunkles Holzzimmer mit vier Betten, drei kleine Lampen brennen"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-lager-l.webp",
+   "fs": "../../assets/img/z-lager-s.webp",
+   "fm": "mini/z-lager.webp"
+  },
+  {
+   "k": "z-doppel",
+   "t": {
+    "de": "Doppelbett hinter Blumenvorhängen, Sessel, alter Schlitten an der Wand"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-doppel-l.webp",
+   "fs": "../../assets/img/z-doppel-s.webp",
+   "fm": "mini/z-doppel.webp"
+  },
+  {
+   "k": "z-familie",
+   "t": {
+    "de": "Langes Zimmer mit vier Betten und rot karierten Vorhängen"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-familie-l.webp",
+   "fs": "../../assets/img/z-familie-s.webp",
+   "fm": "mini/z-familie.webp"
+  },
+  {
+   "k": "z-kajuete",
+   "t": {
+    "de": "Kajütenbett aus hellem Holz"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-kajuete-l.webp",
+   "fs": "../../assets/img/z-kajuete-s.webp",
+   "fm": "mini/z-kajuete.webp"
+  },
+  {
+   "k": "z-einzel",
+   "t": {
+    "de": "Einzelbett unter dem Fenster"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-einzel-l.webp",
+   "fs": "../../assets/img/z-einzel-s.webp",
+   "fm": "mini/z-einzel.webp"
+  },
+  {
+   "k": "z-dach",
+   "t": {
+    "de": "Zimmer unter der Dachschräge"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-dach-l.webp",
+   "fs": "../../assets/img/z-dach-s.webp",
+   "fm": "mini/z-dach.webp"
+  },
+  {
+   "k": "z-ofen",
+   "t": {
+    "de": "Zimmer mit Balken, Ofen und zwei Sesseln"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-ofen-l.webp",
+   "fs": "../../assets/img/z-ofen-s.webp",
+   "fm": "mini/z-ofen.webp"
+  },
+  {
+   "k": "z-bad",
+   "t": {
+    "de": "Dusche und WC"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-bad-l.webp",
+   "fs": "../../assets/img/z-bad-s.webp",
+   "fm": "mini/z-bad.webp"
+  },
+  {
+   "k": "z-estrich",
+   "t": {
+    "de": "Schlafraum unter dem Dach mit langem Tisch"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2336,
+   "h": 1744,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-estrich-l.webp",
+   "fs": "../../assets/img/z-estrich-s.webp",
+   "fm": "mini/z-estrich.webp"
+  },
+  {
+   "k": "z-tisch",
+   "t": {
+    "de": "Schmales Zimmer mit Schreibtisch am Fenster"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1744,
+   "h": 2336,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-tisch-l.webp",
+   "fs": "../../assets/img/z-tisch-s.webp",
+   "fm": "mini/z-tisch.webp"
+  },
+  {
+   "k": "z-fenster",
+   "t": {
+    "de": "Doppelbett mit weissem Leinen"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1744,
+   "h": 2336,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-fenster-l.webp",
+   "fs": "../../assets/img/z-fenster-s.webp",
+   "fm": "mini/z-fenster.webp"
+  },
+  {
+   "k": "d-krug",
+   "t": {
+    "de": "Waschtisch mit Krug, Schüssel und Handtüchern"
+   },
+   "b": "einzel",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 768,
+   "h": 1024,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/d-krug-l.webp",
+   "fs": "../../assets/img/d-krug-s.webp",
+   "fm": "mini/d-krug.webp"
+  },
+  {
+   "k": "d-schrank",
+   "t": {
+    "de": "Grün gestrichener Schrank mit Kupfertellern"
+   },
+   "b": "einzel",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 768,
+   "h": 1024,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/d-schrank-l.webp",
+   "fs": "../../assets/img/d-schrank-s.webp",
+   "fm": "mini/d-schrank.webp"
+  },
+  {
+   "k": "d-bilder",
+   "t": {
+    "de": "Alte Bergfotografien an der Holzwand"
+   },
+   "b": "einzel",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1792,
+   "h": 2389,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/d-bilder-l.webp",
+   "fs": "../../assets/img/d-bilder-s.webp",
+   "fm": "mini/d-bilder.webp"
+  },
+  {
+   "k": "e-plaettli",
+   "t": {
+    "de": "Wurst, Käse und Gurke auf dem Holzbrett"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4032,
+   "h": 3024,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-plaettli-l.webp",
+   "fs": "../../assets/img/e-plaettli-s.webp",
+   "fm": "mini/e-plaettli.webp"
+  },
+  {
+   "k": "e-tafel",
+   "t": {
+    "de": "Lange Holztafel unter den Bäumen"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1792,
+   "h": 2389,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-tafel-l.webp",
+   "fs": "../../assets/img/e-tafel-s.webp",
+   "fm": "mini/e-tafel.webp"
+  },
+  {
+   "k": "fest-tafel",
+   "t": {
+    "de": "Weiss gedeckte Festtafel in der Wiese, dahinter das alte Holzhaus"
+   },
+   "b": "feste",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4032,
+   "h": 3024,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/fest-tafel-l.webp",
+   "fs": "../../assets/img/fest-tafel-s.webp",
+   "fm": "mini/fest-tafel.webp"
+  },
+  {
+   "k": "kaeserei",
+   "t": {
+    "de": "Die alte Käserei: Steinboden, Kupferkessel, Käselaibe, eine Lampe"
+   },
+   "b": "sauna",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4032,
+   "h": 3024,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kaeserei-l.webp",
+   "fs": "../../assets/img/kaeserei-s.webp",
+   "fm": "mini/kaeserei.webp"
+  },
+  {
+   "k": "sauna",
+   "t": {
+    "de": "Vorraum der Sauna mit Holzbank und Lichtband"
+   },
+   "b": "sauna",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2400,
+   "h": 1792,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/sauna-l.webp",
+   "fs": "../../assets/img/sauna-s.webp",
+   "fm": "mini/sauna.webp"
+  },
+  {
+   "k": "chluse",
+   "t": {
+    "de": "Die Naturstrasse unter dem Fels der Chluse, aus dem Auto"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 768,
+   "h": 1024,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/chluse-l.webp",
+   "fs": "../../assets/img/chluse-s.webp",
+   "fm": "mini/chluse.webp"
+  },
+  {
+   "k": "tal-blick",
+   "t": {
+    "de": "Blick über Geröll und Wald hinaus ins Tal"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 3024,
+   "h": 4032,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/tal-blick-l.webp",
+   "fs": "../../assets/img/tal-blick-s.webp",
+   "fm": "mini/tal-blick.webp"
+  },
+  {
+   "k": "tal-luft",
+   "t": {
+    "de": "Die Kander und die Weiden von oben"
+   },
+   "b": "tal",
+   "s": "sommer",
+   "f": "hoch",
+   "w": 3024,
+   "h": 4032,
+   "art": "haus",
+   "q": "Website des Hauses",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/tal-luft-l.webp",
+   "fs": "../../assets/img/tal-luft-s.webp",
+   "fm": "mini/tal-luft.webp"
+  },
+  {
+   "k": "frauenschuh",
+   "t": {
+    "de": "Frauenschuh-Orchideen vor den Talwänden"
+   },
+   "b": "tal",
+   "s": "sommer",
+   "f": "hoch",
+   "w": 810,
+   "h": 1080,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/frauenschuh-l.webp",
+   "fs": "../../assets/img/frauenschuh-s.webp",
+   "fm": "mini/frauenschuh.webp"
+  },
+  {
+   "k": "wegweiser",
+   "t": {
+    "de": "Gelber Wegweiser bei Selden"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1124,
+   "h": 755,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/wegweiser-l.webp",
+   "fs": "../../assets/img/wegweiser-s.webp",
+   "fm": "mini/wegweiser.webp"
+  },
+  {
+   "k": "kegelbahn",
+   "t": {
+    "de": "Kegelbahn im Freien"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1260,
+   "h": 749,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kegelbahn-l.webp",
+   "fs": "../../assets/img/kegelbahn-s.webp",
+   "fm": "mini/kegelbahn.webp"
+  },
+  {
+   "k": "t-strasse",
+   "t": {
+    "de": "Die Naturstrasse im Talboden unter Regenwolken"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY-SA 3.0 · Datei «Gasterntal Regenwetter.JPG»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-strasse-l.webp",
+   "fs": "../../assets/img/t-strasse-s.webp",
+   "fm": "mini/t-strasse.webp"
+  },
+  {
+   "k": "t-luft",
+   "t": {
+    "de": "Das Gasterntal von oben, links das Doldenhorn"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2560,
+   "art": "frei",
+   "q": "Wikimedia Commons · Robert J Heath · CC BY 2.0 · Datei «Gasterntal valley and Doldenhorn _45198751634_.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-luft-l.webp",
+   "fs": "../../assets/img/t-luft-s.webp",
+   "fm": "mini/t-luft.webp"
+  },
+  {
+   "k": "t-kander",
+   "t": {
+    "de": "Die Kander oberhalb Selden"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY 2.5 · Datei «Kander Selden.JPG»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-kander-l.webp",
+   "fs": "../../assets/img/t-kander-s.webp",
+   "fm": "mini/t-kander.webp"
+  },
+  {
+   "k": "t-bruecke",
+   "t": {
+    "de": "Hängebrücke über die Kander bei Selden"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0 · Datei «Selden-Hängebrücke über die Kander_ Gasterntal_ Kandersteg BE 20220712-jag9889.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-bruecke-l.webp",
+   "fs": "../../assets/img/t-bruecke-s.webp",
+   "fm": "mini/t-bruecke.webp"
+  },
+  {
+   "k": "t-kuehe",
+   "t": {
+    "de": "Kühe auf der Weide, dahinter Fels und Firn"
+   },
+   "b": "tal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 3840,
+   "h": 2560,
+   "art": "frei",
+   "q": "Wikimedia Commons · Chrisi1964 · CC0 · Datei «Wanderung im Gasterntal.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-kuehe-l.webp",
+   "fs": "../../assets/img/t-kuehe-s.webp",
+   "fm": "mini/t-kuehe.webp"
+  },
+  {
+   "k": "t-chluse",
+   "t": {
+    "de": "Brücke über die Kander unter der Felswand"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0 · Datei «Waldhaus-Brücke über die Kander_ Gasterntal_ Kandersteg BE 20220712-jag9889.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-chluse-l.webp",
+   "fs": "../../assets/img/t-chluse-s.webp",
+   "fm": "mini/t-chluse.webp"
+  },
+  {
+   "k": "t-holz",
+   "t": {
+    "de": "Der Talboden mit Auenwald von oben"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY-SA 3.0 · Datei «Gasternholz Nord.JPG»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-holz-l.webp",
+   "fs": "../../assets/img/t-holz-s.webp",
+   "fm": "mini/t-holz.webp"
+  },
+  {
+   "k": "w-kandersteg",
+   "t": {
+    "de": "Eggeschwand am Taleingang, dahinter Kandersteg"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0 · Datei «Eggeschwand_ Kandersteg BE 20220712-jag9889.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/w-kandersteg-l.webp",
+   "fs": "../../assets/img/w-kandersteg-s.webp",
+   "fm": "mini/w-kandersteg.webp"
+  },
+  {
+   "k": "w-klus",
+   "t": {
+    "de": "Die Strasse in der Klus unter dem Fels, darunter der Fall der Kander"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY 2.5 · Datei «Kandersteg Klus2.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/w-klus-l.webp",
+   "fs": "../../assets/img/w-klus-s.webp",
+   "fm": "mini/w-klus.webp"
+  },
+  {
+   "k": "w-wiesen",
+   "t": {
+    "de": "Die Naturstrasse zwischen den Wiesen im Talboden"
+   },
+   "b": "tal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2496,
+   "h": 1664,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY-SA 3.0 · Datei «Gasterntal Wiesen.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/w-wiesen-l.webp",
+   "fs": "../../assets/img/w-wiesen-s.webp",
+   "fm": "mini/w-wiesen.webp"
+  },
+  {
+   "k": "u-kander",
+   "t": {
+    "de": "Die junge Kander zwischen Kiesbänken"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0 · Datei «Die junge Kander im Gasterntal_ Kandersteg BE 20220712-jag9889.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/u-kander-l.webp",
+   "fs": "../../assets/img/u-kander-s.webp",
+   "fm": "mini/u-kander.webp"
+  },
+  {
+   "k": "stube-tische",
+   "t": {
+    "de": "Gaststube mit Tischen am Fenster und Bildern an der Holzwand"
+   },
+   "b": "stube",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1656,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-tische-l.webp",
+   "fs": "../../assets/img/stube-tische-s.webp",
+   "fm": "mini/stube-tische.webp"
+  },
+  {
+   "k": "t-klus",
+   "t": {
+    "de": "Die Kander in der Klus, Blick hinaus nach Kandersteg, 1987"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1245,
+   "h": 1920,
+   "art": "frei",
+   "q": "Wikimedia Commons · Joachim Lutz · CC BY-SA 4.0 · Datei «1987 06 07 Pfingsten Gasterntal _4_.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/t-klus-l.webp",
+   "fs": "../../assets/img/t-klus-s.webp",
+   "fm": "mini/t-klus.webp"
+  },
+  {
+   "k": "u-oben",
+   "t": {
+    "de": "Der oberste Teil des Gasterntals, Blick talabwärts"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2878,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY 3.0 · Datei «Gasterntal oberer Teil1.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/u-oben-l.webp",
+   "fs": "../../assets/img/u-oben-s.webp",
+   "fm": "mini/u-oben.webp"
+  },
+  {
+   "k": "u-firn",
+   "t": {
+    "de": "Vom Hockenhorn ins Gasterntal, rechts der Kanderfirn"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1844,
+   "h": 1280,
+   "art": "frei",
+   "q": "Wikimedia Commons · Johannes Menzel · CC BY 3.0 · Datei «WP Gasterental Pano 180908.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/u-firn-l.webp",
+   "fs": "../../assets/img/u-firn-s.webp",
+   "fm": "mini/u-firn.webp"
+  },
+  {
+   "k": "u-sackhorn",
+   "t": {
+    "de": "Das Sackhorn, von oberhalb der Gfelalp"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "Wikimedia Commons · Zacharie Grossen · CC BY-SA 4.0 · Datei «Sackhorn.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/u-sackhorn-l.webp",
+   "fs": "../../assets/img/u-sackhorn-s.webp",
+   "fm": "mini/u-sackhorn.webp"
+  },
+  {
+   "k": "u-waldhaus",
+   "t": {
+    "de": "Bauernhaus und Berghotel Waldhaus im Gasterntal"
+   },
+   "b": "tal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2560,
+   "art": "frei",
+   "q": "Wikimedia Commons · Adrian Michael · CC BY-SA 3.0 · Datei «Gasterntal Waldhaus 2020.jpg»",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/u-waldhaus-l.webp",
+   "fs": "../../assets/img/u-waldhaus-s.webp",
+   "fm": "mini/u-waldhaus.webp"
+  },
+  {
+   "k": "fam-doldenhorn",
+   "t": {
+    "de": "Waldhotel Doldenhorn"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 890,
+   "h": 667,
+   "art": "haus",
+   "q": "Website des Carlton-Europe, Seite «Unsere Partner», Foto des Waldhotel Doldenhorn",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/fam-doldenhorn.webp",
+   "fs": "../../assets/img/fam-doldenhorn.webp",
+   "fm": "mini/fam-doldenhorn.webp"
+  },
+  {
+   "k": "fam-carlton",
+   "t": {
+    "de": "Carlton-Europe"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1821,
+   "h": 864,
+   "art": "haus",
+   "q": "Website des Carlton-Europe, Foto des Hauses",
+   "ue": false,
+   "vk": "",
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/fam-carlton.webp",
+   "fs": "../../assets/img/fam-carlton.webp",
+   "fm": "mini/fam-carlton.webp"
+  },
+  {
+   "k": "fam-ruedihus",
+   "t": {
+    "de": "Landgasthof Ruedihus"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1685,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "ue": true,
+   "vk": "Mit KI bearbeitet (Licht, Farbe, Flächen), der Raum ist das echte Foto",
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/fam-ruedihus.webp",
+   "fs": "../../assets/img/fam-ruedihus.webp",
+   "fm": "mini/fam-ruedihus.webp"
+  }
+ ],
+ "dateien": [
+  {
+   "k": "schriftzug",
+   "var": [
+    {
+     "k": "holz",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-schriftzug-holz.svg",
+      "berghotel-gasterntal-schriftzug-holz.png"
+     ],
+     "px": [
+      2400,
+      473
+     ]
+    },
+    {
+     "k": "blatt",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-schriftzug-blatt.svg",
+      "berghotel-gasterntal-schriftzug-blatt.png"
+     ],
+     "px": [
+      2400,
+      473
+     ]
+    },
+    {
+     "k": "talwand",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schriftzug-talwand.svg",
+      "berghotel-gasterntal-schriftzug-talwand.png"
+     ],
+     "px": [
+      2400,
+      473
+     ]
+    },
+    {
+     "k": "tinte",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schriftzug-tinte.svg",
+      "berghotel-gasterntal-schriftzug-tinte.png"
+     ],
+     "px": [
+      2400,
+      473
+     ]
+    },
+    {
+     "k": "tanne",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schriftzug-tanne.svg",
+      "berghotel-gasterntal-schriftzug-tanne.png"
+     ],
+     "px": [
+      2400,
+      473
+     ]
+    }
+   ]
+  },
+  {
+   "k": "teile",
+   "var": [
+    {
+     "k": "berghotel-holz",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-schrift-berghotel-holz.svg",
+      "berghotel-gasterntal-schrift-berghotel-holz.png"
+     ],
+     "px": [
+      1800,
+      770
+     ]
+    },
+    {
+     "k": "berghotel-talwand",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schrift-berghotel-talwand.svg",
+      "berghotel-gasterntal-schrift-berghotel-talwand.png"
+     ],
+     "px": [
+      1800,
+      770
+     ]
+    },
+    {
+     "k": "gasterntal-holz",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-schrift-gasterntal-holz.svg",
+      "berghotel-gasterntal-schrift-gasterntal-holz.png"
+     ],
+     "px": [
+      1800,
+      577
+     ]
+    },
+    {
+     "k": "gasterntal-talwand",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schrift-gasterntal-talwand.svg",
+      "berghotel-gasterntal-schrift-gasterntal-talwand.png"
+     ],
+     "px": [
+      1800,
+      577
+     ]
+    },
+    {
+     "k": "aesse-holz",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-schrift-aesse-holz.svg",
+      "berghotel-gasterntal-schrift-aesse-holz.png"
+     ],
+     "px": [
+      1800,
+      461
+     ]
+    },
+    {
+     "k": "aesse-talwand",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schrift-aesse-talwand.svg",
+      "berghotel-gasterntal-schrift-aesse-talwand.png"
+     ],
+     "px": [
+      1800,
+      461
+     ]
+    }
+   ]
+  },
+  {
+   "k": "raute",
+   "var": [
+    {
+     "k": "holz",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-raute-holz.svg",
+      "berghotel-gasterntal-raute-holz.png"
+     ],
+     "px": [
+      484,
+      1012
+     ]
+    },
+    {
+     "k": "talwand",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-raute-talwand.svg",
+      "berghotel-gasterntal-raute-talwand.png"
+     ],
+     "px": [
+      484,
+      1012
+     ]
+    },
+    {
+     "k": "tanne",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-raute-tanne.svg",
+      "berghotel-gasterntal-raute-tanne.png"
+     ],
+     "px": [
+      484,
+      1012
+     ]
+    },
+    {
+     "k": "blatt",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-raute-blatt.svg",
+      "berghotel-gasterntal-raute-blatt.png"
+     ],
+     "px": [
+      484,
+      1012
+     ]
+    }
+   ]
+  },
+  {
+   "k": "name",
+   "var": [
+    {
+     "k": "talwand",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-name-talwand.svg",
+      "berghotel-gasterntal-name-talwand.png"
+     ],
+     "px": [
+      1800,
+      271
+     ]
+    },
+    {
+     "k": "blatt",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-name-blatt.svg",
+      "berghotel-gasterntal-name-blatt.png"
+     ],
+     "px": [
+      1800,
+      271
+     ]
+    },
+    {
+     "k": "holz",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-name-holz.svg",
+      "berghotel-gasterntal-name-holz.png"
+     ],
+     "px": [
+      1800,
+      271
+     ]
+    }
+   ]
+  },
+  {
+   "k": "karte",
+   "var": [
+    {
+     "k": "original",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-zeichen-karte-2026.jpg"
+     ],
+     "px": [
+      768,
+      768
+     ]
+    }
+   ]
+  },
+  {
+   "k": "tapete",
+   "var": [
+    {
+     "k": "talwand",
+     "grund": "dunkel",
+     "dateien": [
+      "berghotel-gasterntal-tapete-talwand.png",
+      "berghotel-gasterntal-tapete-talwand.svg",
+      "berghotel-gasterntal-tapete-talwand.webp"
+     ],
+     "px": [
+      44,
+      92
+     ],
+     "deck": 0.045
+    },
+    {
+     "k": "papier",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-tapete-papier.png",
+      "berghotel-gasterntal-tapete-papier.svg",
+      "berghotel-gasterntal-tapete-papier.webp"
+     ],
+     "px": [
+      44,
+      92
+     ],
+     "deck": 0.03
+    }
+   ]
+  },
+  {
+   "k": "farben",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-farben.css",
+      "berghotel-gasterntal-farben.json",
+      "berghotel-gasterntal-farben.ase"
+     ]
+    }
+   ]
+  },
+  {
+   "k": "schriften",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "berghotel-gasterntal-schriften.zip"
+     ]
+    }
+   ]
+  }
+ ],
+ "farben": [
+  {
+   "k": "grund",
+   "n": "Talwand",
+   "h": "#1D2224",
+   "rgb": [
+    29,
+    34,
+    36
+   ],
+   "r": "Grund der Seite, dunkle Abschnitte",
+   "g": "fels",
+   "woher": "Talwand im Regen"
+  },
+  {
+   "k": "zwei",
+   "n": "Schiefer",
+   "h": "#2C3136",
+   "rgb": [
+    44,
+    49,
+    54
+   ],
+   "r": "zweite dunkle Fläche",
+   "g": "fels",
+   "woher": "Talwand, zweiter Ton"
+  },
+  {
+   "k": "tief",
+   "n": "Tief",
+   "h": "#14181A",
+   "rgb": [
+    20,
+    24,
+    26
+   ],
+   "r": "dunkelster Grund: Fuss und Menü",
+   "g": "fels",
+   "woher": "dunkelster Grund: Fuss, Menü"
+  },
+  {
+   "k": "karte",
+   "n": "Karte",
+   "h": "#262B2F",
+   "rgb": [
+    38,
+    43,
+    47
+   ],
+   "r": "Karten auf dunklem Grund",
+   "g": "fels",
+   "woher": ""
+  },
+  {
+   "k": "papier",
+   "n": "Papier",
+   "h": "#E9ECEC",
+   "rgb": [
+    233,
+    236,
+    236
+   ],
+   "r": "helle Abschnitte, Grund der Werkzeuge",
+   "g": "kander",
+   "woher": "aufgehellt aus der Kander #c7cfd3"
+  },
+  {
+   "k": "blatt",
+   "n": "Blatt",
+   "h": "#F6F8F8",
+   "rgb": [
+    246,
+    248,
+    248
+   ],
+   "r": "Karten, Blätter und Felder",
+   "g": "kander",
+   "woher": ""
+  },
+  {
+   "k": "kander",
+   "n": "Kander",
+   "h": "#C7CFD3",
+   "rgb": [
+    199,
+    207,
+    211
+   ],
+   "r": "gemessener Ton der Kander, Linien",
+   "g": "kander",
+   "woher": ""
+  },
+  {
+   "k": "holz",
+   "n": "Holz",
+   "h": "#D6BB96",
+   "rgb": [
+    214,
+    187,
+    150
+   ],
+   "r": "Linien, Betonung und Schriftzug auf Dunkel",
+   "g": "holz",
+   "woher": "helles Balkonholz: Linien, Betonung auf Dunkel"
+  },
+  {
+   "k": "tanne",
+   "n": "Tanne",
+   "h": "#3B4423",
+   "rgb": [
+    59,
+    68,
+    35
+   ],
+   "r": "Betonung auf Hell, kleine Flächen",
+   "g": "holz",
+   "woher": "Tannen am Hang"
+  },
+  {
+   "k": "tinte",
+   "n": "Tinte",
+   "h": "#1A1F21",
+   "rgb": [
+    26,
+    31,
+    33
+   ],
+   "r": "Schrift auf hellen Flächen",
+   "g": "holz",
+   "woher": ""
+  },
+  {
+   "k": "laden",
+   "n": "Laden",
+   "h": "#C5000F",
+   "rgb": [
+    197,
+    0,
+    15
+   ],
+   "r": "nur als Punkt",
+   "g": "laden",
+   "woher": "Fensterläden in der Sonne: nur als Punkt"
+  },
+  {
+   "k": "heute-422615",
+   "n": "Dunkelbraun",
+   "h": "#422615",
+   "rgb": [
+    66,
+    38,
+    21
+   ],
+   "r": "heutige Website des Hauses",
+   "g": "heute",
+   "woher": ""
+  },
+  {
+   "k": "heute-e6e7d5",
+   "n": "Helles Graugrün",
+   "h": "#E6E7D5",
+   "rgb": [
+    230,
+    231,
+    213
+   ],
+   "r": "heutige Website des Hauses",
+   "g": "heute",
+   "woher": ""
+  },
+  {
+   "k": "heute-253b24",
+   "n": "Grün im Zeichen",
+   "h": "#253B24",
+   "rgb": [
+    37,
+    59,
+    36
+   ],
+   "r": "Schrift im Zeichen der Karte 2026",
+   "g": "heute",
+   "woher": ""
+  }
+ ],
+ "gruppen": [
+  {
+   "k": "fels",
+   "n": "Der Fels",
+   "s": "Das Grau der Talwand im Regen trägt die dunklen Flächen, immer mit der Raute der Laube als Muster."
+  },
+  {
+   "k": "kander",
+   "n": "Kander und Papier",
+   "s": "Das Grau der Kander, aufgehellt zu Papier und Blatt. Hier wird gelesen."
+  },
+  {
+   "k": "holz",
+   "n": "Holz und Tanne",
+   "s": "Das helle Holz der Balkone betont auf Dunkel, die Tanne auf Hell. Holz schreibt nie den Lesetext auf Papier."
+  },
+  {
+   "k": "laden",
+   "n": "Der Laden",
+   "s": "Das Rot der Fensterläden in der Sonne. Nur als Punkt, nie als Fläche."
+  },
+  {
+   "k": "heute",
+   "n": "Der heutige Auftritt",
+   "s": "So zeigt sich das Haus heute auf seiner Website und im Zeichen der Karte 2026. Zum Nachschlagen, nicht für Neues."
+  }
+ ],
+ "groessen": {
+  "berghotel-gasterntal-farben.ase": 606,
+  "berghotel-gasterntal-farben.css": 1109,
+  "berghotel-gasterntal-farben.json": 2093,
+  "berghotel-gasterntal-marke.zip": 1533346,
+  "berghotel-gasterntal-name-blatt.png": 38254,
+  "berghotel-gasterntal-name-blatt.svg": 11647,
+  "berghotel-gasterntal-name-holz.png": 38271,
+  "berghotel-gasterntal-name-holz.svg": 11647,
+  "berghotel-gasterntal-name-talwand.png": 38252,
+  "berghotel-gasterntal-name-talwand.svg": 11647,
+  "berghotel-gasterntal-raute-blatt.png": 9840,
+  "berghotel-gasterntal-raute-blatt.svg": 245,
+  "berghotel-gasterntal-raute-holz.png": 9929,
+  "berghotel-gasterntal-raute-holz.svg": 245,
+  "berghotel-gasterntal-raute-talwand.png": 9917,
+  "berghotel-gasterntal-raute-talwand.svg": 245,
+  "berghotel-gasterntal-raute-tanne.png": 9908,
+  "berghotel-gasterntal-raute-tanne.svg": 245,
+  "berghotel-gasterntal-schrift-aesse-holz.png": 75302,
+  "berghotel-gasterntal-schrift-aesse-holz.svg": 6953,
+  "berghotel-gasterntal-schrift-aesse-talwand.png": 75444,
+  "berghotel-gasterntal-schrift-aesse-talwand.svg": 6953,
+  "berghotel-gasterntal-schrift-berghotel-holz.png": 102654,
+  "berghotel-gasterntal-schrift-berghotel-holz.svg": 5370,
+  "berghotel-gasterntal-schrift-berghotel-talwand.png": 102609,
+  "berghotel-gasterntal-schrift-berghotel-talwand.svg": 5370,
+  "berghotel-gasterntal-schrift-gasterntal-holz.png": 80422,
+  "berghotel-gasterntal-schrift-gasterntal-holz.svg": 5477,
+  "berghotel-gasterntal-schrift-gasterntal-talwand.png": 80435,
+  "berghotel-gasterntal-schrift-gasterntal-talwand.svg": 5477,
+  "berghotel-gasterntal-schriften.zip": 160696,
+  "berghotel-gasterntal-schriftzug-blatt.png": 114397,
+  "berghotel-gasterntal-schriftzug-blatt.svg": 10572,
+  "berghotel-gasterntal-schriftzug-holz.png": 114612,
+  "berghotel-gasterntal-schriftzug-holz.svg": 10572,
+  "berghotel-gasterntal-schriftzug-talwand.png": 114501,
+  "berghotel-gasterntal-schriftzug-talwand.svg": 10572,
+  "berghotel-gasterntal-schriftzug-tanne.png": 114397,
+  "berghotel-gasterntal-schriftzug-tanne.svg": 10572,
+  "berghotel-gasterntal-schriftzug-tinte.png": 114454,
+  "berghotel-gasterntal-schriftzug-tinte.svg": 10572,
+  "berghotel-gasterntal-tapete-papier.png": 1036,
+  "berghotel-gasterntal-tapete-papier.svg": 209,
+  "berghotel-gasterntal-tapete-papier.webp": 520,
+  "berghotel-gasterntal-tapete-talwand.png": 1072,
+  "berghotel-gasterntal-tapete-talwand.svg": 209,
+  "berghotel-gasterntal-tapete-talwand.webp": 600,
+  "berghotel-gasterntal-zeichen-karte-2026.jpg": 112146
+ },
+ "bereiche": [
+  "haus",
+  "zimmer",
+  "stube",
+  "essen",
+  "sauna",
+  "feste",
+  "einzel",
+  "tal",
+  "familie"
+ ],
+ "schriften": [
+  {
+   "k": "a",
+   "n": "Barlow Semi Condensed",
+   "d": "barlowsemi-600.woff2",
+   "r": "Grosse Zeilen und Titel",
+   "e": "600, normale Schreibung, 1,2 % enger",
+   "p": "Wo die Natur das Paradies küsst",
+   "w": 600
+  },
+  {
+   "k": "a5",
+   "n": "Barlow Semi Condensed",
+   "d": "barlowsemi-500.woff2",
+   "r": "Zweite Titelstufe",
+   "e": "500, normale Schreibung",
+   "p": "Ässe u trinke",
+   "w": 500
+  },
+  {
+   "k": "s",
+   "n": "Instrument Sans",
+   "d": "InstrumentSans-normal-400_600.woff2",
+   "r": "Lesetext",
+   "e": "400 bis 600, 18 px, Zeilenabstand 1,62",
+   "p": "Einfache, heimelige Zimmer.",
+   "w": 400
+  },
+  {
+   "k": "m",
+   "n": "DM Mono",
+   "d": "DMMono-normal-400.woff2",
+   "r": "Kleine Angaben und Knöpfe",
+   "e": "400, Versalien, 17 % gesperrt",
+   "p": "Selden · 3718 Kandersteg",
+   "w": 400
+  }
+ ],
+ "stand": {
+  "fotos": 57,
+  "haus": 41,
+  "frei": 16,
+  "ki": 0,
+  "partner": 0,
+  "ue": 30,
+  "vn": 30,
+  "dateien": 48,
+  "datum": "18.10.2026"
+ }
+}

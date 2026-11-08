@@ -1,0 +1,156 @@
+[
+ {
+  "name": "Talwand",
+  "hex": "#1d2224",
+  "rgb": [
+   29,
+   34,
+   36
+  ],
+  "rolle": "Grund der Seite, dunkle Abschnitte",
+  "gruppe": "fels"
+ },
+ {
+  "name": "Schiefer",
+  "hex": "#2c3136",
+  "rgb": [
+   44,
+   49,
+   54
+  ],
+  "rolle": "zweite dunkle Fläche",
+  "gruppe": "fels"
+ },
+ {
+  "name": "Tief",
+  "hex": "#14181a",
+  "rgb": [
+   20,
+   24,
+   26
+  ],
+  "rolle": "dunkelster Grund: Fuss und Menü",
+  "gruppe": "fels"
+ },
+ {
+  "name": "Karte",
+  "hex": "#262b2f",
+  "rgb": [
+   38,
+   43,
+   47
+  ],
+  "rolle": "Karten auf dunklem Grund",
+  "gruppe": "fels"
+ },
+ {
+  "name": "Papier",
+  "hex": "#e9ecec",
+  "rgb": [
+   233,
+   236,
+   236
+  ],
+  "rolle": "helle Abschnitte, Grund der Werkzeuge",
+  "gruppe": "kander"
+ },
+ {
+  "name": "Blatt",
+  "hex": "#f6f8f8",
+  "rgb": [
+   246,
+   248,
+   248
+  ],
+  "rolle": "Karten, Blätter und Felder",
+  "gruppe": "kander"
+ },
+ {
+  "name": "Kander",
+  "hex": "#c7cfd3",
+  "rgb": [
+   199,
+   207,
+   211
+  ],
+  "rolle": "gemessener Ton der Kander, Linien",
+  "gruppe": "kander"
+ },
+ {
+  "name": "Holz",
+  "hex": "#d6bb96",
+  "rgb": [
+   214,
+   187,
+   150
+  ],
+  "rolle": "Linien, Betonung und Schriftzug auf Dunkel",
+  "gruppe": "holz"
+ },
+ {
+  "name": "Tanne",
+  "hex": "#3b4423",
+  "rgb": [
+   59,
+   68,
+   35
+  ],
+  "rolle": "Betonung auf Hell, kleine Flächen",
+  "gruppe": "holz"
+ },
+ {
+  "name": "Tinte",
+  "hex": "#1a1f21",
+  "rgb": [
+   26,
+   31,
+   33
+  ],
+  "rolle": "Schrift auf hellen Flächen",
+  "gruppe": "holz"
+ },
+ {
+  "name": "Laden",
+  "hex": "#c5000f",
+  "rgb": [
+   197,
+   0,
+   15
+  ],
+  "rolle": "nur als Punkt",
+  "gruppe": "laden"
+ },
+ {
+  "name": "Dunkelbraun",
+  "hex": "#422615",
+  "rgb": [
+   66,
+   38,
+   21
+  ],
+  "rolle": "heutige Website des Hauses",
+  "gruppe": "heute"
+ },
+ {
+  "name": "Helles Graugrün",
+  "hex": "#e6e7d5",
+  "rgb": [
+   230,
+   231,
+   213
+  ],
+  "rolle": "heutige Website des Hauses",
+  "gruppe": "heute"
+ },
+ {
+  "name": "Grün im Zeichen",
+  "hex": "#253b24",
+  "rgb": [
+   37,
+   59,
+   36
+  ],
+  "rolle": "Schrift im Zeichen der Karte 2026",
+  "gruppe": "heute"
+ }
+]

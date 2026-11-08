@@ -1,0 +1,17 @@
+/* Berghotel Gasterntal · Farben der Marke (Das Hausbuch, 18.10.2026), Werte aus der Website (assets/css/main.css); «heute-…» = heutiger Auftritt, nur zum Nachschlagen */
+:root{
+  --grund:#1d2224; /* Talwand: Grund der Seite, dunkle Abschnitte */
+  --zwei:#2c3136; /* Schiefer: zweite dunkle Fläche */
+  --tief:#14181a; /* Tief: dunkelster Grund: Fuss und Menü */
+  --karte:#262b2f; /* Karte: Karten auf dunklem Grund */
+  --papier:#e9ecec; /* Papier: helle Abschnitte, Grund der Werkzeuge */
+  --blatt:#f6f8f8; /* Blatt: Karten, Blätter und Felder */
+  --kander:#c7cfd3; /* Kander: gemessener Ton der Kander, Linien */
+  --holz:#d6bb96; /* Holz: Linien, Betonung und Schriftzug auf Dunkel */
+  --tanne:#3b4423; /* Tanne: Betonung auf Hell, kleine Flächen */
+  --tinte:#1a1f21; /* Tinte: Schrift auf hellen Flächen */
+  --laden:#c5000f; /* Laden: nur als Punkt */
+  --heute-422615:#422615; /* Dunkelbraun: heutige Website des Hauses */
+  --heute-e6e7d5:#e6e7d5; /* Helles Graugrün: heutige Website des Hauses */
+  --heute-253b24:#253b24; /* Grün im Zeichen: Schrift im Zeichen der Karte 2026 */
+}

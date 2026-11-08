@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Schreibtisch · Listen des Hauses · Berghotel Gasterntal</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2224">
+<link rel="icon" href="/assets/logo/emblem-karte-2026.jpg">
+<link rel="preload" href="/assets/fonts/barlowsemi-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="studio.css?v=2">
+</head>
+<body>
+<div id="tor" class="tor" hidden></div>
+<div id="app" class="app" hidden>
+  <aside class="rand" id="rand"></aside>
+  <div class="haupt">
+    <main class="flaeche" id="sicht" tabindex="-1"></main>
+    <div class="leiste" id="leiste" aria-live="polite"></div>
+  </div>
+</div>
+<div id="lade" class="lade" hidden></div>
+<div id="vergleich" class="vgl" hidden></div>
+<div id="fenster" class="fenster" hidden></div>
+<div id="meldung" class="meldung" aria-live="polite"></div>
+<input type="file" id="datei" accept="image/jpeg,image/png,image/webp" hidden>
+<script src="studio.js?v=3"></script>
+<script src="eingang_nav.js?v=1" defer></script>
+</body>
+</html>

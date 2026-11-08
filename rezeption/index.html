@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rezeption im Chat · Berghotel Gasterntal</title>
+<meta name="description" content="Was die KI-Rezeption des Berghotel Gasterntal kann: Fragen der Gäste beantworten, im Gespräch buchen, Ausflüge nach Wetter, Fragen und Anfragen fürs Haus.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1d2224">
+<link rel="icon" href="../assets/img/gast-familie.webp">
+<link rel="preload" href="../assets/fonts/barlowsemi-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/main.css?v=98">
+<link rel="stylesheet" href="../assets/css/rezeption.css?v=f51e6cd6">
+<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body class="rz rz--gasterntal">
+<header class="rz-leiste"><a class="rz-leiste__marke" href="../index.html"><svg class="" viewBox="0 0 48 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M2 28 17 6l7 10 6-7 16 19z"/><path d="m13 12 4 3 3-3"/></svg><b>Gasterntal</b></a>
+  <button type="button" class="kn kn--klein" data-chat>Rezeption öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></button></header>
+
+<section class="rz-auftakt laube">
+  <div class="wrap">
+    <svg class="rz-auftakt__z" viewBox="0 0 48 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M2 28 17 6l7 10 6-7 16 19z"/><path d="m13 12 4 3 3-3"/></svg>
+    <h1 class="d1" data-r>Die Rezeption<br><em>im Chat.</em></h1>
+    <div class="rz-lauf" data-r><p>Unten rechts auf jeder Seite sitzt die Rezeption des Berghotel Gasterntal. Gäste fragen dort, wie sie mit dem Auto durch die Chluse kommen, wann das Haus offen ist oder ob die Sauna frei ist, und bekommen die Antwort sofort, auch dann, wenn oben im Tal niemand ans Telefon kann.</p><p>Dahinter arbeitet eine KI. Was nicht in den Unterlagen steht, gibt sie an das Haus weiter.</p></div>
+    <div class="rz-kn" data-r><button type="button" class="kn" data-chat>Jetzt ausprobieren<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></button><a class="kn kn--dunkel" href="../index.html">Zur Website<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+  </div>
+</section>
+
+<div class="telefon-block rz-tel">
+<section class="s-telefon3d" id="s-telefon3d" data-basis="../" data-standbild="../assets/img/rezeption/schirm-erstes.webp?v=4a04c1ca" data-film="../assets/video/rezeption-schirm.mp4?v=4a04c1ca" data-zeichen="../assets/3d/rezeption-zeichen.png?v=81" data-modell="../assets/3d/rezeption-phone.glb?v=1" data-dauer="19.367">
+ <div class="tel-pin">
+  <canvas id="cv-telefon3d"></canvas>
+  <div id="telefon3d-text">
+    <h2 class="d2">Ein Gast fragt nach <em>dem Weg ins Tal.</em></h2>
+    <p class="tel-vor">Zu zweit, vom 10. bis 12. Juli, mit dem Auto. So läuft das Gespräch auf dem Handy:</p>
+    <ul class="tel-liste"><li>Die Rezeption erklärt die Naturstrasse ab Kandersteg und den Taktfahrplan durch die Chluse.</li><li>Sie nennt den Preis der Bewilligung: CHF 15.00 für Hin- und Rückfahrt.</li><li>Daten und Personen stehen schon in der Buchungsmaske, gebucht wird bei Booking.com.</li></ul>
+  </div>
+  <figure class="m-telefon nur-mobil" id="m-telefon">
+    <div class="m-tel-rahmen"><video class="m-tel-film" id="m-tel-film" muted playsinline preload="none" width="360" height="778" poster="../assets/img/rezeption/schirm-start.webp?v=4a04c1ca" aria-label="Ein Gast fragt die Rezeption des Berghotel Gasterntal nach der Anreise mit dem Auto, die Buchungsmaske erscheint">
+      <source src="../assets/video/rezeption-schirm-m.mp4?v=4a04c1ca" type="video/mp4"></video></div>
+  </figure>
+  <div id="telefon3d-laden">Wird geladen</div>
+ </div>
+</section>
+</div>
+
+<section class="fl rz-fragen laube">
+  <div class="wrap">
+    <h2 class="d2" data-r>Was Gäste <em>wissen wollen.</em></h2>
+    <div class="rz-lauf" data-r><p>Vier Gespräche mit der Rezeption vom 10. Oktober, die Antworten im Wortlaut. Steht etwas nicht in den Unterlagen, sagt sie das, statt zu raten.</p></div>
+    <div class="hg"><figure class="hg__h" data-r="schweb" style="--i:0"><div class="hg__zug"><div class="hg__box" style="aspect-ratio:956/1955"><img class="hg__schatten" src="../assets/img/rezeption/handy-schatten.webp?v=2" width="926" height="1425" alt="" loading="lazy" decoding="async"><img class="hg__geraet" src="../assets/img/rezeption/handy-weg.webp?v=2" width="956" height="1955" alt="Die Rezeption im Chat erklärt auf dem Handy den Weg ins Gasterntal, mit Auto und ohne" loading="lazy" decoding="async"><img class="hg__dunkel" src="../assets/img/rezeption/handy-dunkel.webp?v=2" width="478" height="977" alt="" loading="lazy" decoding="async"></div></div></figure><figure class="hg__h" data-r="schweb" style="--i:1"><div class="hg__zug"><div class="hg__box" style="aspect-ratio:956/1955"><img class="hg__schatten" src="../assets/img/rezeption/handy-schatten.webp?v=2" width="926" height="1425" alt="" loading="lazy" decoding="async"><img class="hg__geraet" src="../assets/img/rezeption/handy-film.webp?v=2" width="956" height="1955" alt="Die Buchungsmaske im Chat auf dem Handy, Anreise am 10. und Abreise am 12. Juli für zwei Personen" loading="lazy" decoding="async"><img class="hg__dunkel" src="../assets/img/rezeption/handy-dunkel.webp?v=2" width="478" height="977" alt="" loading="lazy" decoding="async"></div></div></figure><figure class="hg__h" data-r="schweb" style="--i:2"><div class="hg__zug"><div class="hg__box" style="aspect-ratio:956/1955"><img class="hg__schatten" src="../assets/img/rezeption/handy-schatten.webp?v=2" width="926" height="1425" alt="" loading="lazy" decoding="async"><img class="hg__geraet" src="../assets/img/rezeption/handy-hund.webp?v=2" width="956" height="1955" alt="Die Rezeption im Chat antwortet auf Englisch, ob der Hund mitkommen darf" loading="lazy" decoding="async"><img class="hg__dunkel" src="../assets/img/rezeption/handy-dunkel.webp?v=2" width="478" height="977" alt="" loading="lazy" decoding="async"></div></div></figure><figure class="hg__h" data-r="schweb" style="--i:3"><div class="hg__zug"><div class="hg__box" style="aspect-ratio:956/1955"><img class="hg__schatten" src="../assets/img/rezeption/handy-schatten.webp?v=2" width="926" height="1425" alt="" loading="lazy" decoding="async"><img class="hg__geraet" src="../assets/img/rezeption/handy-sauna.webp?v=2" width="956" height="1955" alt="Die Rezeption im Chat beantwortet auf dem Handy die Frage nach der Sauna in der alten Käserei" loading="lazy" decoding="async"><img class="hg__dunkel" src="../assets/img/rezeption/handy-dunkel.webp?v=2" width="478" height="977" alt="" loading="lazy" decoding="async"></div></div></figure></div>
+  </div>
+</section>
+
+<section class="fl hell rz-wert">
+  <div class="wrap rz-wert__in">
+    <figure class="rz-wert__b" data-r="schweb"><img class="" src="../assets/img/t-chluse-l.webp?v=81" width="2560" height="1920" alt="Die Strasse durch die Chluse ins Gasterntal" loading="lazy" decoding="async" sizes="(-webkit-min-device-pixel-ratio:1.5) and (max-width:900px) 57vw, (-webkit-min-device-pixel-ratio:1.5) 28.5vw, (max-width:900px) 92vw, 46vw" srcset="../assets/img/t-chluse-l-600.webp?v=81 600w, ../assets/img/t-chluse-l-1400.webp?v=81 1400w, ../assets/img/t-chluse-l-1920.webp?v=81 1920w, ../assets/img/t-chluse-l.webp?v=81 2560w"></figure>
+    <div>
+      <h2 class="d2" data-r>Der Weg ins Tal, <em>bevor jemand losfährt.</em></h2>
+      <div class="rz-lauf" data-r><p>Wer zum ersten Mal ins Gasterntal fährt, hat seine Fragen schon in Kandersteg: ob er eine Bewilligung braucht, wann er durch die Chluse fahren darf, ob der Bus noch fährt. Die Rezeption antwortet aus der Anreise-Seite, mit dem Taktfahrplan, dem Preis der Bewilligung und dem Transport ab Kandersteg, wenn der Gasternbus nicht mehr fährt.</p><p>Oben im Tal ist der Empfang eingeschränkt. Umso mehr zählt, dass die Antwort vorher kommt, zu jeder Uhrzeit, und dass Saisonschluss und Eröffnung immer stimmen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="fl rz-buchen">
+  <div class="wrap">
+    <div class="rz-zwei">
+      <div>
+        <h2 class="d2" data-r>Buchen, ohne die Seite <em>zu verlassen.</em></h2>
+        <div class="rz-lauf" data-r><p>Sobald ein Gast nach Daten fragt, legt die Rezeption die Buchungsmaske ins Gespräch. «Zur Buchung» öffnet die Seite des Hauses bei Booking.com in einem neuen Fenster, mit Daten und Personen schon eingetragen. Booking.com lässt sich nicht in eine fremde Seite einbetten, darum das eigene Fenster.</p></div>
+      </div>
+      <p class="rz-notiz" data-r>Bildschirmfoto vom 10. Oktober 2026 auf der Website des Berghotel Gasterntal, die Antwort der Rezeption im Wortlaut.</p>
+    </div>
+    <figure class="rz-schirm" data-r="schweb"><img class="" src="../assets/img/rezeption/buchung.webp?v=81" width="1800" height="1125" alt="Die Website des Berghotel Gasterntal mit offener Rezeption: Antwort und Buchungsmaske im Gespräch" loading="lazy" decoding="async" sizes="(-webkit-min-device-pixel-ratio:1.5) and (max-width:1480px) 69vw, (-webkit-min-device-pixel-ratio:1.5) 1050px, (max-width:1480px) 92vw, 1400px" srcset="../assets/img/rezeption/buchung-600.webp?v=81 600w, ../assets/img/rezeption/buchung-1400.webp?v=81 1400w, ../assets/img/rezeption/buchung.webp?v=81 1800w"></figure>
+  </div>
+</section>
+
+<section class="fl hell rz-haus">
+  <div class="wrap">
+    <h2 class="d2" data-r>Was Gäste fragen, <em>sieht das Haus.</em></h2>
+    <div class="rz-zwei">
+      <div class="rz-lauf" data-r><p>Im Studio steht unter «Gäste &amp; Anfragen» jede Frage der Woche. Was die Rezeption nicht aus den Unterlagen beantworten konnte, ist markiert. Das Haus ergänzt dann seine Seite, und die nächste Frage dazu ist beantwortet.</p></div>
+      <div class="rz-lauf" data-r><p>Für Wandergruppen, Feste und das ganze Haus gibt es den Anfragen-Assistenten: Die Mail des Gastes kommt hinein, ein Entwurf im Ton des Hauses kommt heraus, mit Zimmern, Bettenlager und Preisen von der Website. Was das Haus entscheiden muss, steht in Klammern. Verschickt wird erst, wenn jemand vom Team gelesen hat.</p></div>
+    </div>
+    <div class="rz-haus__b">
+      <figure class="rz-schirm" data-r="schweb"><img class="" src="../assets/img/rezeption/gefragt.webp?v=81" width="1800" height="1125" alt="Studio des Berghotel Gasterntal, Seite «Gäste &amp; Anfragen» mit den Fragen der Woche" loading="lazy" decoding="async" sizes="(-webkit-min-device-pixel-ratio:1.5) and (max-width:900px) 69vw, (-webkit-min-device-pixel-ratio:1.5) 45vw, (max-width:900px) 92vw, 60vw" srcset="../assets/img/rezeption/gefragt-600.webp?v=81 600w, ../assets/img/rezeption/gefragt-1400.webp?v=81 1400w, ../assets/img/rezeption/gefragt.webp?v=81 1800w"></figure>
+      <figure class="rz-brief" data-r="schweb"><span class="rz-brief__k">Entwurf · Wandergruppe, 14 Personen</span><p>Liebe Sandra</p><p>Herzlichen Dank für Ihre Anfrage. Gerne helfen wir Ihrer Wandergruppe weiter.</p><p>Wir verfügen über Zimmer für bis zu 20 Personen und ein Bettenlager für maximal 30 Personen …</p><p>- Einzelzimmer: CHF 120.– bis 140.–</p><p>- Budget Doppelzimmer: CHF 190.– bis 200.–</p><p>…</p><p>[Verfügbarkeit August 2027 prüfen]</p></figure>
+    </div>
+  </div>
+</section>
+
+<section class="fl rz-tal">
+  <div class="wrap rz-tal__in">
+    <div>
+      <h2 class="d2" data-r>Und morgen, <em>bei dem Wetter?</em></h2>
+      <div class="rz-lauf" data-r><p>Die Rezeption kennt die Vorhersage der nächsten drei Tage für Kandersteg, den Oeschinensee und den Gemmipass, dazu die Seiten der Gondelbahn zum Oeschinensee, der Luftseilbahn Sunnbüel und der BLS. Bei Regen schlägt sie eher die Sauna in der alten Käserei vor, bei klarem Himmel einen Weg im Tal.</p><p>Betriebszeiten nennt sie mit der Quelle und dem Hinweis, sie vor der Fahrt nachzusehen.</p></div>
+    </div>
+    <figure class="rz-tal__b" data-r="schweb"><img class="" src="../assets/img/tal-blick-l.webp?v=81" width="2200" height="2933" alt="Blick ins Gasterntal" loading="lazy" decoding="async" sizes="(-webkit-min-device-pixel-ratio:1.5) and (max-width:900px) 69vw, (-webkit-min-device-pixel-ratio:1.5) 30vw, (max-width:900px) 92vw, 40vw" srcset="../assets/img/tal-blick-l-600.webp?v=81 600w, ../assets/img/tal-blick-l-1400.webp?v=81 1400w, ../assets/img/tal-blick-l.webp?v=81 2200w"></figure>
+  </div>
+</section>
+
+<section class="fl rz-vier laube">
+  <div class="wrap">
+    <h2 class="d2" data-r>In allen <em>vier Häusern.</em></h2>
+    <div class="rz-lauf" data-r><p>Carlton-Europe, Waldhotel Doldenhorn, Landgasthof Ruedihus und Berghotel Gasterntal haben dieselbe Rezeption, jede in den Farben und mit dem Wissen ihres Hauses.</p></div>
+    <div class="rz-haeuser"><a class="rz-h" href="https://carlton.tastystudios.ch/rezeption/" target="_blank" rel="noopener" data-r>
+      <span class="rz-h__b"><img class="" src="../assets/img/rezeption/haus-carlton.webp?v=81" width="1000" height="474" alt="Carlton-Europe, Interlaken" loading="lazy" decoding="async" sizes="(max-width:700px) 92vw, 25vw"></span>
+      <span class="rz-h__t"><b>Carlton-Europe</b><i>Interlaken</i><u>Seite ansehen <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></u></span></a><a class="rz-h" href="https://doldenhorn.tastystudios.ch/rezeption/" target="_blank" rel="noopener" data-r>
+      <span class="rz-h__b"><img class="" src="../assets/img/rezeption/haus-doldenhorn.webp?v=81" width="1000" height="667" alt="Waldhotel Doldenhorn, Kandersteg" loading="lazy" decoding="async" sizes="(max-width:700px) 92vw, 25vw"></span>
+      <span class="rz-h__t"><b>Waldhotel Doldenhorn</b><i>Kandersteg</i><u>Seite ansehen <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></u></span></a><a class="rz-h" href="https://ruedihus.tastystudios.ch/rezeption/" target="_blank" rel="noopener" data-r>
+      <span class="rz-h__b"><img class="" src="../assets/img/rezeption/haus-ruedihus.webp?v=81" width="1000" height="667" alt="Landgasthof Ruedihus, Kandersteg" loading="lazy" decoding="async" sizes="(max-width:700px) 92vw, 25vw"></span>
+      <span class="rz-h__t"><b>Landgasthof Ruedihus</b><i>Kandersteg</i><u>Seite ansehen <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></u></span></a><a class="rz-h rz-h--hier" href="https://gasterntal.tastystudios.ch/rezeption/" data-r>
+      <span class="rz-h__b"><img class="" src="../assets/img/rezeption/haus-gasterntal.webp?v=81" width="1000" height="410" alt="Berghotel Gasterntal, Selden" loading="lazy" decoding="async" sizes="(max-width:700px) 92vw, 25vw"></span>
+      <span class="rz-h__t"><b>Berghotel Gasterntal</b><i>Selden</i><u>Diese Seite </u></span></a></div>
+  </div>
+</section>
+
+<section class="fl rz-zahlen">
+  <div class="wrap rz-zahlen__in"><div data-r><b>14</b><span>Kilometer Naturstrasse, erklärt</span></div><div data-r><b>3</b><span>Sprachen</span></div><div data-r><b>24</b><span>Stunden am Tag</span></div><div data-r><b>4</b><span>Häuser der Familie</span></div></div>
+</section>
+
+<section class="fl hell rz-grenzen">
+  <div class="wrap rz-zwei">
+    <h2 class="d2" data-r>Was sie <em>nicht tut.</em></h2>
+    <ul class="rz-liste" data-r><li>Sie erfindet nichts. Steht etwas nicht in den Unterlagen, sagt sie das und nennt die Nummer des Hauses.</li><li>Sie sagt keine Zimmer zu. Ob etwas frei ist, zeigt nur das Buchungssystem.</li><li>Karten- oder Passdaten nimmt sie nicht entgegen.</li><li>Fragen, die nichts mit dem Haus zu tun haben, lenkt sie freundlich zurück. Wer in kurzer Zeit sehr viel fragt, landet bei der Telefonnummer.</li><li>Gespeichert werden Fragen ohne Mail-Adressen und Nummern, gelöscht nach zwölf Monaten. Der Abschnitt <a href="../rechtliches.html#ki-assistent">KI-Assistent der Rezeption</a> in den rechtlichen Hinweisen erklärt, was dabei geschieht.</li></ul>
+  </div>
+</section>
+
+<section class="fl rz-schluss laube">
+  <div class="wrap">
+    <svg class="rz-auftakt__z" viewBox="0 0 48 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M2 28 17 6l7 10 6-7 16 19z"/><path d="m13 12 4 3 3-3"/></svg>
+    <h2 class="d1" data-r>Fragen Sie <em>selbst.</em></h2>
+    <div class="rz-kn" data-r><button type="button" class="kn" data-chat>Rezeption öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></button><a class="kn kn--dunkel" href="../index.html">Zur Website<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+    <p class="rz-studie">Designstudie von Tasty Studios, nicht die offizielle Website</p>
+  </div>
+</section>
+
+<script src="../assets/js/rezeption.js?v=23fa28c5" defer></script>
+<script src="/assets/js/gast_demo.js?v=87fd8dea" defer data-gast-demo></script><script src="../assets/js/gast.js?v=98" defer></script>
+<script src="../assets/js/rezeption-galerie.js?v=1" defer></script>
+<script src="/assets/js/zur-werkbank.js?v=434e720d" defer data-zw data-hoehe></script></body>
+</html>

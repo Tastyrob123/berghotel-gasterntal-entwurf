@@ -1,0 +1,58 @@
+/* Das Besucherbuch · Berghotel Gasterntal: Anschluss an die Oberfläche der Häuser (17.10.2026). Rahmen, Kopf, Rand, Leiste und Startbild kommen aus
+   /assets/oberflaeche/ (grund.css, rahmen-buehne.css, kleid/gasterntal.css). Hier steht nur, was das Besucherbuch darin eigen hat:
+   die Kennzahlen im Startbild wie die Zahlen der Tafel des Hauses, der Zeitraum auf dunklem Grund,
+   der Raum ohne eigene Scrollfläche. Geladen nach dem Kleid. Bewegung nur über transform und opacity (Regel 55). */
+
+/* Raum: die Seite scrollt als Ganzes, nie eine Fläche für sich (UMSTELLUNG.md, Prüfen Punkt 3) */
+.rg .flaeche{overflow:visible;position:relative}
+.rg .flaeche:focus{outline:0}
+.rg .in{max-width:none;margin:0;padding:0 0 40px}
+.rg .wo-raum{min-height:60vh}
+
+/* Rand: Titel und Haus unten, sonst wie das Paket */
+.rg .rand__titel{margin:4px 8px 10px;font-size:9.5px}
+.rg .rand__titel::before{display:none}
+.rg .rand__haus{margin:14px 10px 2px;padding-top:12px}
+
+/* Startbild: das gemeinsame Startbild der Oberfläche, nichts eigen gestaltet. Die vier Kennzahlen stehen wie die Zahlen der Tafel desselben Hauses
+   (_werkzeuge/carte/ .kopf__zahlen: Zahl in der Titelschrift, darunter die Marke in Mono und Holz), dazu der Zeitraum als Segment-Wahl des Pakets. */
+.wo-sb .wo-sb__kn{align-items:center}
+.wo-sb .buehne__chips{display:flex;flex-wrap:wrap;gap:26px;margin:0 0 0 12px;padding:0;list-style:none}
+.wo-sb .buehne__chips li{display:flex;flex-direction:column;list-style:none}
+.wo-sb .buehne__chips b{order:1;font:var(--wo-titel-g) 24px/1 var(--wo-titel);color:var(--wo-weiss);font-feature-settings:"lnum","tnum"}
+.wo-sb .buehne__chips span{order:2;margin-top:6px;font:400 9.5px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-gold)}
+.wo-sb .zeitraum{order:3}
+.wo-sb .zeitraum button{color:var(--wo-leise)}
+.wo-sb .zeitraum button[aria-pressed="true"]{color:var(--wo-tinte)}
+.rg .wahl3.wo-seg{padding:4px;border-radius:var(--wo-rk);background:linear-gradient(180deg,var(--wo-papier2),var(--wo-papier))}
+.rg .wahl3.wo-seg button{height:auto;padding:9px 16px;border-radius:var(--wo-rk);font:500 13px/1 var(--wo-sans)}
+.rg .wahl3.wo-seg button.an{background:linear-gradient(180deg,var(--wo-weiss),var(--wo-blatt));color:var(--wo-tinte)}
+
+/* Leiste: WO.leiste wie in den anderen Werkzeugen; nur «Dieses Gerät zählt nicht» zeigt gedrückt einen Rand */
+.wo-leiste .wo-kn[aria-pressed="true"]{box-shadow:inset 0 0 0 1.5px var(--wo-gold)}
+
+/* Startfehler-Tür */
+.tuer-zu__kn{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* Meldungen über der Leiste */
+.rg .meldung{bottom:96px}
+@media (max-width:900px){
+  .rg .meldung{bottom:84px}
+  .wo-sb .buehne__chips{margin:12px 0 0;gap:20px}
+  .wo-sb .buehne__chips b{font-size:21px}
+  .wo-sb .zeitraum{width:100%;display:flex}
+  .wo-sb .zeitraum button{flex:1}
+  .detail{top:76px}
+  .wo-leiste #l-export{display:none}   /* Handy: «Als Tabelle sichern» steht unter der Besuchsliste (wie Carlton und Doldenhorn) */
+}
+
+/* Abstand unter dem Startbild (das Paket setzt keinen) */
+.rg .wo-sb{margin-bottom:34px}   /* Fehlerbuch 10a: mindestens 30 px unter der Bühne */
+
+/* Robert 18.10.2026 18:58 «da kann man die texte nicht erkenen»: im Weg zur Buchung lag helle Schrift halb auf dem Balken, halb auf hellem Grund.
+   Jetzt steht die Schrift dunkel auf hellem Grund, der Balken läuft als schmale Spur darunter; lesbar bei 1 % wie bei 100 %. */
+.trichter li{padding:12px 16px 22px!important}
+.trichter li i{inset:auto 16px 9px 16px!important;height:6px!important;border-radius:3px!important;background:var(--nacht,#14181a)!important}
+.trichter li::after{content:'';position:absolute;left:16px;right:16px;bottom:9px;height:6px;border-radius:3px;background:rgba(26,31,33,.1);z-index:-1}
+.trichter span,.trichter b{color:var(--tinte,#1a1f21)!important;mix-blend-mode:normal!important}
+.trichter em{color:rgba(26,31,33,.66)!important;mix-blend-mode:normal!important}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfung · Der Schreibtisch · Berghotel Gasterntal</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2224">
+<link rel="icon" href="/assets/logo/emblem-karte-2026.jpg">
+<link rel="stylesheet" href="studio.css?v=2022c6b8df">
+<style>
+/* Grundgerüst, das auch ohne studio.css steht (falls die Datei nicht geladen werden kann): dieselben Farben, einfache Formen. */
+body{margin:0;background:#1d2224;color:#1a1f21;font-family:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.pr{min-height:100vh;background:#e9ecec;border-radius:0}
+.pr .in{max-width:1040px;margin:0 auto;padding:54px clamp(22px,4vw,60px) 120px}
+.pr__kopf{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.pr__kopf h1{font-size:clamp(2.6rem,4.8vw,4.3rem);line-height:.96;margin:0}
+.pr__kopf p{margin:14px 0 0;max-width:60ch;color:rgba(26,31,33,.72);font-size:16.5px}
+.pr__kn{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pr__marke{display:flex;align-items:center;gap:14px;margin-bottom:28px;color:#5f6a6e;font-size:13px}
+.pr__marke img{height:34px;width:auto}
+.pr__marke span{font-family:'DM Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase}
+.ampel{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:22px;align-items:center;padding:26px 30px;border-radius:26px;background:#1d2224;color:#fff;margin-bottom:28px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.ampel>i{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:#3b4423;color:#fff;font-style:normal;font-family:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;font-weight:600;font-size:1.9rem}
+.ampel.s-hinweis>i{background:#b8862a}.ampel.s-fehler>i{background:#c5000f}.ampel.s-laeuft>i{background:#2c3136;color:#d6bb96}
+.ampel>i svg{width:32px;height:32px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ampel b{display:block;font-family:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;font-weight:600;font-size:clamp(1.6rem,2.6vw,2.3rem);line-height:1.02}
+.ampel p{margin:8px 0 0;color:rgba(255,255,255,.72);max-width:64ch}
+.ampel small{display:block;margin-top:10px;font-family:'DM Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.ampel .kn{color:#1a1f21;background:linear-gradient(#f7f9f9,#e0e5e6 55%,#c7cfd3)}
+.ampel .kn i{background:linear-gradient(#3f474c,#1d2224)}.ampel .kn i svg{stroke:#e9ecec}
+.zw{font-family:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;font-weight:600;font-size:1.7rem;line-height:1;margin:46px 0 18px;display:flex;align-items:baseline;gap:14px}
+.zw span{font-family:'DM Mono',ui-monospace,monospace;font-weight:400;font-size:11px;letter-spacing:.14em;color:#5f6a6e}
+.pliste{display:grid;gap:8px}
+.punkt{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:16px;align-items:start;padding:16px 20px;border-radius:18px;background:#f6f8f8;box-shadow:inset 0 0 0 1px rgba(26,31,33,.12),inset 0 1px 0 #fff}
+.punkt>i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-style:normal;color:#fff;background:#3b4423;margin-top:2px}
+.punkt.s-hinweis>i{background:#b8862a}.punkt.s-fehler>i{background:#c5000f}.punkt.s-laeuft>i{background:#c7cfd3;color:#1a1f21}.punkt.s-unbekannt>i{background:#5f6a6e}
+.punkt>i svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.punkt b{display:block;font-family:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;font-weight:600;font-size:1.22rem;line-height:1.1}
+.punkt p{margin:5px 0 0;color:rgba(26,31,33,.76);font-size:14.5px;line-height:1.45}
+.punkt ul{margin:8px 0 0;padding:0 0 0 18px;font-size:13.5px;color:rgba(26,31,33,.7)}
+.punkt ul li{margin:2px 0;list-style:disc}
+.punkt__r{display:grid;gap:8px;justify-items:end}
+.punkt .link{font-family:'DM Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#5f6a6e;border-bottom:1px solid currentColor;padding-bottom:2px;background:none;border-top:0;border-left:0;border-right:0;cursor:pointer}
+.punkt .link:hover{color:#1a1f21}
+.griffe{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.griff{display:flex;flex-direction:column;gap:8px;padding:20px 22px;border-radius:20px;background:#f6f8f8;box-shadow:inset 0 0 0 1px rgba(26,31,33,.12),inset 0 1px 0 #fff;text-align:left}
+.griff b{font-family:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;font-weight:600;font-size:1.2rem;line-height:1.1}
+.griff p{margin:0;font-size:13.5px;color:rgba(26,31,33,.7);line-height:1.45;flex:1}
+.griff .kn{align-self:flex-start;margin-top:6px}
+.griff.heikel .kn{box-shadow:inset 0 0 0 1px #9f1d19;color:#9f1d19;background:none}
+.griff.heikel .kn i{background:#9f1d19}.griff.heikel .kn i svg{stroke:#fff}
+.lex{display:grid;gap:8px}
+.lex__such{margin-bottom:14px}
+.lex__such input{width:100%;box-sizing:border-box;background:#fff;border:0;border-radius:12px;padding:13px 15px;font:inherit;font-size:15.5px;box-shadow:inset 0 0 0 1px rgba(26,31,33,.14)}
+.lex details{border-radius:18px;background:#f6f8f8;box-shadow:inset 0 0 0 1px rgba(26,31,33,.12),inset 0 1px 0 #fff;padding:0 20px}
+.lex details[open]{background:#fff}
+.lex summary{cursor:pointer;list-style:none;padding:16px 0;font-family:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;font-weight:600;font-size:1.15rem;line-height:1.15;display:flex;gap:12px;align-items:baseline}
+.lex summary::-webkit-details-marker{display:none}
+.lex summary small{font-family:'DM Mono',ui-monospace,monospace;font-weight:400;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#5f6a6e;margin-left:auto;flex:none}
+.lex .lex__t{padding:0 0 18px;display:grid;gap:10px;font-size:14.5px;color:rgba(26,31,33,.8);line-height:1.5}
+.lex .lex__t>div>b{display:block;font-family:'DM Mono',ui-monospace,monospace;font-weight:400;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#5f6a6e;margin-bottom:3px}
+.lex details.treffer{box-shadow:inset 0 0 0 2px #b8862a,inset 0 1px 0 #fff}
+.proto{display:grid;gap:6px}
+.proto li{display:grid;grid-template-columns:150px 90px minmax(0,1fr);gap:14px;padding:10px 16px;border-radius:12px;background:#f6f8f8;font-size:13.5px;box-shadow:inset 0 0 0 1px rgba(26,31,33,.1);list-style:none;overflow-wrap:anywhere}
+.proto li span:first-child{font-family:'DM Mono',ui-monospace,monospace;font-size:11px;color:#5f6a6e}
+.proto li span:nth-child(2){font-family:'DM Mono',ui-monospace,monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f1d19}
+.proto details{grid-column:1/-1}.proto details summary{font-size:12px;color:#5f6a6e;cursor:pointer}.proto pre{white-space:pre-wrap;font-size:11px;color:#5f6a6e;margin:6px 0 0}
+.proto .leer{color:#5f6a6e;font-size:14px}
+.fuss{margin-top:54px;padding-top:22px;border-top:1px solid rgba(26,31,33,.12);color:rgba(26,31,33,.62);font-size:13.5px;display:grid;gap:6px}
+.fuss a{color:#1a1f21;text-decoration:underline;text-underline-offset:3px}
+.pr .kn{text-decoration:none}
+@media (max-width:860px){.ampel{grid-template-columns:56px minmax(0,1fr)}.ampel>i{width:56px;height:56px}.ampel .pr__kn{grid-column:1/-1}.punkt{grid-template-columns:34px minmax(0,1fr)}.punkt__r{grid-column:2;justify-items:start;grid-auto-flow:column}.proto li{grid-template-columns:1fr}}
+</style>
+<script src="/besuch.js?v=108cf13990" defer></script><script src="/verweil.js?v=5d7a8c4284" defer></script></head>
+<body>
+<div class="pr">
+  <div class="in">
+    <div class="pr__marke"><img src="/assets/logo/schrift-berghotel-gasterntal.svg" alt="Berghotel Gasterntal"><span>Der Schreibtisch · Prüfung</span></div>
+    <header class="pr__kopf">
+      <div><h1>Prü<em>fung.</em></h1>
+        <p>Wenn im Studio etwas hakt, finden Sie hier heraus, woran es liegt, und bringen es meist selbst wieder in Ordnung. Diese Seite braucht nichts vom übrigen Studio: sie läuft auch dann, wenn das Studio nicht mehr lädt.</p></div>
+      <div class="pr__kn"><a class="kn kn--linie" href="/studio/">Zum Schreibtisch</a><button class="kn" type="button" id="nochmal">Noch einmal prüfen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></button></div>
+    </header>
+    <section class="ampel s-laeuft" id="ampel" aria-live="polite"><i>…</i><div><b>Die Prüfung läuft.</b><p>Einen Moment, jeder Punkt wird einzeln geprüft.</p></div></section>
+    <h2 class="zw">Verbindung und Browser<span id="n-hier"></span></h2>
+    <div class="pliste" id="hier"></div>
+    <h2 class="zw">Das Studio selbst<span id="n-dort"></span></h2>
+    <div class="pliste" id="dort"></div>
+    <h2 class="zw">Reparieren<span>Jeder Griff tut genau eines</span></h2>
+    <div class="griffe" id="griffe"></div>
+    <h2 class="zw">Fehlerprotokoll<span id="n-proto"></span></h2>
+    <ul class="proto" id="proto"></ul>
+    <h2 class="zw">Lexikon<span id="n-lex"></span></h2>
+    <div class="lex__such"><input type="search" id="such" placeholder="Was sehen Sie? Zum Beispiel: Passwort, Bild, Veröffentlichen, weiss, antwortet nicht" aria-label="Im Lexikon suchen"></div>
+    <div class="lex" id="lex"></div>
+    <footer class="fuss">
+      <span>Wenn ein Punkt rot bleibt und das Lexikon nicht weiterhilft: schreiben Sie Robert Reff eine Nachricht an <a href="mailto:robert@tasty-studios.de">robert@tasty-studios.de</a> und fügen Sie den Bericht an (Knopf «Bericht kopieren» oben in der Ampel). Darin steht alles, was er braucht.</span>
+      <span id="fassung"></span>
+    </footer>
+  </div>
+</div>
+<div id="meldung" class="meldung" aria-live="polite"></div>
+<script src="pruefung.js?v=2c952d2bde"></script>
+</body>
+</html>

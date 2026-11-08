@@ -1,0 +1,194 @@
+{
+ "reihen": 9,
+ "stuecke": [
+  {
+   "id": "plakat-0",
+   "r": 1,
+   "c": 1,
+   "w": 3,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "e-tafel",
+   "r": 2,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-tafel"
+  },
+  {
+   "id": "frauenschuh",
+   "r": 2,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "frauenschuh"
+  },
+  {
+   "id": "haus-giebel",
+   "r": 2,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "haus-giebel"
+  },
+  {
+   "id": "stube-regal",
+   "r": 3,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-regal"
+  },
+  {
+   "id": "e-plaettli",
+   "r": 3,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-plaettli"
+  },
+  {
+   "id": "stube-sessel",
+   "r": 3,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-sessel"
+  },
+  {
+   "id": "z-doppel",
+   "r": 4,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-doppel"
+  },
+  {
+   "id": "d-bilder",
+   "r": 4,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "d-bilder"
+  },
+  {
+   "id": "z-tisch",
+   "r": 4,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-tisch"
+  },
+  {
+   "id": "plakat-4",
+   "r": 5,
+   "c": 1,
+   "w": 3,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "sauna",
+   "r": 6,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "sauna"
+  },
+  {
+   "id": "tal-luft",
+   "r": 6,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "tal-luft"
+  },
+  {
+   "id": "saeli",
+   "r": 6,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "saeli"
+  },
+  {
+   "id": "z-kajuete",
+   "r": 7,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-kajuete"
+  },
+  {
+   "id": "d-krug",
+   "r": 7,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "d-krug"
+  },
+  {
+   "id": "z-einzel",
+   "r": 7,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-einzel"
+  },
+  {
+   "id": "haus-alt",
+   "r": 8,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "haus-alt"
+  },
+  {
+   "id": "chluse",
+   "r": 8,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "chluse"
+  },
+  {
+   "id": "tal-blick",
+   "r": 8,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "tal-blick"
+  },
+  {
+   "id": "plakat-8",
+   "r": 9,
+   "c": 1,
+   "w": 3,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  }
+ ]
+}

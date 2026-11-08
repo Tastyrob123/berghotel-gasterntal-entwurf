@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anleitung · Das Hausbuch · Berghotel Gasterntal</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2224">
+<link rel="icon" href="dateien/berghotel-gasterntal-raute-holz.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/barlowsemi-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+:root{--nacht:#1d2224;--navy:#1d2224;--blau:#2c3136;--papier:#e9ecec;--weiss:#f6f8f8;--gold:#d6bb96;--taupe:#3b4423;--tinte:#1a1f21;--blatt:#f6f8f8;--linie:rgba(26,31,33,.12);--leise:rgba(26,31,33,.66);
+  --serif:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;--sans:'Instrument Sans',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace;--e1:cubic-bezier(.16,1,.3,1);--e2:cubic-bezier(.32,.72,0,1)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--papier);color:var(--tinte);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ol,ul,figure{margin:0;padding:0}ol,ul{list-style:none}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.012em}
+:focus-visible{outline:1.5px solid var(--taupe);outline-offset:3px;border-radius:6px}
+.mono{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.kn{position:relative;display:inline-flex;align-items:center;gap:12px;height:48px;padding:0 6px 0 22px;border-radius:999px;font:11px var(--mono);letter-spacing:.15em;text-transform:uppercase;color:#fff;background:linear-gradient(180deg,#485056,#2c3136 55%,#1d2224);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -3px 0 rgba(0,0,0,.55),0 14px 22px -14px rgba(20,24,26,.55);transition:transform .5s var(--e2)}
+.kn:hover{transform:translateY(-2px)}
+.kn i{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#f7f9f9,#c7cfd3);color:var(--tinte);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 0 rgba(0,0,0,.22)}
+.kn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.3}
+.kn--hell{background:linear-gradient(180deg,#f7f9f9,#e9ecec 50%,#c7cfd3);color:var(--tinte);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -3px 0 rgba(26,31,33,.25),0 14px 22px -14px rgba(0,0,0,.5)}
+.kn--hell i{background:linear-gradient(180deg,#3f474c,#1d2224);color:var(--weiss)}
+/* Kopf */
+.kopf{position:relative;isolation:isolate;color:var(--weiss);background-color:var(--navy);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='92'%3E%3Cg fill='%23d6bb96' fill-opacity='.09'%3E%3Cpath d='M22 14 30 46 22 78 14 46z'/%3E%3Ccircle cx='22' cy='6' r='3'/%3E%3Ccircle cx='22' cy='86' r='3'/%3E%3C/g%3E%3C/svg%3E");background-size:44px 92px;background-position:0 0;border-radius:0 0 34px 34px;overflow:hidden}
+.kopf::after{content:'';position:absolute;inset:auto 0 0 0;height:60%;z-index:-1;background:linear-gradient(0deg,rgba(20,24,26,.8),transparent)}
+.kopf__in{max-width:1180px;margin:0 auto;padding:36px 28px 74px}
+.kopf nav{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:56px;font:10.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.kopf nav a:hover{color:#fff}
+.kopf h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:1.02;max-width:14ch}.kopf h1 em{font-style:normal;color:var(--gold)}
+.kopf p{margin-top:22px;max-width:56ch;font-size:1.08rem;color:rgba(246,248,248,.84)}
+.kopf .kn{margin-top:30px}
+.kopf .kn+.kn{margin-left:10px}
+/* Inhalt */
+main{max-width:1180px;margin:0 auto;padding:0 28px 120px}
+.inhalt{margin:58px 0 70px}
+.inhalt h2{font-size:clamp(2rem,3.6vw,3rem);line-height:1.08;margin:8px 0 8px}.inhalt h2 em{font-style:normal;color:var(--taupe)}
+.inhalt>p{max-width:60ch;color:var(--leise)}
+.themen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
+.thema{background:var(--blatt);border-radius:22px;box-shadow:inset 0 0 0 1px var(--linie);padding:22px 24px}
+.thema h3{font-size:1.35rem;line-height:1.15;display:grid;gap:3px}.thema h3 small{font:10px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}.thema h3 em{font:11px var(--mono);font-style:normal;color:var(--leise)}
+.thema ol{margin-top:12px;display:grid;gap:2px}
+.thema a{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:baseline;padding:9px 6px;border-radius:12px;transition:background-color .3s}
+.thema a:hover{background:rgba(255,255,255,.7)}.thema a b{font:12px var(--mono);color:var(--taupe)}.thema a span{font-family:var(--serif)}.thema a i{font:10px var(--mono);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+/* Kapitel */
+.kap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,60px);align-items:start;padding:54px 0;border-top:1px solid var(--linie);scroll-margin-top:20px}
+.kap:nth-of-type(even) .kap__t{order:2}
+.kap h2{font-size:clamp(1.9rem,3.2vw,2.8rem);line-height:1.08;margin:12px 0 14px;text-wrap:balance}
+.einl{color:rgba(26,31,33,.78);max-width:54ch}
+.schritte{display:grid;gap:12px;margin:22px 0}
+.schritte li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:14px;align-items:start}
+.schritte li span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold);font:12px var(--mono)}
+.schritte p{padding-top:3px}
+.wissen{padding:16px 18px;border-radius:16px;background:rgba(214,187,150,.34);font-size:14.5px;color:var(--tinte)}.wissen b{display:block;margin-bottom:3px;font:10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--tinte)}
+.kap__b{position:sticky;top:20px}
+.bild{display:block;width:100%;border-radius:20px;overflow:hidden;background:var(--navy);box-shadow:0 30px 50px -28px rgba(20,24,26,.6),inset 0 0 0 1px rgba(214,187,150,.3);cursor:zoom-in;transition:transform .6s var(--e2)}
+.bild:hover{transform:translateY(-3px)}.bild img{display:block;width:100%;height:auto}
+figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+/* Bild gross */
+.gross{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:3vmin;background:rgba(20,24,26,.88);cursor:zoom-out;animation:auf .35s var(--e1) both}
+.gross[hidden]{display:none}.gross img{max-width:100%;max-height:100%;border-radius:14px;box-shadow:0 40px 80px -30px #000}.gross small{position:absolute;bottom:14px;left:0;right:0;text-align:center;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+@keyframes auf{from{opacity:0}}
+.fuss{margin-top:20px;padding:34px 0 0;border-top:1px solid var(--linie);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--leise);font-size:14px}
+@media (max-width:900px){.themen{grid-template-columns:1fr}.kap{grid-template-columns:1fr;padding:40px 0}.kap:nth-of-type(even) .kap__t{order:0}.kap__b{position:static}.kopf__in{padding:26px 18px 54px}.kopf nav{margin-bottom:36px}main{padding:0 18px 80px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.zurueck{border-bottom:1px solid currentColor}
+</style>
+<link rel="stylesheet" href="/werkbank/auftritte.css?v=cbb2007c87">
+</head>
+<body>
+<!-- Anleitung Das Hausbuch · Berghotel Gasterntal: gebaut von anleitung_bau.py aus dieser Vorlage (Aufbau wie die Anleitung im Hausbuch des Waldhotel Doldenhorn) -->
+<header class="kopf"><div class="kopf__in">
+  <nav><span>Anleitung · Berghotel Gasterntal</span><a href="./">Das Hausbuch öffnen</a></nav>
+  <h1>Fotos, Dateien <em>und die Prüfung.</em></h1>
+  <p>9 kurze Kapitel. Wie Sie ein Foto in der richtigen Grösse laden, wo Schriftzug und Farben für die Agentur liegen und wie das Hausbuch einen Entwurf prüft.</p>
+  <a class="kn" href="./">Das Hausbuch öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="kn kn--hell" href="#inhalt">Zu den Kapiteln<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></i></a>
+</div></header>
+<main>
+  <section class="inhalt" id="inhalt"><span class="mono">00 · Inhalt</span><h2>9 Kapitel, <em>fünf Themen.</em></h2><p>Jedes Kapitel zeigt den Bereich und nennt die Schritte. Ein Klick macht das Bild gross, ein zweiter oder Esc bringt es zurück.</p>
+    <div class="themen"><section class="thema"><h3><small>Grundlagen</small>So geht das Hausbuch<em>1 Kapitel</em></h3><ol><li><a href="#k01"><b>01</b><span>So ist das Hausbuch aufgebaut.</span><i>Übersicht</i></a></li></ol></section><section class="thema"><h3><small>Bildarchiv</small>Finden, laden, Herkunft<em>3 Kapitel</em></h3><ol><li><a href="#k02"><b>02</b><span>Ein Foto finden.</span><i>Bildarchiv</i></a></li><li><a href="#k03"><b>03</b><span>In der richtigen Grösse laden.</span><i>Bildarchiv</i></a></li><li><a href="#k04"><b>04</b><span>Woher ein Foto kommt.</span><i>Bildarchiv</i></a></li></ol></section><section class="thema"><h3><small>Logo &amp; Dateien</small>Dateien und Farben<em>2 Kapitel</em></h3><ol><li><a href="#k05"><b>05</b><span>Den Schriftzug weitergeben.</span><i>Logo &amp; Dateien</i></a></li><li><a href="#k06"><b>06</b><span>Farbwerte kopieren.</span><i>Logo &amp; Dateien</i></a></li></ol></section><section class="thema"><h3><small>Markenprüfung</small>Prüfen und lesen<em>2 Kapitel</em></h3><ol><li><a href="#k07"><b>07</b><span>Einen Entwurf prüfen.</span><i>Markenprüfung</i></a></li><li><a href="#k08"><b>08</b><span>Die Rückmeldung lesen.</span><i>Markenprüfung</i></a></li></ol></section><section class="thema"><h3><small>Nachschlagen</small>Das Markenbuch<em>1 Kapitel</em></h3><ol><li><a href="#k09"><b>09</b><span>Im Markenbuch nachschlagen.</span><i>Markenbuch</i></a></li></ol></section></div></section>
+<article class="kap" id="k01">
+  <div class="kap__t"><span class="mono">01 · Übersicht</span><h2>So ist das Hausbuch aufgebaut.</h2><p class="einl">Das Hausbuch ist die Marke des Hauses zum Arbeiten. Drei Teile für den Alltag, dazu das Markenbuch zum Nachschlagen.</p>
+    <ol class="schritte"><li><span>1</span><p>Links die Teile: «Bildarchiv», «Logo &amp; Dateien» und «Markenprüfung». Darunter das Markenbuch.</p></li><li><span>2</span><p>Oben rechts führen runde Knöpfe zur Stube und zur Anleitung, daneben «Website ansehen». Unten steht immer der Hinweis zu den Bildrechten, daneben laden Sie alle Dateien der Marke auf einmal.</p></li><li><span>3</span><p>Auf dem Handy öffnet der Knopf «Bereiche» die Teile als Menü und schliesst sich nach der Wahl.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Das Hausbuch speichert nichts. Was Sie laden, landet auf Ihrem Rechner, was Sie prüfen, ist nach der Prüfung wieder weg.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: So ist das Hausbuch aufgebaut."><img src="anleitung/k01.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Übersicht: So ist das Hausbuch aufgebaut."></button>
+    <figcaption><span>das hausbuch / übersicht</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k02">
+  <div class="kap__t"><span class="mono">02 · Bildarchiv</span><h2>Ein Foto finden.</h2><p class="einl">Alle Fotos der Website liegen im Bildarchiv, jedes mit Bereich, Format und Herkunft.</p>
+    <ol class="schritte"><li><span>1</span><p>Oben ins Suchfeld schreiben, zum Beispiel «Sauna», «Fondue» oder «Kander».</p></li><li><span>2</span><p>Darunter eingrenzen: Bereich, Hoch- oder Querformat und Herkunft (Fotos des Hauses, frei lizenziert, mit KI bearbeitet).</p></li><li><span>3</span><p>Über der Liste steht, wie viele Fotos passen. «Filter zurücksetzen» zeigt wieder alle. Beim Scrollen kommen weitere Fotos nach.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Für einen Instagram-Beitrag eignen sich Hochformate am besten: «Hochformat» wählen, dann schneidet das Hausbuch am wenigsten weg.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Ein Foto finden."><img src="anleitung/k02.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Bildarchiv: Ein Foto finden."></button>
+    <figcaption><span>das hausbuch / bildarchiv</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k03">
+  <div class="kap__t"><span class="mono">03 · Bildarchiv</span><h2>In der richtigen Grösse laden.</h2><p class="einl">Ein Klick auf ein Foto öffnet es gross. Rechts stehen vier fertige Grössen.</p>
+    <ol class="schritte"><li><span>1</span><p>«Instagram-Beitrag» (1080 × 1350) oder «Story» (1080 × 1920) mit der Maus berühren. Im Bild erscheint der Ausschnitt.</p></li><li><span>2</span><p>Den Rahmen im Bild an die Stelle ziehen, die zu sehen sein soll. Der Knopf «Laden» nimmt genau diesen Ausschnitt.</p></li><li><span>3</span><p>«Website» lädt das Foto mit 2000 Pixel an der längsten Seite, «Druck» in voller Auflösung. Zwei Wege führen direkt in Die Werkstatt, mit demselben Ausschnitt.</p></li><li><span>4</span><p>Bei den mit KI bearbeiteten Fotos zeigen «Vorher», «Nachher» und «Schieber», wie das Foto geliefert wurde und wie es heute auf der Website steht.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Ist das Foto für eine Story etwas zu klein, steht im Dateinamen «hochgerechnet». Steht dort «websitegroesse», liegt kein grösseres Original vor.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: In der richtigen Grösse laden."><img src="anleitung/k03.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Bildarchiv: In der richtigen Grösse laden."></button>
+    <figcaption><span>das hausbuch / bildarchiv</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k04">
+  <div class="kap__t"><span class="mono">04 · Bildarchiv</span><h2>Woher ein Foto kommt.</h2><p class="einl">42 Fotos stammen vom Haus, von der Website, von Booking.com und vom Tourismusbüro Kandersteg. 16 Fotos zeigen das Tal und sind frei lizenziert.</p>
+    <ol class="schritte"><li><span>1</span><p>Frei lizenzierte Fotos nennen unter «Quelle» den Fotografen und die Lizenz. So müssen sie auch genannt werden.</p></li><li><span>2</span><p>31 Fotos sind mit KI bearbeitet: Licht, Farbe und Flächen, der Raum ist echt. Geöffnet steht der Vermerk dabei, das Original lässt sich mit «Vorher laden» holen.</p></li><li><span>3</span><p>Unter «Herkunft» lassen sich die Arten ein- oder ausblenden.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Mit KI erzeugte Bilder gibt es im Haus keine. Kommt eines dazu, trägt es im Archiv «KI» und im Dateinamen «mit-ki-erzeugt».</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Woher ein Foto kommt."><img src="anleitung/k04.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Bildarchiv: Woher ein Foto kommt."></button>
+    <figcaption><span>das hausbuch / bildarchiv</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k05">
+  <div class="kap__t"><span class="mono">05 · Logo &amp; Dateien</span><h2>Den Schriftzug weitergeben.</h2><p class="einl">Unter «Logo &amp; Dateien» liegt alles, was eine Agentur oder eine Druckerei vom Haus braucht.</p>
+    <ol class="schritte"><li><span>1</span><p>Der Schriftzug aus dem Willkommensschreiben liegt in Holz und Blatt für dunkle Flächen, in Talwand, Tinte und Tanne für helle. Dazu «Berghotel», «Gasterntal» und «Ässe u trinke» einzeln, die Raute und der Name in Barlow Semi Condensed.</p></li><li><span>2</span><p>«SVG» bleibt in jeder Grösse scharf. «PNG» hat einen durchsichtigen Grund, für Präsentationen und Office.</p></li><li><span>3</span><p>Die Tapete liegt als Kachel bei. «Alle Dateien (ZIP)» lädt alles auf einmal, mit den Schriften.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Was mit dem Schriftzug nie geschieht (drehen, stauchen, umfärben, rahmen), steht im Markenbuch unter «Schriftzug».</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Den Schriftzug weitergeben."><img src="anleitung/k05.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Logo &amp; Dateien: Den Schriftzug weitergeben."></button>
+    <figcaption><span>das hausbuch / logo &amp; dateien</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k06">
+  <div class="kap__t"><span class="mono">06 · Logo &amp; Dateien</span><h2>Farbwerte kopieren.</h2><p class="einl">Die Farben des Hauses stehen mit Namen und Rolle da: Fels, Kander und Papier, Holz und Tanne, der Laden. Ein Klick genügt.</p>
+    <ol class="schritte"><li><span>1</span><p>Auf eine Farbe klicken: der Wert (zum Beispiel #1D2224) liegt in der Zwischenablage.</p></li><li><span>2</span><p>Ein Klick auf die RGB-Zeile kopiert die RGB-Werte.</p></li><li><span>3</span><p>Darunter laden Sie die Farben als CSS, JSON oder ASE (für InDesign und Illustrator) und die Schriften als WOFF2 oder als Paket mit TTF.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Das Rot der Fensterläden ist nur ein Punkt. Die Farben des heutigen Auftritts stehen getrennt und gelten nicht für Neues.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Farbwerte kopieren."><img src="anleitung/k06.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Logo &amp; Dateien: Farbwerte kopieren."></button>
+    <figcaption><span>das hausbuch / logo &amp; dateien</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k07">
+  <div class="kap__t"><span class="mono">07 · Markenprüfung</span><h2>Einen Entwurf prüfen.</h2><p class="einl">Schickt eine Agentur ein Plakat, einen Flyer oder einen Beitrag, prüfen Sie hier, ob er zum Haus passt.</p>
+    <ol class="schritte"><li><span>1</span><p>Den Entwurf in das Feld ziehen oder «Datei wählen». Bild (JPG, PNG, WebP) oder PDF, bis 30 MB.</p></li><li><span>2</span><p>«Prüfen» drücken. Das Hausbuch misst zuerst die Farben, dann sieht Claude sich den Entwurf an.</p></li><li><span>3</span><p>Nach etwa einer halben Minute steht die Rückmeldung da. Unter dem leeren Feld steht schon ein Beispiel.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Solange die Prüfung durch Claude nicht eingeschaltet ist, antwortet eine Probe: die Farben sind gemessen, der Rest ist als Probe beschriftet.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Einen Entwurf prüfen."><img src="anleitung/k07.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Markenprüfung: Einen Entwurf prüfen."></button>
+    <figcaption><span>das hausbuch / markenprüfung</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k08">
+  <div class="kap__t"><span class="mono">08 · Markenprüfung</span><h2>Die Rückmeldung lesen.</h2><p class="einl">Oben ein Satz, wie nah der Entwurf am Haus ist. Darunter Punkt für Punkt: Farben, Schrift, Schriftzug, Abstand, Bild und Ton.</p>
+    <ol class="schritte"><li><span>1</span><p>Jeder Punkt hat ein Urteil: «passt», «achten» oder «passt nicht». Was nicht passt, steht oben.</p></li><li><span>2</span><p>Links die gemessenen Farben: wie viel der Fläche in den Farben des Hauses liegt, und welche Töne fremd sind. Diese Messung macht keine KI.</p></li><li><span>3</span><p>«Als Text kopieren» gibt Ihnen die Rückmeldung zum Weitergeben. «Ergebnis sichern» legt sie als Datei auf Ihren Rechner, nur wenn Sie es wollen.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Das Beispiel ist eigens gezeichnet. Seine Farben sind wirklich gemessen, die Rückmeldung dazu ist von Hand geschrieben und so beschriftet.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Die Rückmeldung lesen."><img src="anleitung/k08.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Markenprüfung: Die Rückmeldung lesen."></button>
+    <figcaption><span>das hausbuch / markenprüfung</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+<article class="kap" id="k09">
+  <div class="kap__t"><span class="mono">09 · Markenbuch</span><h2>Im Markenbuch nachschlagen.</h2><p class="einl">Das Markenbuch erklärt in acht Kapiteln, wie das Haus aussieht: Haus, Schriftzug, Raute und Name, Farben und ihre Herkunft im Tal, Schriften, Tapete, Bilder und Ton.</p>
+    <ol class="schritte"><li><span>1</span><p>Links «Markenbuch» oder auf der Übersicht «Markenbuch» drücken.</p></li><li><span>2</span><p>Oben im Markenbuch springen Sie zu jedem Kapitel. «Als PDF sichern» legt es als PDF ab, je Kapitel eine Seite.</p></li></ol>
+    <p class="wissen"><b>Gut zu wissen</b>Die Markenprüfung prüft nach denselben Regeln. Ändert sich etwas an der Marke, wird beides zusammen neu gebaut.</p></div>
+  <figure class="kap__b"><button type="button" class="bild" aria-label="Bild gross ansehen: Im Markenbuch nachschlagen."><img src="anleitung/k09.jpg" width="1200" height="714" loading="lazy" decoding="async" alt="Das Hausbuch, Markenbuch: Im Markenbuch nachschlagen."></button>
+    <figcaption><span>das hausbuch / markenbuch</span><span>Grösser ansehen</span></figcaption></figure>
+</article>
+  <div class="fuss"><span>Das Hausbuch · Berghotel Gasterntal, Selden · 3718 Kandersteg</span><a class="zurueck" href="./">Zurück zum Hausbuch</a></div>
+</main>
+<div class="gross" id="gross" hidden role="dialog" aria-modal="true" aria-label="Bild gross"><img alt=""><small>Klick oder Esc zum Schliessen</small></div>
+<script src="anleitung.js"></script>
+<script src="/werkbank/auftritte.js?v=8f2db02292" data-alles></script>
+<script src="/assets/js/zur-werkbank.js?v=0c96546f19" defer data-zw data-hoehe></script></body>
+</html>
