@@ -8,13 +8,13 @@
    Massstab: das Drucksachen-Studio desselben Hauses. Raum: Marine mit der Tapete, Kopf als Insel mit Goldkante, Platten aus Papier mit Tiefe, Kuhlen für Felder,
    Knöpfe mit Goldknauf und Lichtstreif, 3D-Fotokacheln der Website, Auswahllisten im Hausstil (/assets/js/auswahl.js). Bewegung nur über transform und opacity.
    Vorher-Stand: _qa/bureau/studio-vor-edel.css */
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/barlowsemi-600.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/barlowsemi-700.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:700;font-display:swap;src:url('../assets/fonts/barlowsemi-700.woff2') format('woff2')}
 @font-face{font-family:'Barlow Ersatz';src:local('Arial Bold'),local('Arial-BoldMT'),local('Arial');size-adjust:82.5%;ascent-override:120%;descent-override:24%;line-gap-override:0%}
-@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-weight:500;font-display:swap;src:url('/assets/fonts/DMMono-normal-500.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:500;font-display:swap;src:url('../assets/fonts/DMMono-normal-500.woff2') format('woff2')}
 [hidden]{display:none!important}
 :root{
   --navy:#1d2224;--marine:#1d2224;--nacht:#1d2224;--blau:#2c3136;--karte:#22272a;--stahl:#3b4423;--schiefer:#485056;--tinte:#1a1f21;--papier:#e9ecec;--creme:#dde1e1;--weiss:#f6f8f8;--sand:#cfd5d6;--leinen:#cfd5d6;
@@ -919,7 +919,7 @@ h2[data-sw],[data-sw="k"]{--weg:clamp(30px,3.2vw,48px);--kl:.97}
 .kopf__marke b{font:600 19px/1.02 var(--serif);letter-spacing:.005em;text-transform:none;background:none;color:#f6f8f8;filter:none}
 /* Schriftzug des Hauses (assets/logo/schrift-berghotel-gasterntal.svg) unter dem Namen, als Maske in Holz */
 .kopf__schrift{display:block;width:126px;height:25px;margin-top:5px;background:var(--holzglanz);
-  -webkit-mask:url('/assets/logo/schrift-berghotel-gasterntal.svg') left center/contain no-repeat;mask:url('/assets/logo/schrift-berghotel-gasterntal.svg') left center/contain no-repeat}
+  -webkit-mask:url('../assets/logo/schrift-berghotel-gasterntal.svg') left center/contain no-repeat;mask:url('../assets/logo/schrift-berghotel-gasterntal.svg') left center/contain no-repeat}
 .zier .raute{width:8px}
 .mini__nav .raute{width:6px}
 h2.zw::before{content:'';flex:none;width:9px;aspect-ratio:16/34;margin-right:4px;background:var(--holzglanz);

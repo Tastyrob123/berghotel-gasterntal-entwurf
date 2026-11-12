@@ -91,7 +91,7 @@
   DS.ALLEIN = location.hostname === 'drucksachen-studio.vercel.app';
   DS.LIVRE = '../livre/';
   DS.livreUrl = p => new URL(p, new URL(DS.LIVRE, location.href)).href;
-  DS.livreSeite = () => location.port === '8975' ? 'http://localhost:8918/_werkzeuge/livre/' : DS.ALLEIN ? 'https://gasterntal.tastystudios.ch/werkzeuge/livre/' : DS.LIVRE;
+  DS.livreSeite = () => location.port === '8975' ? 'http://localhost:8918/_werkzeuge/livre/' : DS.ALLEIN ? 'https://tastyrob123.github.io/berghotel-gasterntal-entwurf/werkzeuge/livre/' : DS.LIVRE;
   /* Logo, Logo quer und Wortmarke aus Le Livre: Bildschirm SVG, Blatt und PDF PNG (bis 3000 px, mit Transparenz) */
   DS.livreDateien = M => (M.livre ? M.livre.dateien : []).filter(d => ['logo', 'quer', 'wortmarke'].includes(d.k) && d.var).flatMap(d => {
     const vb = (d.vb || '0 0 4 3').split(' ').map(Number), N = { logo: 'Logo', quer: 'Logo quer', wortmarke: 'Wortmarke' }[d.k];

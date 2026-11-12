@@ -15,8 +15,8 @@
   --wo-punkt:#b3261e; --wo-gut:#3f7a4f;
   --wo-titel:'Titel CE',Georgia,serif; --wo-titel-g:400; --wo-titel-ls:-.005em;
   --wo-r1:28px; --wo-r2:22px; --wo-r3:12px; --wo-rk:999px;
-  --wo-tapete:linear-gradient(rgba(11,31,64,.55),rgba(11,31,64,.55)),url('/assets/img/tapete-navy.webp') 50% 0/700px auto;
-  --wo-tapete-fein:url('/assets/img/tapete-navy.webp') 50% 0/700px auto;
+  --wo-tapete:linear-gradient(rgba(11,31,64,.55),rgba(11,31,64,.55)),url('/berghotel-gasterntal-entwurf/assets/img/tapete-navy.webp') 50% 0/700px auto;
+  --wo-tapete-fein:url('/berghotel-gasterntal-entwurf/assets/img/tapete-navy.webp') 50% 0/700px auto;
 }
 
 /* ================= Carlton-Europe · Belle Époque ================= */

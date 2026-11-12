@@ -1,12 +1,12 @@
 /* Die Stube (La Maison) · Berghotel Gasterntal (17.10.2026), gebaut von _werkzeuge/maison/bau.py: Vorlage mit Farben, Schriften und Tapete des Hauses,
    dazu fensterfront.css (Empfang) und gasterntal.css (Kleid). Nicht von Hand ändern. */
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/barlowsemi-600.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/barlowsemi-700.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:700;font-display:swap;src:url('../assets/fonts/barlowsemi-700.woff2') format('woff2')}
 @font-face{font-family:'Barlow Ersatz';src:local('Arial Bold'),local('Arial-BoldMT'),local('Arial');size-adjust:82.5%;ascent-override:120%;descent-override:24%;line-gap-override:0%}
-@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
 @font-face{font-family:'Sans Ersatz';src:local('Arial');size-adjust:99%}
-@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
 :root{
   --marine:#2c3136;--blau:#485056;--nacht:#1d2224;--tinte:#1a1f21;--papier:#e9ecec;--creme:#c7cfd3;--weiss:#f6f8f8;--sand:#c7cfd3;
   --gold:#d6bb96;--goldhell:#f3e8d6;--taupe:#7c8386;--taupe-tief:#485056;--leise:rgba(26,31,33,.68);--holz:#d6bb96;--laden:#c5000f;--tanne:#3b4423;--kander:#c7cfd3;--tief:#14181a;--karte:#262b2f;--hausgold:#d6bb96;

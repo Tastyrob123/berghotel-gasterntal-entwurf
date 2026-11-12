@@ -5,7 +5,7 @@
    Fotos als JPG (haeuser/gasterntal/mail/, 1200 px, Outlook kann kein WebP), öffentliche Adressen auf der Studio-Seite.
    Kein Mailprogramm führt Skripte aus; alles hier ist reines HTML. DSMAIL.html(doc, {editor}) → vollständiges Dokument. */
 (function () {
-  const ONLINE = 'https://gasterntal.tastystudios.ch/werkzeuge/imprimerie/';   // öffentliche Adresse der Bilder in den Mails (Fotos, Kopf, Fuss)
+  const ONLINE = 'https://tastyrob123.github.io/berghotel-gasterntal-entwurf/werkzeuge/imprimerie/';   // öffentliche Adresse der Bilder in den Mails (Fotos, Kopf, Fuss)
   const C = { navy: '#1d2224', papier: '#e9ecec', creme: '#dce1e2', weiss: '#f6f8f8', sand: '#c7cfd3', gold: '#d6bb96', messing: '#a98f68', taupe: '#7a6444', tief: '#3b4423', tinte: '#1a1f21' };
   const F = {
     serif: "'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif",

@@ -4,11 +4,11 @@
    auf Hell, das Rot der Fensterläden (#c5000f) nur als Punkt (Marke «Entwurf»); Barlow Semi Condensed für Titel, Instrument Sans, DM Mono
    (assets/css/main.css). Den Rahmen (Kopf, Rand, Startbild, Leiste) liefert die Werkzeug-Oberfläche der Häuser (grund.css, rahmen-buehne.css,
    kleid/gasterntal.css), das Zusammenspiel steht in tafel.css. Bewegung nur über transform und opacity. Präfix der Klassen: lc */
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/barlowsemi-600.woff2') format('woff2')}
-@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('../../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
 :root{
   --nacht:#1d2224;--navy:#1d2224;--blau:#3a4045;--papier:#e9ecec;--creme:#dde2e3;--weiss:#f6f8f8;--gold:#d6bb96;--messing:#a3865c;--taupe:#3b4423;--tief:#5f6a6e;--tinte:#1a1f21;
   --linie:rgba(26,31,33,.11);--leise:#5f6a6e;--gruen:#3b4423;--warn:#b7791f;--rot:#9b1d14;--geranie:#c5000f;--kerze:#d6bb96;

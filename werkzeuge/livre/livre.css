@@ -4,10 +4,10 @@
    Talwand und Schiefer als dunkle Flächen mit der Raute der Laube, Papier, Holz als Zeichnung auf Dunkel, Tanne als Betonung auf Hell, das Rot der
    Fensterläden nur für «passt nicht» und «Entwurf». Barlow Semi Condensed für Titel (nie fett, 600), Instrument Sans, DM Mono. Fotonamen auf Schildern in
    Talwand mit Holz (wie das Hausschild am Giebel). Bewegung nur über transform. Vorsatz li-. */
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/barlowsemi-600.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('../../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
 @font-face{font-family:'Barlow Ersatz';src:local('Arial Bold'),local('Arial-BoldMT'),local('Arial');size-adjust:82.5%;ascent-override:120%;descent-override:24%;line-gap-override:0%}
 :root{--nacht:#1d2224;--tief:#14181a;--blau:#2c3136;--karte:#262b2f;--stahl:#3b4423;--hellgold:#d6bb96;--gold:#a3865c;--papier:#e9ecec;--leinen:#c7cfd3;--blatt:#f6f8f8;--tinte:#1a1f21;--schiefer:#2c3136;--laden:#c5000f;
   --titel:'Barlow Semi','Barlow Ersatz','DIN Alternate','Arial Narrow',sans-serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;

@@ -1,12 +1,12 @@
 /* Anleitung zum Schreibtisch · Berghotel Gasterntal (17.10.2026). Aufbau wie die Anleitung des Grand Beau-Rivage über die des Waldhotels Doldenhorn,
    eigenständig und im Kleid des Gasterntal: Barlow Semi Condensed, Talwand mit den Rauten der Laube, Papier aus der Kander, helles Balkonholz
    (Farben übersetzt mit _werkzeuge/bureau/werkzeug/kleid.py). Bewegung nur über transform und opacity. */
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/barlowsemi-600.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/barlowsemi-700.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('../../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:700;font-display:swap;src:url('../../assets/fonts/barlowsemi-700.woff2') format('woff2')}
 @font-face{font-family:'Barlow Ersatz';src:local('Arial Bold'),local('Arial-BoldMT'),local('Arial');size-adjust:82.5%;ascent-override:120%;descent-override:24%;line-gap-override:0%}
-@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('../../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
 :root{
   --navy:#1d2224;--nacht:#1d2224;--tief:#0d1011;--blau:#2c3136;--tinte:#1a1f21;--papier:#e9ecec;--creme:#dde1e1;--weiss:#f6f8f8;
   --gold:#d6bb96;--messing:#a68b66;--taupe:#3b4423;--taupe-tief:#485056;

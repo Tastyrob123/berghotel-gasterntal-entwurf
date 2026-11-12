@@ -35,9 +35,9 @@ body.frei [data-n] [data-k]{cursor:text}
 .rub[data-gal],.g-k[data-gal],.hin[data-gal]{justify-content:var(--gai)!important}
 .rub[data-gal] .rub-u{flex:none}
 [data-gz],[data-gz] *{line-height:var(--gz)!important}
-@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:400;src:url('/assets/fonts/montserrat-400-latin.woff2') format('woff2')}
-@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:500;src:url('/assets/fonts/montserrat-500-latin.woff2') format('woff2')}
-@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:600;src:url('/assets/fonts/montserrat-600-latin.woff2') format('woff2')}
+@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:400;src:url('../../assets/fonts/montserrat-400-latin.woff2') format('woff2')}
+@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:500;src:url('../../assets/fonts/montserrat-500-latin.woff2') format('woff2')}
+@font-face{font-family:'Montserrat CE';font-style:normal;font-weight:600;src:url('../../assets/fonts/montserrat-600-latin.woff2') format('woff2')}
 /* ---------------------------------------------------------------- Anordnen (nur Vorschau): Rahmen und Griffe wie in L’Imprimerie, Gold, Hilfslinien rot */
 body.anr-an #seiten [data-n]{cursor:move}
 body.anr-an #seiten [contenteditable="true"]{cursor:text;outline:2px solid #a3865c;background:rgba(214,187,150,.28)}

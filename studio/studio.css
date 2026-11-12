@@ -1,9 +1,9 @@
 /* Studio · Berghotel Gasterntal. Farben, Schriften und Knöpfe wie auf der Seite (Farbwelt «Tal»: Talwand, helles Holz, Rot der Läden als Punkt).
    Bewegung nur über transform und opacity. Aufbau wie das Studio der Salt-&-Silver-Seite. */
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/barlowsemi-600.woff2') format('woff2')}
-@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/barlowsemi-500.woff2') format('woff2')}
-@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
 :root{
   --grund:#1d2224; --zwei:#2c3136; --tief:#14181a; --karte:#262b2f; --tanne:#3b4423; --holz:#d6bb96; --papier:#e9ecec; --kander:#c7cfd3; --blatt:#f6f8f8; --tinte:#1a1f21; --laden:#c5000f;
   --linie:rgba(26,31,33,.12); --leise:#5f6a6e; --ok:#3b4423; --warn:#b8862a;

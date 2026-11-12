@@ -14,8 +14,8 @@
   --wo-punkt:#a33a2a; --wo-gut:#2f6b4f;
   --wo-titel:'Titel DH',Georgia,serif; --wo-titel-g:400; --wo-titel-ls:-.008em;
   --wo-r1:38px; --wo-r2:30px; --wo-r3:18px; --wo-rk:999px;
-  --wo-tapete:linear-gradient(rgba(13,22,33,.72),rgba(13,22,33,.72)),url('/assets/img/tapete-gold-055.png') 0 0/150px 170px;
-  --wo-tapete-fein:url('/assets/img/tapete-gold-055.png') 0 0/150px 170px;
+  --wo-tapete:linear-gradient(rgba(13,22,33,.72),rgba(13,22,33,.72)),url('/berghotel-gasterntal-entwurf/assets/img/tapete-gold-055.png') 0 0/150px 170px;
+  --wo-tapete-fein:url('/berghotel-gasterntal-entwurf/assets/img/tapete-gold-055.png') 0 0/150px 170px;
 }
 
 /* ================= Waldhotel Doldenhorn · Wald, Nacht, Nebel ================= */

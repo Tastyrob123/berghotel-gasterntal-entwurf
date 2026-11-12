@@ -6,7 +6,7 @@
   'use strict';
   var KARTE = window.__DEMO_KARTE || {}, WEGE = window.__DEMO_WEGE || [], WEGE_RE = (window.__DEMO_WEGE_RE || []).map(function (w) { return [new RegExp(w[0]), w[1]]; }), LS = null;
   try { LS = window.localStorage; } catch (e) {}
-  var ORIGIN = location.origin, BASE = ORIGIN + '/';
+  var ORIGIN = location.origin, WURZEL_ = window.__W || '/', BASE = ORIGIN + WURZEL_;
   var FLUECHTIG = /^(t|_|cb|ts|zeit|nocache|r|rnd|stamp)$/;
   function sauber(search) {                                 // Zeitstempel-Parameter fallen weg, Rest sortiert
     if (!search || search === '?') return '';
@@ -24,9 +24,10 @@
     try {
       var u = new URL(p, document.baseURI || location.href);
       if (u.origin !== ORIGIN) return null;
-      if (/^\/(besuch|verweil)\.js$/.test(u.pathname)) return null;
-      var roh = u.pathname.replace(/^\//, '');
-      var pfad = umbiegen(u.pathname).replace(/^\//, '');
+      var pn = u.pathname; if (WURZEL_ !== '/' && pn.indexOf(WURZEL_) === 0) pn = '/' + pn.slice(WURZEL_.length);
+      if (/^\/(besuch|verweil)\.js$/.test(pn)) return null;
+      var roh = pn.replace(/^\//, '');
+      var pfad = umbiegen(pn).replace(/^\//, '');
       return { weg: roh + sauber(u.search), nur: roh, ziel: pfad, zweg: pfad + sauber(u.search), suche: u.search, hash: u.hash };
     } catch (e) { return null; }
   }

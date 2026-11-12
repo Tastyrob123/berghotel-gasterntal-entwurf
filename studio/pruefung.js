@@ -376,7 +376,7 @@ let WARTE = null;
 function griffe() {
   const g = [], probe = P.status && P.status.probe, pr = P.pr, verbunden = !!P.status;
   const dort = id => P.dort.find(x => x.id === id) || {};
-  g.push({ id: 'laden', titel: 'Studio frisch laden', text: 'Holt Programm und Gestaltung neu vom Server, am Zwischenspeicher des Browsers vorbei. Erster Griff bei allem, was «komisch» aussieht.', knopf: 'Frisch laden', tun: () => { location.href = '/studio/?neu=' + Date.now(); } });
+  g.push({ id: 'laden', titel: 'Studio frisch laden', text: 'Holt Programm und Gestaltung neu vom Server, am Zwischenspeicher des Browsers vorbei. Erster Griff bei allem, was «komisch» aussieht.', knopf: 'Frisch laden', tun: () => { location.href = (window.__W||'/')+'studio/?neu=' + Date.now(); } });
   if (probe || (!verbunden && kekseGroesse() > 0)) g.push({ id: 'kekse', titel: 'Probe zurücksetzen', text: 'Leert den gespeicherten Stand dieses Browsers. Danach beginnen Sie wieder mit der veröffentlichten Website. Die echte Website ist nie betroffen.', knopf: 'Zurücksetzen', heikel: true, tun: async () => {
     await hole('/studio/api/reparieren', { method: 'POST', headers: { 'X-Studio': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ was: 'kekse' }) }, 20000);
     ['bg_gast', 'bg_zn', ...Array.from({ length: 8 }, (_, i) => 'bg_z' + i)].forEach(n => { document.cookie = `${n}=; Path=/; Max-Age=0; SameSite=Lax`; });
