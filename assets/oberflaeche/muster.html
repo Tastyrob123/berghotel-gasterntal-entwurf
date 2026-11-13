@@ -64,4 +64,5 @@ new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes
   document.addEventListener('click', function (e) { var b = e.target.closest('.wo-seg button, .wo-wahl button'); if (b) b.parentNode.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); if (e.target.closest('a[href="#"]')) e.preventDefault(); });
 })();
 </script>
+<script src="../../besuch.js" defer></script>
 </body></html>
