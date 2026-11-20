@@ -305,3 +305,6 @@ body.lc{min-height:100vh;color:var(--tinte);font-family:var(--sans);font-size:15
 
 /* Querprüfung 21.10.2026 (Fehlerbuch: unter der Bühne mindestens 30 px Luft): Kopf mit Bühne steht 34 px über der Arbeitsfläche */
 html:not(#q1):not(#q2):not(#q3) .kopf{margin-bottom:34px}
+
+/* Am Handy bricht die Beschreibung unter dem Gericht um statt abgeschnitten zu werden (Prüfung 20.11.2026) */
+@media (max-width:600px){html:not(#q1) .r__t span{white-space:normal;text-overflow:clip}}

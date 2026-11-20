@@ -382,3 +382,6 @@ body.li-zu{overflow:hidden}
 .li-farben{max-width:100%}
 /* die Kacheln schweben mit 1,04 herein und ragten vor dem Auftritt seitlich hinaus: die Seite schneidet seitlich ab, statt zu schieben */
 html,body{overflow-x:clip}
+
+/* Die Zierzeile im Startbild bricht um statt «… Kand» abzuschneiden (Prüfung 20.11.2026) */
+html:not(#q1) .li .wo-sb__zier span{white-space:normal;overflow:visible;text-overflow:clip}
