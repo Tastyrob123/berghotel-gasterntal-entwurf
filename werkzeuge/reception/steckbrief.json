@@ -1,0 +1,563 @@
+{
+ "stand": 1792254510.5642474,
+ "bereiche": [
+  {
+   "bereich": "Das Haus",
+   "gruppen": [
+    {
+     "gruppe": "Auf einen Blick",
+     "zeilen": [
+      {
+       "fid": "ebd4b78067",
+       "was": "Adresse",
+       "angabe": "Selden, 3718 Kandersteg",
+       "beleg": "gasterntal@doldenhorn.ch · Selden, 3718 Kandersteg",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "41bfbf8255",
+       "was": "Telefon",
+       "angabe": "033 675 81 81",
+       "beleg": "Reservation unter 033 675 81 81.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7ecea17534",
+       "was": "E-Mail",
+       "angabe": "gasterntal@doldenhorn.ch",
+       "beleg": "Reservation erforderlich Tel 033 675 81 81 oder gasterntal@doldenhorn.ch",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2440fcc729",
+       "was": "Lage",
+       "angabe": "in Selden, hinten im Gasterntal bei Kandersteg",
+       "beleg": "Berghotel Gasterntal in Selden, hinten im Gasterntal bei Kandersteg.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3a3f1a5daf",
+       "was": "Betrieb",
+       "angabe": "ein Betrieb des Waldhotel Doldenhorn und Landgasthof Ruedihus Kandersteg",
+       "beleg": "Ein Betrieb des Waldhotel Doldenhorn und Landgasthof Ruedihus Kandersteg.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c7a1d6b119",
+       "was": "Was es nicht gibt",
+       "angabe": "keinen Fernseher, keine Zentralheizung, nur eingeschränkten Internetempfang",
+       "beleg": "Kein Fernseher, keine Zentralheizung und eingeschränkter Internetempfang, der ideale Ort zum Entschleunigen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "5714c388b3",
+       "was": "Hunde",
+       "angabe": "willkommen («auch Vierbeiner»)",
+       "beleg": "Platz für Vierbeiner«Herzlich willkommen (auch Vierbeiner)»",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Zimmer",
+   "gruppen": [
+    {
+     "gruppe": "Die Zimmer",
+     "zeilen": [
+      {
+       "fid": "f0c7b55b7f",
+       "was": "Art",
+       "angabe": "einfache, heimelige Zimmer; Dusche, WC und Waschgelegenheit auf der Etage oder im Bettenlager",
+       "beleg": "Einfache, heimelige Zimmer, Dusche, WC und Waschgelegenheit auf der Etage oder im Bettenlager.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "8c49aab575",
+       "was": "Heizung",
+       "angabe": "rustikal und ungeheizt",
+       "beleg": "Unsere rustikalen, ungeheizten Zimmer bieten ein authentisches und unvergessliches Erlebnis",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "38a2510563",
+       "was": "Einzelzimmer",
+       "angabe": "Einzelzimmer mit Frühstück; Budget Einzelzimmer im Nebenhaus",
+       "beleg": "Noch offenEinzelzimmer mit FrühstückBudget Einzelzimmer · im Nebenhaus",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "08b9d20f83",
+       "was": "Doppelzimmer",
+       "angabe": "Budget Doppelzimmer, mit Frühstück, mit Kajütenbett, mit privater Dusche und WC",
+       "beleg": "Budget DoppelzimmerDoppelzimmer mit FrühstückDoppelzimmer mit KajüttenbetDoppelzimmer mit privater Dusche und WC",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "28706e7968",
+       "was": "Familienzimmer",
+       "angabe": "mit 4, 6 oder 8 Betten im Nebenhaus",
+       "beleg": "FamilienzimmerMit 4, 6 oder 8 Betten im Nebenhaus",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "a97dcca017",
+       "was": "Buchen",
+       "angabe": "beim Haus anfragen oder über Booking.com",
+       "beleg": "Zimmer anfragenÜber Booking.com buchen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Package",
+     "zeilen": [
+      {
+       "fid": "abc7749934",
+       "was": "Einfach – Luxuriös",
+       "angabe": "1 Nacht im Berghotel Gasterntal und 1 Nacht im Waldhotel Doldenhorn, Frühstück und 2 Nachtessen, Gepäcktransport, Hallenbad und Wellness im Doldenhorn",
+       "beleg": "1 Übernachtung im Berghotel Gasterntal und 1 Übernachtung im Waldhotel Doldenhorn, Frühstück und 2 Nachtessen, gratis Gepäcktransport, Benutzung Hallenbad und Wellness im Waldhotel Doldenhorn",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Essen & Trinken",
+   "gruppen": [
+    {
+     "gruppe": "Die Küche",
+     "zeilen": [
+      {
+       "fid": "fe1c85e393",
+       "was": "Küche",
+       "angabe": "lokal, naturnah, von Grossmutters Küche inspiriert, schweizerische Gerichte",
+       "beleg": "Unsere Küche ist lokal, naturnah und von Grossmutters Küche inspiriert, mit schweizerischen Gerichten",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "86cd5b8004",
+       "was": "Produkte",
+       "angabe": "wenn immer möglich naturgerecht, direkt vom Produzenten",
+       "beleg": "Unsere Devise, wenn immer möglich, nur naturgerechte Produkte, direkt vom Produzenten",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "93129db262",
+       "was": "Herkunft",
+       "angabe": "Hobelkäse aus Kandersteg, Kaffee aus Adelboden, Wild und Geflügel aus der Schweiz",
+       "beleg": "Hobelkäse aus Kandersteg",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Vogelisi- Kaffee us Adelboden",
+        "Das frische Wild kommt aus der Schweiz",
+        "Geflügel aus der Schweiz"
+       ]
+      },
+      {
+       "fid": "47a6ffe433",
+       "was": "Fondue",
+       "angabe": "Friburger Chäsefondue und Tomatefondue, ab 2 Personen",
+       "beleg": "Gäng guetab 2 Personen",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Friburger Chäsefondue",
+        "Tomatefondue"
+       ]
+      },
+      {
+       "fid": "adb99cc1c7",
+       "was": "Vegan",
+       "angabe": "Linseneintopf",
+       "beleg": "Ohni tierische Produkt (Vegan) Linseneintopf",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1a28c06ab0",
+       "was": "Allergene",
+       "angabe": "die Mitarbeiter informieren über allergene Zutaten",
+       "beleg": "Unsere Mitarbeiter informieren Sie gerne über Allergene Zutaten",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "d5b591cb86",
+       "was": "Jugendschutz",
+       "angabe": "Wein, Bier und Apfelwein ab 16 Jahren, Spirituosen und Aperitifs ab 18",
+       "beleg": "Wein, Bier und Apfelwein geben wir ausschließlich an Personen ab 16 Jahren ab.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Spirituosen, Aperitifs und Alcopops erhalten ausschließlich Personen ab 18 Jahren."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Sauna",
+   "gruppen": [
+    {
+     "gruppe": "Sauna in der alten Käserei",
+     "zeilen": [
+      {
+       "fid": "ac74c8c141",
+       "was": "Wo",
+       "angabe": "in der alten Käserei, mit Holz eingeheizt",
+       "beleg": "Unsere Sauna in der alten Käserei wird traditionell mit Holz eingeheizt",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "157d6e2b1f",
+       "was": "Dauer",
+       "angabe": "90 Minuten",
+       "beleg": "90 Minuten Wärme, Ruhe und Natur",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3316ece2a3",
+       "was": "Personen",
+       "angabe": "pauschal, egal ob für 1, 2 oder 4 Personen",
+       "beleg": "der Preis gilt pauschal - egal ob für 1, 2 oder 4 Personen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3366e69e19",
+       "was": "Reservation",
+       "angabe": "mindestens 2 Stunden im Voraus",
+       "beleg": "Reservation mindestens 2 Stunden im Voraus erforderlich.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b4b8532c7e",
+       "was": "Abkühlung",
+       "angabe": "draussen in der freien Natur",
+       "beleg": "Nach dem Saunagang geht es hinaus in die freie Natur",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Luxus-Picknick",
+   "gruppen": [
+    {
+     "gruppe": "Picknick",
+     "zeilen": [
+      {
+       "fid": "1804244095",
+       "was": "Was",
+       "angabe": "ein Picknick inmitten der Natur, das Haus stellt es zusammen",
+       "beleg": "Das Picknick stellt das Haus für Sie zusammen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "564617e533",
+       "was": "Bestellung",
+       "angabe": "per Mail oder Telefon 033 675 81 81",
+       "beleg": "Auskunft und Bestellung per Mail oder Telefon: 033 675 81 81 · gasterntal@doldenhorn.ch",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7d2d0a6b07",
+       "was": "Inhalt und Preis",
+       "angabe": "sagt das Haus auf Anfrage",
+       "beleg": "Es meldet sich mit dem, was es Ihnen richtet, und mit dem Preis.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Feste & Gruppen",
+   "gruppen": [
+    {
+     "gruppe": "Feste",
+     "zeilen": [
+      {
+       "fid": "83339bd590",
+       "was": "Platz",
+       "angabe": "bis 80 Personen, 50 mit Übernachtung",
+       "beleg": "Mit Platz für bis zu 80 Personen (50 inkl. Übernachtung)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "80d87a8871",
+       "was": "Anlässe",
+       "angabe": "Hochzeit, Geburtstagsfeier, Firmenveranstaltung",
+       "beleg": "können wir Ihre Hochzeit, Geburtstagsfeier oder Firmenveranstaltung ausrichten",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "12393aef31",
+       "was": "Drinnen oder draussen",
+       "angabe": "eine Feier im Innenbereich oder im Freien",
+       "beleg": "Ob Sie eine intime Feier im Innenbereich planen oder lieber im Freien feiern möchten",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4dec5d279c",
+       "was": "Hochzeitsflyer",
+       "angabe": "als PDF auf der Seite Feste und Gruppen",
+       "beleg": "Hochzeitsflyer als PDF",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Das Hotel exklusiv",
+     "zeilen": [
+      {
+       "fid": "04f494ea5b",
+       "was": "Exklusiv mieten",
+       "angabe": "das ganze Hotel für eine Gruppe",
+       "beleg": "Sie können das ganze Hotel exklusiv für sich und Ihre Gruppe buchen!",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c2b4e9300c",
+       "was": "Betten",
+       "angabe": "Zimmer für 20 Personen, Bettenlager für höchstens 30",
+       "beleg": "Wir bieten Zimmer für 20 Personen und ein Bettenlager für maximal 30 Personen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Saison & Öffnungszeiten",
+   "gruppen": [
+    {
+     "gruppe": "Offen",
+     "zeilen": [
+      {
+       "fid": "d70f52301e",
+       "was": "Restaurant",
+       "angabe": "Dienstag bis Sonntag 11:00 bis 20:00; Montag je nach Wetter und Saison",
+       "beleg": "Di–So 11:00 – 20:00. Montags: Je nach Wetter und Saison.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b1c533559d",
+       "was": "Warme Küche",
+       "angabe": "bis 20:30",
+       "beleg": "Warme Speisen bis 20:30",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "aa6054b609",
+       "was": "Saisonschluss 2026",
+       "angabe": "25.10.2026",
+       "beleg": "Saisonschluss 2026: 25.10.2026.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "bfbed19661",
+       "was": "Eröffnung 2027",
+       "angabe": "13.05.2027, falls das Wetter mitspielt",
+       "beleg": "Eröffnung 2027: 13.05.2027 (falls das Wetter mitspielt).",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7282cc9964",
+       "was": "Das Tal im Winter",
+       "angabe": "etwa vom 15. November bis 15. Mai geschlossen, Zufahrt nicht befahrbar",
+       "beleg": "Das Gasterntal ist jeweils ca. vom 15. November bis 15. Mai geschlossen und die Zufahrtstrasse nicht befahrbar.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Anreise & Abreise",
+   "gruppen": [
+    {
+     "gruppe": "Mit dem Auto",
+     "zeilen": [
+      {
+       "fid": "3b5aca5fb3",
+       "was": "Zufahrt",
+       "angabe": "Naturstrasse (14 km) ab Kandersteg, mit dem Auto (gebührenpflichtig) oder mit dem öffentlichen Verkehr",
+       "beleg": "Sie erreichen uns über eine Naturstrasse (14 km) von Kandersteg mit dem Auto (gebührenpflichtig) oder mit dem öffentlichen Verkehr.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "de042e8d9a",
+       "was": "Bewilligung",
+       "angabe": "an der Frontscheibe, gilt für Hin- und Rückfahrt, im Haus erhältlich",
+       "beleg": "Die Bewilligung muss an der Frontscheibe ihres Autos angebracht werden.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Die Bewilligung an der Frontscheibe gilt für die Hin- und Rückfahrt.",
+        "Falls nicht können Sie diese bei uns erwerben."
+       ]
+      },
+      {
+       "fid": "3a22247883",
+       "was": "Chluse",
+       "angabe": "Taktfahrplan, Kreuzen nicht möglich; hinauf Viertel vor bis fünf nach, hinunter Viertel nach bis fünf nach halb",
+       "beleg": "Von Viertel vor bis fünf nach darf hochgefahren werden und von Viertel nach bis fünf nach halb darf runtergefahren werden.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "dbcf7940cc",
+       "was": "Losfahren am Hotel",
+       "angabe": "zwischen fünf und zehn nach der vollen Stunde",
+       "beleg": "Am besten fahren Sie am Hotel zwischen fünf und zehn nach der vollen Stunde los.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b309e78cd2",
+       "was": "Gewitter",
+       "angabe": "bei Gewitter oder Starkregen ist die Zufahrt gesperrt, Stunden bis Tage",
+       "beleg": "Bei Gewitter oder Starkregen wird die Zufahrtsstrasse aus Sicherheitsgründen vollständig gesperrt.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Ohne Auto",
+     "zeilen": [
+      {
+       "fid": "f49830dbc5",
+       "was": "Gasternbus",
+       "angabe": "Juni bis Oktober ab Bahnhof Kandersteg bis Selden, Reservation obligatorisch, nur per Telefon 033 671 11 72",
+       "beleg": "Von Juni bis Oktober gibt es einen Busbetrieb von Kandersteg Bahnhof bis Gasterntal Selden.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "nur per Telefon 033 671 11 72"
+       ]
+      },
+      {
+       "fid": "0058e91350",
+       "was": "Billett",
+       "angabe": "GA, Halbtax und Gästekarte gelten nicht",
+       "beleg": "GA/Halbtax/Gästekarte ist nicht gültig.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1013d23155",
+       "was": "Nach dem Bus",
+       "angabe": "ab 5. Oktober organisiert das Haus einen Transport ab Kandersteg, Reservation 033 675 81 81",
+       "beleg": "Ab 5. Oktober verkehrt der Gasternbus nicht mehr.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "kann ein Transport von Kandersteg organisiert werden. Reservation unter 033 675 81 81."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Das Tal & Ausflüge",
+   "gruppen": [
+    {
+     "gruppe": "Rund um Selden",
+     "zeilen": [
+      {
+       "fid": "1c3a2fdf38",
+       "was": "Welterbe",
+       "angabe": "mitten im UNESCO-Weltnaturerbe",
+       "beleg": "Erkunden Sie die Umgebung – in Mitten eines UNESCO Weltnaturerbes.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "71b11ee6d4",
+       "was": "Heimritz",
+       "angabe": "25 Minuten zu Fuss",
+       "beleg": "Heimritz25 Min. zu Fuss",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "74715d90bb",
+       "was": "Kanderfirn",
+       "angabe": "Rundweg 4 Std. 30, 10 km, unterwegs keine Einkehr",
+       "beleg": "Rundweg4 Std. 30",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Strecke10 km",
+        "Unterwegs gibt es keine Einkehr."
+       ]
+      },
+      {
+       "fid": "ac42b509d2",
+       "was": "Lötschenpass",
+       "angabe": "Hütte auf 2690 m, der Weg beginnt an der Hängebrücke in Selden",
+       "beleg": "Hütte auf 2690 m, Übergang ins Wallis",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Der Weg beginnt an der Hängebrücke in Selden"
+       ]
+      },
+      {
+       "fid": "e730317b5b",
+       "was": "Waldhaus",
+       "angabe": "1 Std. 40 zu Fuss",
+       "beleg": "Zu Fuss1 Std. 40",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "e0a49e699b",
+       "was": "Bergwege",
+       "angabe": "nur mit guten Schuhen und bei sicherem Wetter",
+       "beleg": "Bergwege nur mit guten Schuhen und bei sicherem Wetter.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

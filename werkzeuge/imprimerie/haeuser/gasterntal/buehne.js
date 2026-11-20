@@ -1,5 +1,5 @@
-/* L’Imprimerie des Berghotel Gasterntal: Bühne über jeder Ansicht und Knopf zurück zu La Maison (Robert 15.10.2026).
-   «Heroes richtig schön, geil, luxuriös, edel», Vorbild Le Bureau der Häuser: blaue Tafel mit Tapete, Goldrahmen innen,
+/* Drucksachen & Feed des Berghotel Gasterntal: Bühne über jeder Ansicht und Knopf zurück zu «Kontrollpanel» (Robert 15.10.2026).
+   «Heroes richtig schön, geil, luxuriös, edel», Vorbild Website bearbeiten der Häuser: blaue Tafel mit Tapete, Goldrahmen innen,
    Foto des Hauses rechts mit weichem Übergang, Titel links. Gleiche Sprache wie Grand Beau-Rivage/website/studio/buehne.js.
    «In allen Tools zurück in die Maison kommen» → runder Knopf mit Haus in beiden Kopfzeilen.
    Nur für dieses Haus geladen (index.html, HAUS_STIL). Entfernen = vorheriger Stand. */
@@ -8,7 +8,7 @@
   /* Foto je Ansicht (1200 px, haeuser/gasterntal/kopf/, gebaut von bau.py) */
   var FOTO = { msStart: 'haus-profil', msEvents: 'fest-tafel', msAbteilungen: 'haus-eingang', msHinweise: 'chluse', msNewsletter: 'haus-giebel',
     msFotos: 'tal-blick', msMarke: 'haus-pano', msLivre: 'd-bilder', msMeine: 'stube', msFreigegeben: 'stube-tische', msNeu: 'kaeserei', weg: 'haus-rueck', entwuerfe: 'e-tafel' };
-  /* Die Stube (La Maison) des Gasterntal: lokal /_werkzeuge/maison/ auf dem Server des Hauses (:8918), online /maison/ (_werkzeuge/maison/online.json) */
+  /* Kontrollpanel des Gasterntal: lokal /_werkzeuge/maison/ auf dem Server des Hauses (:8918), online /maison/ (_werkzeuge/maison/online.json) */
   var MAISON = location.port === '8975' ? 'http://localhost:8918/_werkzeuge/maison/' : /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';
   /* R05: die Website des Hauses (lokal auf dem Server des Hauses, online dieselbe Adresse) */
   var WEBSITE = location.port === '8975' ? 'http://localhost:8918/' : '/';
@@ -57,7 +57,7 @@
   }
   function knopf(cls) {
     var a = document.createElement('a'); a.className = 'rund ' + cls; a.href = MAISON;
-    a.setAttribute('aria-label', 'Zurück zur Stube'); a.setAttribute('data-tip', 'Die Stube'); a.innerHTML = HAUS;
+    a.setAttribute('aria-label', 'Zurück zu «Kontrollpanel»'); a.setAttribute('data-tip', 'Kontrollpanel'); a.innerHTML = HAUS;
     return a;
   }
   function maison() {

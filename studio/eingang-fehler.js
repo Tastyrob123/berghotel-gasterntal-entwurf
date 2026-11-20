@@ -1,5 +1,5 @@
-/* Weiter zum Gastgeber (17.10.2026, Vorlage Waldhotel Doldenhorn studio/eingang-fehler.js): Der Eingang ist im Gastgeber (La Réception) aufgegangen,
-   dieselben Anfragen über /api/anfragen, dazu Brief, Chat, Wissen. Antwortet der Gastgeber unter dieser Adresse (lokal /_werkzeuge/reception/, online
+/* Weiter zu «Anfragen & Chat» (17.10.2026, Vorlage Waldhotel Doldenhorn studio/eingang-fehler.js): Der Eingang ist in «Anfragen & Chat» aufgegangen,
+   dieselben Anfragen über /api/anfragen, dazu Brief, Chat, Wissen. Antwortet «Anfragen & Chat» unter dieser Adresse (lokal /_werkzeuge/reception/, online
    /werkzeuge/reception/), geht es dorthin zum Eingang. Antwortet er nicht (z. B. am Hausserver :8918 oder bevor er online ist), bleibt dieser Eingang wie
    bisher: keine Anfrage geht verloren. ?bleiben zeigt immer diesen Eingang. Die Seite bleibt bis zur Entscheidung ruhig (höchstens 1,6 s); die Stile laden
    erst, wenn dieser Eingang bleibt (sonst bricht die Weiterleitung ihre Downloads ab, Firefox meldet das als Fehler). */

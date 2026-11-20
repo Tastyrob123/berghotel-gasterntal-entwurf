@@ -1,0 +1,30 @@
+--- inhalt.py
++++ inhalt.py (mit der Tafel)
+@@ -282,10 +282,26 @@
+ REG['karte'] = KARTE_STANDARD
+ 
+ 
++_TAFEL = []
++
++
++def _die_tafel(reihe):
++    """Die Tafel (La Carte, Werkzeug, 17.10.2026): von der Tafel veröffentlichte Zeilen der Karte 2026 (_werkzeuge/carte/web.py zeilen()).
++    Ohne Veröffentlichung mit Anschluss None: dann gilt daten.py wie bisher."""
++    try:   # nach Pfad geladen, nicht über sys.path (Falle F10: gleichnamige Module)
++        if not _TAFEL:
++            import importlib.util as _iu
++            _sp = _iu.spec_from_file_location('die_tafel_web', os.path.join(ROOT, '_werkzeuge', 'carte', 'web.py'))
++            _m = _iu.module_from_spec(_sp); _sp.loader.exec_module(_m); _TAFEL.append(_m)
++        return _TAFEL[0].zeilen(reihe, None)
++    except (ImportError, OSError, AttributeError, SyntaxError):
++        return None
++
++
+ def karte_roh(reihe):
+     """Die geltenden Rubriken einer Reihe (speisen · getraenke), ausgeblendete schon weg."""
+     cur = C['karte'].get(reihe)
+-    rub = cur if isinstance(cur, list) else KARTE_STANDARD[reihe]
++    rub = cur if isinstance(cur, list) else (_die_tafel(reihe) or KARTE_STANDARD[reihe])
+     return [(gi, r) for gi, r in enumerate(rub) if not r.get('aus') and str(r.get('t') or '').strip()]
+ 
+ 

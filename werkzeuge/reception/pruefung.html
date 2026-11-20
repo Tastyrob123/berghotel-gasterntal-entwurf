@@ -38,7 +38,7 @@ body{margin:0;font:15px/1.6 var(--sans);color:var(--tinte);background:linear-gra
 .kopf{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px clamp(16px,4vw,56px);color:var(--weiss);background:linear-gradient(rgba(29,34,36,.5),rgba(29,34,36,.5)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='92'%3E%3Cg fill='%23d6bb96' fill-opacity='.09'%3E%3Cpath d='M22 14 30 46 22 78 14 46z'/%3E%3Ccircle cx='22' cy='6' r='3'/%3E%3Ccircle cx='22' cy='86' r='3'/%3E%3C/g%3E%3C/svg%3E") 50% 0/44px 92px,var(--navy);box-shadow:0 0 0 1px rgba(214,187,150,.35)}
 .kopf img{width:58px;height:auto}
 .kopf b{display:block;font:400 22px/1.1 var(--serif)}
-.kopf small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.kopf small{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .kopf .re{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
 .kn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 18px;border:0;border-radius:999px;font:500 13px var(--sans);text-decoration:none;cursor:pointer;color:var(--nacht);background:linear-gradient(180deg,#e1ceb4,#a3865c);box-shadow:0 8px 18px -10px rgba(20,24,26,.6)}
 .kn--linie{color:var(--weiss);background:transparent;box-shadow:inset 0 0 0 1px rgba(214,187,150,.5)}
@@ -53,12 +53,12 @@ h2{font:400 26px/1.2 var(--serif);color:var(--navy);margin:38px 0 12px}
 .z.gelb i{background:var(--gelb)}.z.rot i{background:var(--rot)}
 .z b{font-weight:500}
 .z span{color:#4a453f;overflow-wrap:anywhere}
-.z a{font-size:12px;color:var(--taupe)}
-.gr{font:600 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--taupe);padding:14px 18px 4px;background:rgba(230,215,193,.35)}
+.z a{font-size:13px;color:var(--taupe)}
+.gr{font:600 13px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--taupe);padding:14px 18px 4px;background:rgba(230,215,193,.35)}
 .lex{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 .lex article{padding:16px 18px;background:var(--weiss);border-radius:14px;box-shadow:0 0 0 1px rgba(95,106,110,.25);scroll-margin-top:20px}
 .lex article:target{box-shadow:0 0 0 2px var(--messing),0 16px 30px -18px rgba(20,24,26,.5)}
-.lex h3{margin:0 0 6px;font:600 12px var(--sans);letter-spacing:.16em;color:var(--navy)}
+.lex h3{margin:0 0 6px;font:600 13px var(--sans);letter-spacing:.16em;color:var(--navy)}
 .lex p{margin:4px 0;font-size:14px}.lex p b{font-weight:600;color:var(--taupe)}
 .fl{margin:0;padding:0;list-style:none}
 .fl li{padding:10px 18px;border-top:1px solid rgba(95,106,110,.18);font-size:13px;overflow-wrap:anywhere}
@@ -71,7 +71,7 @@ h2{font:400 26px/1.2 var(--serif);color:var(--navy);margin:38px 0 12px}
 @media (max-width:640px){.z{grid-template-columns:12px minmax(0,1fr);row-gap:2px}.z span,.z a{grid-column:2}.kopf .re{margin-left:0}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-<link rel="stylesheet" href="../../werkbank/auftritte.css?v=cbb2007c87">
+<link rel="stylesheet" href="../../werkbank/auftritte.css?v=d98cffe582">
 </head>
 <body>
 <header class="kopf">
@@ -92,15 +92,14 @@ h2{font:400 26px/1.2 var(--serif);color:var(--navy);margin:38px 0 12px}
   <div class="rep">
     <button class="kn" type="button" data-rep="fehler">Fehlerliste leeren</button>
     <button class="kn" type="button" data-rep="geraet">Ansicht und Namen in diesem Browser zurücksetzen</button>
-    <a class="kn" href="api/export" download="gastgeber-berghotel-gasterntal.zip">Alle Daten herunterladen</a>
+    <a class="kn" href="api/export" download>Alle Daten herunterladen</a>
   </div>
 
   <h2>Lexikon</h2>
   <p class="satz">Jede Meldung des Gastgebers beginnt mit einem Stichwort. «Was tun?» in der Meldung führt hierher.</p>
   <div class="lex" id="lex"></div>
 </main>
-<script src="pruefung.js?v=97f573c072"></script>
-<script src="../../werkbank/auftritte.js?v=8f2db02292" data-alles></script>
-<script src="../../besuch.js" defer></script>
-</body>
+<script src="pruefung.js?v=4"></script>
+<script src="../../werkbank/auftritte.js?v=d98cffe582" data-alles></script>
+<script src="../../besuch.js" defer></script></body>
 </html>

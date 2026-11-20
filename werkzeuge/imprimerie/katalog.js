@@ -1,4 +1,4 @@
-/* L’Imprimerie (Die Werkstatt) · Berghotel Gasterntal · Katalog des Hauses. GESCHRIEBEN VON _qa/vorlagen_gasterntal.py, nicht von Hand ändern.
+/* Drucksachen & Feed · Berghotel Gasterntal · Katalog des Hauses. GESCHRIEBEN VON _qa/vorlagen_gasterntal.py, nicht von Hand ändern.
    Fertig gesetzte Vorlagen nur aus dem Betrieb dieses Hauses (Website, Karte 2026, Willkommensschreiben, daten.py), jede öffnet ohne KI und ohne Kosten.
    Jeder Satz, jede Uhrzeit, jede Telefonnummer ist gegen api/_daten/gasterntal-wissen.txt geprüft. Keine Preise. Was das Haus pro Fall einträgt, steht in [eckigen Klammern]. */
 (function () {

@@ -1,4 +1,4 @@
-/* Der Schreibtisch (Le Bureau) · Berghotel Gasterntal (17.10.2026). Nachbau von Le Bureau des Grand Beau-Rivage (studio/studio.js v25 dort, lokale Fassung,
+/* Website bearbeiten · Berghotel Gasterntal (17.10.2026). Nachbau von «Website bearbeiten» des Grand Beau-Rivage (studio/studio.js v25 dort, lokale Fassung,
    nur gelesen) über die Fassungen des Waldhotels Doldenhorn und des Landgasthofs Ruedihus (gleicher Tag, nur gelesen): jede Funktion und jeder Handgriff
    gleich, dazu die Zusätze des Carlton-Europe (zwei Fenster, Grösse im Browser, kleine Handys). Das Kleid ist das des Gasterntal (bureau.css, Startbild
    startbild.css). Server-Teil: studio_bureau.py (Wege /studio/api/b/…) über studio.py. Was nur das Gasterntal hat (Saison und Takt der Chluse, Zimmer und
@@ -17,9 +17,9 @@ const SPRW = { en: 'English', fr: 'Français', it: 'Italiano' };
 const SPR = () => [['', 'Deutsch']].concat(((S.ue && S.ue.sprachen) || []).map(k => [k, SPRW[k] || k]));   // die Website hat zurzeit nur Deutsch
 const ZAHLWORT = { 1: 'Eine', 2: 'Zwei', 3: 'Drei', 4: 'Vier', 5: 'Fünf', 6: 'Sechs', 7: 'Sieben', 8: 'Acht' };
 const WEG = k => (S.ue && S.ue.wege && S.ue.wege[k]) || { website: '/', pruefung: '/studio/pruefung.html', anleitung: '/studio/anleitung/', eingang: '/studio/eingang.html' }[k] || '';
-const CARTE = () => WEG('carte');   // Die Tafel (La Carte) des Hauses: Adresse aus dem Server (anschluss.json), nie geraten
+const CARTE = () => WEG('carte');   // Karten & Preislisten des Hauses: Adresse aus dem Server (anschluss.json), nie geraten
 /* Namen der Werkzeuge in der Welt Landhaus (_Werkzeuge/stamm/welt.js, haeuser/gasterntal/haus.json welt=land). Ändern: hier und in studio_bureau.py NAME. */
-const NB = 'Der Schreibtisch', NM = 'Die Stube', NC = 'Die Tafel';
+const NB = 'Website bearbeiten', NM = 'Kontrollpanel', NC = 'Karten & Preislisten';
 /* Listen des Hauses und die frühere Ansicht, in der sie gepflegt werden (alt.html, studio/studio.js LISTEN) */
 const LV = { zimmerarten: 'zimmer', zimmer: 'zimmer', exklusiv: 'zimmer', package: 'zimmer', sauna: 'zimmer', nicht: 'hausS', dafuer: 'hausS', etappen: 'hausS', produzenten: 'hausS', haeuser: 'hausS' };   // übrige Listen (Der Weg hinunter, Das Tal) einzeln: liste/<Schlüssel>
 /* Listen des Hauses je Bereich: stehen im Reiter «Listen» des Bereichs, bearbeitet in der eingebetteten Ansicht des früheren Studios (alt.html) */
@@ -35,7 +35,7 @@ async function api(was, daten) {
   try {
     r = await fetch('/studio/api/b/' + was, daten === undefined ? { cache: 'no-store', credentials: 'same-origin' } : { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json', 'X-Studio': '1' }, body: JSON.stringify(daten) });
   } catch (e) {
-    throw new Error('VERBINDUNG · Keine Verbindung zum Schreibtisch. Ihre Eingaben sind noch da: Verbindung prüfen und noch einmal speichern.');
+    throw new Error('VERBINDUNG · Keine Verbindung zu «Website bearbeiten». Ihre Eingaben sind noch da: Verbindung prüfen und noch einmal speichern.');
   }
   let d = {};
   try { d = await r.json(); } catch (e) { throw new Error('SERVER · Antwort nicht lesbar (' + r.status + ').'); }
@@ -201,13 +201,13 @@ const IC = {
   kalender: '<rect x="2.4" y="3.4" width="11.2" height="10" rx="1.6"/><path d="M2.4 6.6h11.2M5.4 2v2.6M10.6 2v2.6"/><path d="M5.2 9.2h1.4M7.4 9.2h1.4M9.6 9.2h1.4M5.2 11.2h1.4"/>'
 };
 const ic = k => `<svg viewBox="0 0 16 16" aria-hidden="true">${IC[k] || IC.text}</svg>`;
-function kopfLeiste() {   /* Werkzeug-Oberfläche: Kopf aus WO.kopf (Zeichen, die sechs Werkzeuge, Die Stube, Prüfung, Anleitung, Website) */
+function kopfLeiste() {   /* Werkzeug-Oberfläche: Kopf aus WO.kopf (Zeichen, die sechs Werkzeuge, Kontrollpanel, Prüfung, Anleitung, Website) */
   const b = S.ansicht === 'bereich' ? bereich() : null;
   const t = b ? b.name : (TITEL[S.ansicht] || (/^x:liste\//.test(S.ansicht) ? 'Liste des Hauses' : NB));
   const u = S.ue, z = u && u.zuletzt;
   $('#kopf').innerHTML = WO.kopf({ werkzeug: 'website', unter: 'Website', titel: t, stand: u && u.aenderungen ? u.aenderungen + ' im Entwurf' : z ? 'Veröffentlicht ' + datum(z.zeit).split(',')[0] : 'Wie gebaut',
     pruefung: WEG('pruefung'), anleitung: WEG('anleitung'), website: WEG('website'), marke: 'data-gehe="start" aria-label="Zur Übersicht"' });
-  const st = $('#kopf .wo-kopf__r a[href="' + ((WO.haus.wege || {}).zentrale || '#') + '"]'); if (st && WEG('maison')) st.href = WEG('maison');   // Die Stube: Weg aus dem Server (anschluss.json, online /maison/)
+  const st = $('#kopf .wo-kopf__r a[href="' + ((WO.haus.wege || {}).zentrale || '#') + '"]'); if (st && WEG('maison')) st.href = WEG('maison');   // Kontrollpanel: Weg aus dem Server (anschluss.json, online /maison/)
   $$('#kopf [data-gehe]').forEach(x => x.onclick = e => { e.preventDefault(); gehe(x.dataset.gehe); });
 }
 async function zeichne(still = false) {
@@ -241,13 +241,13 @@ const EXTRA = {
   karte: ['Karten', 'Ässe <em>u trinke.</em>', 'Die Karte 2026, wie sie auf «Ässe u trinke» und auf der Startseite steht: Speisen und Getränke, Rubrik für Rubrik, Zeile für Zeile mit Preis.'],
   anlass: ['Karten', 'Anlass <em>auf der Karte.</em>', 'Der Kasten oben auf «Ässe u trinke»: ein Abend mit Datum, Zeit, Namen und Reservation. Nach dem Datum verschwindet er von selbst.'],
   besuche: ['Im Betrieb', 'Besuche <em>& Anfragen.</em>', 'Was Gäste auf der Website anklicken: Zimmer, Tisch und Sauna, Picknick, Buchen. Ohne Kekse, ohne Namen.'],
-  zugang: ['Sicher', 'Ihr <em>Zugang.</em>', 'Passwort und Anmeldung. Bei der Auslieferung an das Haus wird der Schreibtisch mit Anmeldung und Passwort geschützt.'],
+  zugang: ['Sicher', 'Ihr <em>Zugang.</em>', 'Passwort und Anmeldung. Bei der Auslieferung an das Haus wird «Website bearbeiten» mit Anmeldung und Passwort geschützt.'],
   zimmer: ['Listen des Hauses', 'Zimmer <em>& Preise.</em>', 'Die Zimmerarten mit ihren Fotos, jede Preiszeile, das Hotel exklusiv, das Package mit dem Waldhotel Doldenhorn und die Zahlen der Sauna.'],
   hausS: ['Listen des Hauses', 'Das <em>Haus.</em>', 'Was die Startseite erzählt: «Was Sie hier nicht finden», der Weg hinauf in vier Etappen, die Produzenten der Küche und die Häuser der Familie im Fuss jeder Seite.']
 };
 function zeichneExtra(name, listen) {
   const x = EXTRA[name] || (/^liste\//.test(name || '') ? ['Listen des Hauses', 'Eine <em>Liste.</em>', 'Ein Eintrag lässt sich ändern, neu anlegen, verschieben oder ausblenden; gespeichert wird im Entwurf.'] : [NB, esc(name), '']);
-  const tafel = CARTE() && (name === 'karte' || ALT_B(listen) === 'karte') ? '&tafel=1' : '';   // Die Tafel angeschlossen: dort nur noch das Tagesmenu (studio.js TAFEL)
+  const tafel = CARTE() && (name === 'karte' || ALT_B(listen) === 'karte') ? '&tafel=1' : '';   // Karten & Preislisten angeschlossen: dort nur noch das Tagesmenu (studio.js TAFEL)
   const ziel = listen ? `/studio/alt.html?eingebettet=1${tafel}#/${ALT_B(listen)}` : `/studio/alt.html?eingebettet=1${tafel}#/${name}`;
   const html = `<div class="einbett"><iframe id="ein-f" title="${esc(TITEL['x:' + name] || name || 'Listen')}" src="${ziel}"></iframe><div class="lade-schleier">Wird geladen …</div></div>`;
   if (listen) return html;
@@ -689,7 +689,7 @@ async function zeichneZahlen() {
       } else vormerken(key, { art: 'text', seite: s.seite, h: s.h, n: s.n, neu: s.art === 'el' ? esc(t) : t, ueberall: ue, vorschau: t });
     };
   });
-  $$('[data-zur-liste]').forEach(b => b.onclick = () => b.dataset.zurListe === 'karte' && CARTE() ? window.open(CARTE(), '_blank') : gehe('x:' + b.dataset.zurListe));   // Karten: zur Tafel, sobald sie angeschlossen ist
+  $$('[data-zur-liste]').forEach(b => b.onclick = () => b.dataset.zurListe === 'karte' && CARTE() ? window.open(CARTE(), '_blank') : gehe('x:' + b.dataset.zurListe));   // Karten: zu «Karten & Preislisten», sobald sie angeschlossen ist
   $$('[data-zeig]').forEach(b => b.onclick = () => { const [seite, h, n] = b.dataset.zeig.split('|'); const be = bereichVon(seite); gehe('b:' + be.key, { seite, wahl: { h, n: +n } }); });
   blickVorschau();
 }
@@ -770,15 +770,15 @@ function ersetzeText(html, alt, neu) {
   return h;
 }
 
-/* ---------- Karten (La Carte) ---------- */
+/* ---------- Karten (Karten & Preislisten) ---------- */
 function karten() {
   const K = S.ue.karten || {}, mc = K.karten || [], kw = K.website || [];
   const BILD = { speisen: 'e-fondue', getraenke: 'stube-regal' };
   return kopf('Karten', 'Die <em>Karten.</em>', 'Die Karte 2026 steht auf «Ässe u trinke» in zwei Reihen, Speisen und Getränke, Rubrik für Rubrik mit Preis; die Startseite zeigt einen Teil davon. Sie pflegen sie Zeile für Zeile unter «Ässe u trinke». Die gedruckte Karte und ihr PDF macht ' + NC + '.',
     (CARTE() ? WO.knopf(NC + ' öffnen', 'pfeil', 'gold', { href: CARTE(), neu: true }) : '') + WO.knopf('Ässe u trinke', 'karte', CARTE() ? 'hell' : 'gold', { attr: 'data-gehe="x:karte"' })) +
     (K.fehler && CARTE() ? `<div class="leer-hinweis"><b>${NC} antwortet nicht.</b>${esc(K.fehler)}</div>` : '') +
-    /* M27 (Robert 18.10.2026): nie leer; ohne Anschluss an die Tafel steht ein beschriftetes Beispiel da statt «noch nicht angeschlossen» */
-    (!mc.length && !CARTE() ? `<div class="leer-hinweis"><b>Beispiel.</b>So steht hier jede gedruckte Karte aus ${NC} mit ihrer PDF, sobald sie am Schreibtisch angeschlossen ist.</div>
+    /* M27 (Robert 18.10.2026): nie leer; ohne Anschluss an «Karten & Preislisten» steht ein beschriftetes Beispiel da statt «noch nicht angeschlossen» */
+    (!mc.length && !CARTE() ? `<div class="leer-hinweis"><b>Beispiel.</b>So steht hier jede gedruckte Karte aus ${NC} mit ihrer PDF, sobald sie an «Website bearbeiten» angeschlossen ist.</div>
     <div class="kt-flaeche kt-flaeche--bsp" aria-label="Beispiel">${[['Karte 2026', 'Restaurant · PDF vom 16.10.2026', 'stube-tische'], ['Getränke', 'Restaurant · PDF vom 16.10.2026', 'stube-regal']].map(([n, u, b], i) => `<span class="kt" style="--i:${i};--r:${[-2.5, 1.8][i]}deg"><span class="kt__b"><img src="/assets/img/${b}-s.webp" alt="" loading="lazy" decoding="async"></span><b>${n}</b><small>${u}</small><em>Beispiel</em></span>`).join('')}</div>` : '') +
     (mc.length ? `<div class="kt-flaeche">${mc.map((k, i) => `<a class="kt" style="--i:${i};--r:${[-2.5, 1.8, -1.2, 2.4, -1.8][i % 5]}deg" href="${CARTE()}#${esc(k.ziel)}" target="_blank" rel="noopener"><span class="kt__b"><img src="/assets/img/e-fondue-s.webp" alt="" loading="lazy" decoding="async"></span><b>${esc(k.name)}</b><small>${esc(k.gruppe || 'Karte')} · PDF vom ${esc((k.pdf_zeit || '–').split(' ')[0])}</small>${k.entwurf ? '<em>Entwurf wartet</em>' : ''}</a>`).join('')}</div>` : '') +
     `<h2 class="zw">Auf der <em>Website</em></h2>
@@ -870,7 +870,7 @@ async function zeichneSprachen() {
         return `<div class="ue__sp"><label for="ue-${i}-${sp}">${SPNAME[sp] || sp}</label><input id="ue-${i}-${sp}" type="text" data-sp="${sp}" value="${esc(op ? op.ue : x.wert)}" placeholder="${x.haus ? esc(x.haus) : 'steht deutsch, bis hier etwas steht'}">${x.haus ? '<small>Schon übersetzt (aus dem Wörterbuch der Website).</small>' : x.alt ? `<small>Bisher: ${esc(x.alt)}</small>` : ''}</div>`;
       }).join('')}</section>`).join('')
       : `<div class="leer-hinweis"><b>${SP.length ? 'Nichts zu übersetzen.' : 'Nur Deutsch, nichts zu übersetzen.'}</b>${SP.length ? 'Sobald Sie einen Text auf Deutsch ändern und speichern, steht er hier mit einem Feld je Sprache.' : 'Kommt Englisch oder Französisch dazu, läuft es so:'}</div>
-      <div class="ue-weg">${[['stift', 'Auf Deutsch ändern', 'Im Schreibtisch einen Satz der Website neu schreiben und speichern.'],
+      <div class="ue-weg">${[['stift', 'Auf Deutsch ändern', 'In «Website bearbeiten» einen Satz der Website neu schreiben und speichern.'],
         ['sprache', 'Hier übersetzen', 'Der Satz erscheint hier, mit einem Feld je Sprache der Website.'],
         ['welt', 'Gäste lesen ihn', 'Wer die Website in einer anderen Sprache öffnet, liest Ihre Übersetzung.']].map(([k, t, x], i) => `<div class="ue-weg__s" style="--i:${i}"><i>${ic(k)}</i><b>${t}</b><span>${x}</span></div>`).join('')}</div>
       <section class="karte ue ue--bsp" aria-label="Beispiel"><div class="ue-wo"><img src="/assets/img/stube-tische-s.webp" alt=""><div><small>Steht auf der Website</small><b>Ässe u trinke · Küche</b><span>Gäste, die die Seite in einer anderen Sprache öffnen, lesen die Zeile aus dem Feld ihrer Sprache.</span></div></div><span class="mono">Beispiel · Ässe u trinke · Küche</span><div class="ue__de">Warme Speisen bis 20:30</div>
@@ -980,10 +980,10 @@ async function zeichneVerlauf() {
           ['Freitag, 23. Oktober, 09.05 Uhr', '1 Änderung · Foto der Gaststube getauscht', ''],
           ['Montag, 19. Oktober, 11.40 Uhr', '2 Änderungen · Anlass auf der Karte, Zeit der Küche', '']].map(([z, t, m], i) => `<div class="vl"><i class="vl__z">${ic(i ? 'zurueck' : 'welt')}</i><div><b>${z}</b><span>${t}</span></div>${m ? `<em class="vl__m">${m}</em>` : ''}<span class="kn kn--linie kn--klein" aria-disabled="true">In den Entwurf holen<i>${PF}</i></span></div>`).join('')}
           <p class="leise vl-bsp__satz">Eine ältere Fassung zurückholen: Sie kommt zuerst in den Entwurf. Dort sehen Sie vorher und nachher und veröffentlichen erst, wenn alles stimmt.</p></div>`) +
-    `<div class="vl vl--ursprung"><div><b>Ursprünglicher Stand</b><span>Die Website, wie Tasty Studios sie gebaut hat, ohne jede Änderung im Schreibtisch.</span></div><button class="kn kn--linie kn--klein" type="button" data-id="ursprung">In den Entwurf holen<i>${PF}</i></button></div>`;
+    `<div class="vl vl--ursprung"><div><b>Ursprünglicher Stand</b><span>Die Website, wie Tasty Studios sie gebaut hat, ohne jede Änderung in «Website bearbeiten».</span></div><button class="kn kn--linie kn--klein" type="button" data-id="ursprung">In den Entwurf holen<i>${PF}</i></button></div>`;
   $$('[data-id]').forEach(b => b.onclick = async () => {
     try { const r = await api('zurueckholen', { id: b.dataset.id }); S.offen = {}; await frisch(false); gehe('entwurf'); quit('Im Entwurf', `${r.offen} Änderung${r.offen === 1 ? '' : 'en'} gegenüber der Website. Prüfen, dann veröffentlichen.`, [], false, 6000); }
-    catch (e) {   /* Endprüfung 19.10.2026: in der Probe-Fassung online wird der Stand nicht neu gebaut; der Schreibtisch tut so, als wäre er geholt, nie ein Serverfehler */
+    catch (e) {   /* Endprüfung 19.10.2026: in der Probe-Fassung online wird der Stand nicht neu gebaut; «Website bearbeiten» tut so, als wäre er geholt, nie ein Serverfehler */
       if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) { fehler(e); return; }
       S.offen = {}; try { await frisch(false); } catch (x) {} gehe('entwurf');
       quit('Im Entwurf', b.dataset.id === 'ursprung' ? 'Der ursprüngliche Stand liegt jetzt im Entwurf. In der Probe-Fassung bleibt die Website, wie sie ist.' : 'Diese Fassung liegt jetzt im Entwurf. In der Probe-Fassung bleibt die Website, wie sie ist.', [], false, 6000); }
@@ -1019,7 +1019,7 @@ function eingangZahl() {
     window.bureauMerk && window.bureauMerk('Start: ' + (e.message || e));
     return;
   }
-  /* Aus La Maison / Der Stube geöffnet: immer auf der Übersicht anfangen (Robert 16.10.2026), beim Neuladen bleibt die letzte Ansicht */
+  /* Aus «Kontrollpanel» / Der Stube geöffnet: immer auf der Übersicht anfangen (Robert 16.10.2026), beim Neuladen bleibt die letzte Ansicht */
   if ((/\/maison\/?(index\.html)?([?#].*)?$/.test(document.referrer) && ((performance.getEntriesByType('navigation')[0] || {}).type !== 'reload'))) try { localStorage.removeItem('bureau-ansicht'); } catch (e) { /* privat */ }
   else try { const m = JSON.parse(localStorage.getItem('bureau-ansicht') || 'null'); if (m) { S.ansicht = m.a || 'start'; S.bereich = m.b || ''; S.seite = m.s || ''; } } catch (e) { /* privat */ }
   if (S.ansicht === 'bereich' && !S.ue.bereiche.some(b => b.key === S.bereich)) S.ansicht = 'start';

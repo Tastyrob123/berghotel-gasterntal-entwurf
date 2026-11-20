@@ -1,4 +1,4 @@
-/* Anleitung zum Schreibtisch des Berghotels Gasterntal (Vorlage: Anleitung des Waldhotels Doldenhorn, dort des Grand Beau-Rivage): Hereinkommen, Filme und Bilder werden per Klick gross (Kino aus dem Werkbank-Kit, hier auch für Standbilder). */
+/* Anleitung zu «Website bearbeiten» des Berghotels Gasterntal (Vorlage: Anleitung des Waldhotels Doldenhorn, dort des Grand Beau-Rivage): Hereinkommen, Filme und Bilder werden per Klick gross (Kino aus dem Werkbank-Kit, hier auch für Standbilder). */
 (function () {
   'use strict';
   var doc = document, ruhig = matchMedia('(prefers-reduced-motion:reduce)').matches;

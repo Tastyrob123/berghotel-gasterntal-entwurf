@@ -1,0 +1,132 @@
+[
+ {
+  "vor": [
+   0,
+   8,
+   12
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Habt ihr eine Sauna?",
+  "antwort": "Ja, in der alten Käserei. Sie wird mit Holz eingeheizt, Sie haben 90 Minuten.\n- Reservation: mindestens 2 Stunden im Voraus\n- Telefon: 033 675 81 81",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   0,
+   10,
+   40
+  ],
+  "sprache": "en",
+  "belegt": true,
+  "frage": "How do I get to the Gasterntal by car?",
+  "antwort": "Via a gravel road (14 km) from Kandersteg; the road is subject to a fee. Through the Chluse you can drive up from a quarter to until five past each hour, and passing is not possible there. The permit goes on the windscreen; you can buy it at the hotel.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   9,
+   20
+  ],
+  "sprache": "de",
+  "belegt": false,
+  "frage": "Ab wann kann ich am Anreisetag ins Zimmer?",
+  "antwort": "Dazu steht nichts in meinen Unterlagen. Die Rezeption hilft Ihnen gerne weiter:\n- Telefon: 033 675 81 81\n- E-Mail: gasterntal@doldenhorn.ch",
+  "thema": "Check-in",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   16,
+   5
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Darf mein Hund mit?",
+  "antwort": "Ja. Das Haus schreibt: «Herzlich willkommen (auch Vierbeiner)».",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   19,
+   20
+  ],
+  "sprache": "fr",
+  "belegt": true,
+  "frage": "Le restaurant est-il ouvert le lundi ?",
+  "antwort": "Du mardi au dimanche de 11:00 à 20:00. Le lundi, cela dépend de la météo et de la saison : un appel au 033 675 81 81 vous le confirme.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   8,
+   30
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Wann macht ihr zu für den Winter?",
+  "antwort": "Saisonschluss 2026: 25.10.2026. Eröffnung 2027: 13.05.2027, falls das Wetter mitspielt.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   13,
+   45
+  ],
+  "sprache": "en",
+  "belegt": false,
+  "frage": "Can I pay by card at the hotel?",
+  "antwort": "There is nothing about this in my documents. The reception will be happy to help:\n- Phone: 033 675 81 81\n- E-mail: gasterntal@doldenhorn.ch",
+  "thema": "Zahlung im Haus",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   9,
+   15
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Fährt der Gasternbus noch?",
+  "antwort": "Ab 5. Oktober verkehrt der Gasternbus nicht mehr. Das Haus organisiert einen Transport von Kandersteg, Reservation unter 033 675 81 81.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   14,
+   2
+  ],
+  "sprache": "en",
+  "belegt": true,
+  "frage": "How many people fit for a party?",
+  "antwort": "Up to 80 people at a celebration, 50 including an overnight stay. You can celebrate indoors or outside.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   4,
+   11,
+   5
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Habt ihr Familienzimmer?",
+  "antwort": "Ja, Familienzimmer mit 4, 6 oder 8 Betten im Nebenhaus. Freie Zimmer zeigt die Buchungsmaske für Ihre Daten.",
+  "thema": "",
+  "buchung": true
+ }
+]

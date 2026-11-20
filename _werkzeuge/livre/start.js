@@ -1,4 +1,4 @@
-/* Das Hausbuch (Le Livre) · Berghotel Gasterntal · läuft vor allem anderen (Master R03, R04, R15).
+/* Markenbuch · Berghotel Gasterntal · läuft vor allem anderen (Master R03, R04, R15).
    Fehlermelder: Skriptfehler nach localStorage «bg-livre-fehler» (letzte 20) und an api/fehler; Netzfehler und fehlende Dateien nie, höchstens 20 je Seite,
    ein eigener Fehlschlag schaltet ab (Safari-Schleife 15.10.2026). Ladezeichen erst nach 280 ms. Kommt livre.js nach 12 s nicht hoch: ein Satz statt leerer Fläche. */
 'use strict';
@@ -19,6 +19,6 @@
   window.LIVRE_TUER = setTimeout(() => {
     if (window.LIVRE_BEREIT) return;
     const a = document.getElementById('ansicht'); if (!a) return;
-    a.innerHTML = '<div class="platte li-tuer" role="alert"><h1>Das Hausbuch startet nicht.</h1><p class="li-tuer__g">Das Programm der Seite ist nicht geladen worden (Netz oder blockiertes Skript).</p><p>Hilft «Neu laden» nicht: die Anleitung öffnen oder Tasty Studios Bescheid geben.</p><div class="titel__kn"><a class="wo-kn wo-kn--dunkel" href="./"><span>Neu laden</span><i></i></a><a class="wo-kn wo-kn--hell" href="anleitung.html" target="_blank" rel="noopener"><span>Anleitung</span><i></i></a></div></div>';
+    a.innerHTML = '<div class="platte li-tuer" role="alert"><h1>Markenbuch startet nicht.</h1><p class="li-tuer__g">Das Programm der Seite ist nicht geladen worden (Netz oder blockiertes Skript).</p><p>Hilft «Neu laden» nicht: die Anleitung öffnen oder Tasty Studios Bescheid geben.</p><div class="titel__kn"><a class="wo-kn wo-kn--dunkel" href="./"><span>Neu laden</span><i></i></a><a class="wo-kn wo-kn--hell" href="anleitung.html" target="_blank" rel="noopener"><span>Anleitung</span><i></i></a></div></div>';
   }, 12000);
 })();

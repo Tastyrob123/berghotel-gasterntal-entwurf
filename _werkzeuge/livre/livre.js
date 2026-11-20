@@ -1,4 +1,4 @@
-/* Das Hausbuch (Le Livre) · Berghotel Gasterntal. Die Marke des Hauses zum Arbeiten (Nachbau von Le Livre des Waldhotel Doldenhorn, dahinter
+/* Markenbuch · Berghotel Gasterntal. Die Marke des Hauses zum Arbeiten (Nachbau von «Markenbuch» des Waldhotel Doldenhorn, dahinter
    Carlton-Europe und Grand Beau-Rivage, dort nur gelesen): Bildarchiv mit fertigen Grössen, Dateien (Schriftzug, Raute, Name, Tapete, Farben,
    Schriften, Zeichen der Karte 2026), Markenprüfung für Entwürfe, Markenbuch (buch.html).
    Rahmen (Kopf, Rand, Leiste, Startbild, Knöpfe) aus dem gemeinsamen Paket «Werkzeug-Oberfläche» (Rahmen «Die Bühne», Kleid gasterntal, oberflaeche.js → WO),
@@ -41,13 +41,13 @@ function kn(text, ic, art = 'dunkel', o = {}) {
 const SPRACHEN = [['de', 'DE', 'Deutsch']];
 const T = {
 de: {
-  name: 'Das Hausbuch', unter: 'Marke', start: 'Übersicht', arbeiten: 'Arbeiten', nachschlagen: 'Nachschlagen', bilder: 'Bildarchiv', dateien: 'Logo & Dateien', pruefung: 'Markenprüfung', buch: 'Markenbuch',
-  anleitung: 'Anleitung', maison: 'Die Stube', website: 'Website ansehen', sprache: 'Sprache', rundgang: 'Kurzer Rundgang', bereiche: 'Bereiche',
+  name: 'Markenbuch', unter: 'Marke', start: 'Übersicht', arbeiten: 'Arbeiten', nachschlagen: 'Nachschlagen', bilder: 'Bildarchiv', dateien: 'Logo & Dateien', pruefung: 'Markenprüfung', buch: 'Markenbuch',
+  anleitung: 'Anleitung', maison: 'Kontrollpanel', website: 'Website ansehen', sprache: 'Sprache', rundgang: 'Kurzer Rundgang', bereiche: 'Bereiche',
   morgen: 'Guten Morgen.', tag: 'Guten Tag.', abend: 'Guten Abend.', frage: 'Was brauchen Sie heute?',
-  start_satz: 'Das Hausbuch ist die Marke des Hauses zum Arbeiten: alle Fotos in fertigen Grössen für Instagram, Website und Druck, Schriftzug, Raute, Tapete und Farben als Dateien, und eine Prüfung für Entwürfe von Agenturen und aus dem Haus.',
+  start_satz: 'Markenbuch ist die Marke des Hauses zum Arbeiten: alle Fotos in fertigen Grössen für Instagram, Website und Druck, Schriftzug, Raute, Tapete und Farben als Dateien, und eine Prüfung für Entwürfe von Agenturen und aus dem Haus.',
   k_bilder: 'Alle Fotos der Website, nach Bereich und Herkunft. Jedes als Beitrag, Story, für die Website oder den Druck.',
   k_dateien: 'Der Schriftzug für helle und dunkle Flächen, die Raute, die Tapete und die Farbwerte zum Kopieren.',
-  k_pruefung: 'Ein Entwurf als Bild oder PDF. Das Hausbuch sagt, was zum Haus passt und was nicht, Punkt für Punkt.',
+  k_pruefung: 'Ein Entwurf als Bild oder PDF. Markenbuch sagt, was zum Haus passt und was nicht, Punkt für Punkt.',
   k_buch: 'Schriftzug, Farben und ihre Herkunft im Tal, Schriften, Tapete, Bilder und Ton, nach denen alles gestaltet ist.',
   oeffnen: 'Öffnen', lesen: 'Lesen', haeufig: 'Häufig', gebraucht: 'gebraucht',
   ue_kurz: 'mit KI bearbeitet', z_haus: 'Fotos des Hauses', z_frei: 'frei lizenziert', z_ue: 'mit KI bearbeitet', z_dateien: 'Dateien',
@@ -57,12 +57,12 @@ de: {
   stand: '{0} Fotos · {1} Dateien',
   recht_t: 'Bildrechte', recht: 'Die Fotos gehören dem Berghotel Gasterntal, der Familie Maeder und den jeweiligen Fotografen. Frei lizenzierte Fotos nur mit dem genannten Namen und der Lizenz. Mit KI bearbeitete Fotos sind gekennzeichnet.',
   alles_zip: 'Alle Dateien (ZIP)',
-  b_titel: 'Das Bildarchiv', b_satz: 'Ein Klick auf ein Foto öffnet es. Dort laden Sie es in der Grösse, die Sie brauchen, und wählen bei Beitrag und Story den Ausschnitt.',
+  b_titel: 'Markenbuch', b_satz: 'Ein Klick auf ein Foto öffnet es. Dort laden Sie es in der Grösse, die Sie brauchen, und wählen bei Beitrag und Story den Ausschnitt.',
   suchen: 'Suchen, zum Beispiel «Sauna» oder «Fondue»', bereich: 'Bereich', saison: 'Saison', format: 'Format', herkunft: 'Herkunft', alle: 'Alle',
   b_haus: 'Das Haus von aussen', b_zimmer: 'Zimmer', b_stube: 'Stuben', b_essen: 'Essen & Trinken', b_sauna: 'Sauna in der alten Käserei', b_feste: 'Feste', b_einzel: 'Einzelheiten', b_tal: 'Weg & Tal', b_familie: 'Schwesterhäuser',
   s_sommer: 'Sommer', s_herbst: 'Herbst', s_winter: 'Winter', s_jahr: 'Ohne Jahreszeit', f_hoch: 'Hochformat', f_quer: 'Querformat', f_quadrat: 'Quadrat',
   h_haus: 'Fotos des Hauses', h_frei: 'Frei lizenziert', h_ki: 'Mit KI erzeugt', h_ue: 'Mit KI bearbeitet',
-  im_titel: 'In der Werkstatt gestalten', im_beitrag: 'Als Instagram-Beitrag', im_story: 'Als Story', im_satz: 'Öffnet Die Werkstatt mit diesem Foto und Ihrem Ausschnitt.',
+  im_titel: 'In «Drucksachen & Feed» gestalten', im_beitrag: 'Als Instagram-Beitrag', im_story: 'Als Story', im_satz: 'Öffnet Drucksachen & Feed mit diesem Foto und Ihrem Ausschnitt.',
   treffer: '{0} von {1} Fotos', keine: 'Kein Foto passt. Ein Filter weniger hilft.', mehr: 'Mehr zeigen', zuruecksetzen: 'Filter zurücksetzen',
   ki: 'KI', ki_lang: 'Mit KI bearbeitet', ki_satz: 'Licht, Farbe und Flächen sind mit KI überarbeitet, der Raum ist das echte Foto.',
   frei_satz: 'Frei lizenziert: verwenden nur mit dem Namen des Fotografen und der Lizenz, wie unter «Quelle» genannt.',
@@ -70,7 +70,7 @@ de: {
   quelle: 'Quelle', original: 'Grösste Fassung', vermerk: 'Vermerk', laden: 'Laden', grossen: 'Grössen', ausschnitt: 'Ausschnitt: das Feld im Bild ziehen.',
   g_instagram: 'Instagram-Beitrag', g_story: 'Story', g_web: 'Website', g_druck: 'Druck',
   i_instagram: '1080 × 1350, JPG', i_story: '1080 × 1920, JPG', i_web: 'längste Seite 2000 px, JPG', i_druck: 'volle Auflösung, {0} × {1}, JPG', i_druck_web: 'in Website-Grösse (Original nicht hinterlegt), JPG',
-  ohne_server: 'Fertige Grössen brauchen den Server-Teil des Hausbuchs. Ohne ihn lädt der Knopf das Foto in Website-Grösse.',
+  ohne_server: 'Fertige Grössen brauchen den Server-Teil «Markenbuch». Ohne ihn lädt der Knopf das Foto in Website-Grösse.',
   vn_vorher: 'Vorher', vn_nachher: 'Nachher', vn_schieber: 'Schieber', vn_t_vorher: 'Vorher · so geliefert', vn_t_nachher: 'Nachher · mit KI bearbeitet', vn_t_schieber: 'Vorher links · nachher rechts',
   vn_hilfe: 'Mit «Vorher» sehen Sie das Foto, wie das Haus es geliefert hat.', vn_orig: 'Vorher laden',
   d_titel: 'Logo & Dateien', d_satz: 'Alles, was eine Agentur oder eine Druckerei braucht. SVG bleibt in jeder Grösse scharf, PNG hat einen durchsichtigen Grund.',
@@ -98,10 +98,10 @@ de: {
   u_passt: 'passt', u_achten: 'achten', u_passt_nicht: 'passt nicht',
   ber: { farben: 'Farben', schrift: 'Schrift', zeichen: 'Schriftzug', abstand: 'Abstand', bild: 'Bild', ton: 'Ton' },
   p_ki_fehler: 'Die Beurteilung durch Claude war gerade nicht möglich ({0}). Die Messung der Farben steht links.', p_fehler: 'Die Prüfung ging nicht durch',
-  p_seiten: '{0} Seiten, geprüft die ersten {1}', p_text: 'Gelesener Text', fehler_verb: 'Der Server-Teil des Hausbuchs antwortet nicht.',
-  schliessen: 'Schliessen', fehler_json: 'Die Daten des Hausbuchs (livre.json) fehlen.',
+  p_seiten: '{0} Seiten, geprüft die ersten {1}', p_text: 'Gelesener Text', fehler_verb: 'Der Server-Teil «Markenbuch» antwortet nicht.',
+  schliessen: 'Schliessen', fehler_json: 'Die Daten «Markenbuch» (livre.json) fehlen.',
   p_typ: 'Diese Datei ist kein Bild und keine PDF. Erlaubt sind JPG, PNG, WebP und PDF.', p_gross: 'Die Datei ist grösser als 30 MB.', p_pdf_online: 'Online geht eine PDF bis 3 MB. Bitte kleiner speichern oder die erste Seite als Bild prüfen.', p_offline: 'Keine Verbindung. Der Entwurf bleibt gewählt, bitte noch einmal prüfen, sobald das Netz wieder da ist.', fehler_code: 'Der Server antwortete mit Fehler {0}.',
-  tuer_t: 'Das Hausbuch startet nicht.', tuer_neu: 'Neu laden', tuer_hilfe: 'Hilft das nicht: die Anleitung öffnen oder Tasty Studios Bescheid geben.'
+  tuer_t: 'Markenbuch startet nicht.', tuer_neu: 'Neu laden', tuer_hilfe: 'Hilft das nicht: die Anleitung öffnen oder Tasty Studios Bescheid geben.'
 }
 };
 if (/[?&]sprachen=probe\b/.test(location.search)) {   // nur für die Prüfung des Sprachwechsels: jeder Text in ‹ ›
@@ -562,7 +562,7 @@ function sichere(j) {
   // nur auf ausdrücklichen Wunsch: eine Datei auf diesem Rechner, nichts auf dem Server
   const html = `<!doctype html><meta charset="utf-8"><title>${esc(t('name'))} · ${esc(j.name)}</title><body style="font:15px/1.6 system-ui;max-width:820px;margin:40px auto;color:#1a1f21;background:#e9ecec;padding:0 20px">
     <h1 style="font:600 32px 'Arial Narrow',system-ui">${esc(t('pruefung'))}: ${esc(j.name)}</h1><img src="${j.vorschau}" style="max-width:360px;border-radius:12px"><pre style="white-space:pre-wrap;font:14px/1.6 system-ui">${esc(alsText(j))}</pre>
-    <p style="color:#3b4423;font-size:12px">${esc(t('name'))} · ${esc(S.d.haus)}, ${esc(S.d.ort)} · ${new Date().toLocaleString('de-CH')}</p></body>`;
+    <p style="color:#3b4423;font-size:13px">${esc(t('name'))} · ${esc(S.d.haus)}, ${esc(S.d.ort)} · ${new Date().toLocaleString('de-CH')}</p></body>`;
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
   a.download = 'hausbuch-pruefung-' + (j.name.replace(/\.[a-z0-9]+$/i, '').replace(/[^a-z0-9äöü_-]+/gi, '-').toLowerCase().slice(0, 60) || 'entwurf') + '.html';
@@ -598,7 +598,7 @@ function melde(text, fehl = false) {
 }
 
 /* ---------------------------------------------------------------- Start */
-/* Startfehler-Tür (R04): statt einer leeren Fläche sagt das Hausbuch, dass und warum es nicht startet */
+/* Startfehler-Tür (R04): statt einer leeren Fläche sagt «Markenbuch», dass und warum es nicht startet */
 function startfehler(grund) {
   window.LIVRE_BEREIT = true; clearTimeout(window.LIVRE_LADE);
   $('#ansicht').innerHTML = `<div class="platte li-tuer" role="alert"><span class="li-tuer__z">${ZEICHEN_N}</span><h1>${esc(t('tuer_t'))}</h1>

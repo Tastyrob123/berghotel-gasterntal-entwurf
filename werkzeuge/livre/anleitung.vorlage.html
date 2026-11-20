@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de-CH">
+<head><script data-wurzel>/* Wurzel-Weiche: Seite laeuft an der Wurzel einer Adresse oder in einem Unterordner (github.io/<repo>/) */(function(){var D=2,p=location.pathname.split('/');p.splice(p.length-1-D,D+1);var W=p.join('/')+'/';window.__W=W;if(W==='/')return;var O=location.origin;
+function f(u){if(typeof u!=='string')return u;if(u.indexOf(O+'/')===0)return O+f(u.slice(O.length));if(u.charAt(0)!=='/'||u.charAt(1)==='/'||u.indexOf(W)===0||u+'/'===W)return u;return W+u.slice(1)}
+function s(v){return typeof v!=='string'?v:v.replace(/(^|,)(\s*)(\S+)/g,function(m,a,b,u){return a+b+f(u)})}
+function c(v){return typeof v!=='string'?v:v.replace(/url\(\s*(['"]?)([^'")]+)/g,function(m,q,u){return 'url('+q+f(u)})}
+function h(v){return typeof v!=='string'?v:c(v.replace(/(\s(?:src|href|poster|action|data-src|data-href)\s*=\s*)(["'])([^"']*)\2/gi,function(m,a,q,u){return a+q+f(u)+q}).replace(/(\s(?:srcset|imagesrcset|data-srcset)\s*=\s*)(["'])([^"']*)\2/gi,function(m,a,q,u){return a+q+s(u)+q}))}
+function d(K,k,g){K=window[K];if(!K)return;var x=Object.getOwnPropertyDescriptor(K.prototype,k);if(!x||!x.set)return;Object.defineProperty(K.prototype,k,{configurable:true,enumerable:x.enumerable,get:x.get,set:function(v){x.set.call(this,g(v))}})}
+[['HTMLImageElement','src'],['HTMLScriptElement','src'],['HTMLLinkElement','href'],['HTMLIFrameElement','src'],['HTMLSourceElement','src'],['HTMLMediaElement','src'],['HTMLVideoElement','poster'],['HTMLAnchorElement','href'],['HTMLAreaElement','href'],['HTMLFormElement','action'],['HTMLEmbedElement','src'],['HTMLObjectElement','data']].forEach(function(z){d(z[0],z[1],f)});
+[['HTMLImageElement','srcset'],['HTMLSourceElement','srcset'],['HTMLLinkElement','imageSrcset']].forEach(function(z){d(z[0],z[1],s)});
+d('Element','innerHTML',h);d('Element','outerHTML',h);var iah=Element.prototype.insertAdjacentHTML;Element.prototype.insertAdjacentHTML=function(w,v){return iah.call(this,w,h(v))};
+var sa=Element.prototype.setAttribute;Element.prototype.setAttribute=function(n,v){var l=String(n).toLowerCase();if(/^(src|href|poster|action|data|data-src|data-href)$/.test(l))v=f(v);else if(/srcset$/.test(l))v=s(v);else if(l==='style')v=c(v);return sa.call(this,n,v)};
+var st=CSSStyleDeclaration.prototype,sp=st.setProperty;st.setProperty=function(n,v,q){return sp.call(this,n,c(v),q)};['background','backgroundImage','cssText','maskImage','webkitMaskImage','listStyleImage','borderImageSource','content'].forEach(function(k){var x=Object.getOwnPropertyDescriptor(st,k);if(x&&x.set)Object.defineProperty(st,k,{configurable:true,enumerable:x.enumerable,get:x.get,set:function(v){x.set.call(this,c(v))}})});
+var F=window.fetch;if(F)window.fetch=function(i,o){if(typeof i==='string')i=f(i);else if(i instanceof URL)i=f(i.href);return F.call(this,i,o)};
+var XO=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(){var a=[].slice.call(arguments);a[1]=f(a[1] instanceof URL?a[1].href:a[1]);return XO.apply(this,a)};
+if(navigator.sendBeacon){var B=navigator.sendBeacon;navigator.sendBeacon=function(u,x){return B.call(navigator,f(u),x)}}
+var wo=window.open;window.open=function(u){var a=[].slice.call(arguments);a[0]=f(u);return wo.apply(window,a)};
+var dw=document.write,dl=document.writeln;document.write=function(){return dw.apply(document,[].map.call(arguments,h))};document.writeln=function(){return dl.apply(document,[].map.call(arguments,h))};
+['pushState','replaceState'].forEach(function(k){var o=history[k];history[k]=function(a,b,u){return o.call(history,a,b,u==null?u:f(String(u)))}});
+function e(el){if(!el||el.nodeType!==1)return;['src','href','poster','action'].forEach(function(a){var v=el.getAttribute(a);if(v&&v.charAt(0)==='/'){var z=f(v);if(z!==v)sa.call(el,a,z)}});var t=el.getAttribute('srcset');if(t&&/(^|,)\s*\/[^\/]/.test(t)){var z=s(t);if(z!==t)sa.call(el,'srcset',z)}t=el.getAttribute('style');if(t&&/url\(\s*['"]?\/[^\/]/.test(t)){z=c(t);if(z!==t)sa.call(el,'style',z)}}
+new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes')e(m.target);else m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;e(n);var l=n.querySelectorAll('[src],[href],[srcset],[poster],[action],[style]');for(var i=0;i<l.length;i++)e(l[i])})})}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['src','href','srcset','poster','action','style']})})();</script><!--demo-weiche--><script src="../../_demo/karte.js"></script><script src="../../_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anleitung · Markenbuch · Berghotel Gasterntal</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2224">
+<link rel="icon" href="dateien/berghotel-gasterntal-raute-holz.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/barlowsemi-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Barlow Semi';font-style:normal;font-weight:600;font-display:swap;src:url('../../assets/fonts/barlowsemi-600.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+:root{--nacht:#1d2224;--navy:#1d2224;--blau:#2c3136;--papier:#e9ecec;--weiss:#f6f8f8;--gold:#d6bb96;--taupe:#3b4423;--tinte:#1a1f21;--blatt:#f6f8f8;--linie:rgba(26,31,33,.12);--leise:rgba(26,31,33,.66);
+  --serif:'Barlow Semi','DIN Alternate','Arial Narrow',sans-serif;--sans:'Instrument Sans',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace;--e1:cubic-bezier(.16,1,.3,1);--e2:cubic-bezier(.32,.72,0,1)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--papier);color:var(--tinte);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ol,ul,figure{margin:0;padding:0}ol,ul{list-style:none}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.012em}
+:focus-visible{outline:1.5px solid var(--taupe);outline-offset:3px;border-radius:6px}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.kn{position:relative;display:inline-flex;align-items:center;gap:12px;height:48px;padding:0 6px 0 22px;border-radius:999px;font:13px var(--mono);letter-spacing:.15em;text-transform:uppercase;color:#fff;background:linear-gradient(180deg,#485056,#2c3136 55%,#1d2224);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -3px 0 rgba(0,0,0,.55),0 14px 22px -14px rgba(20,24,26,.55);transition:transform .5s var(--e2)}
+.kn:hover{transform:translateY(-2px)}
+.kn i{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#f7f9f9,#c7cfd3);color:var(--tinte);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 0 rgba(0,0,0,.22)}
+.kn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.3}
+.kn--hell{background:linear-gradient(180deg,#f7f9f9,#e9ecec 50%,#c7cfd3);color:var(--tinte);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -3px 0 rgba(26,31,33,.25),0 14px 22px -14px rgba(0,0,0,.5)}
+.kn--hell i{background:linear-gradient(180deg,#3f474c,#1d2224);color:var(--weiss)}
+/* Kopf */
+.kopf{position:relative;isolation:isolate;color:var(--weiss);background-color:var(--navy);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='92'%3E%3Cg fill='%23d6bb96' fill-opacity='.09'%3E%3Cpath d='M22 14 30 46 22 78 14 46z'/%3E%3Ccircle cx='22' cy='6' r='3'/%3E%3Ccircle cx='22' cy='86' r='3'/%3E%3C/g%3E%3C/svg%3E");background-size:44px 92px;background-position:0 0;border-radius:0 0 34px 34px;overflow:hidden}
+.kopf::after{content:'';position:absolute;inset:auto 0 0 0;height:60%;z-index:-1;background:linear-gradient(0deg,rgba(20,24,26,.8),transparent)}
+.kopf__in{max-width:1180px;margin:0 auto;padding:36px 28px 74px}
+.kopf nav{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:56px;font:13px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.kopf nav a:hover{color:#fff}
+.kopf h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:1.02;max-width:14ch}.kopf h1 em{font-style:normal;color:var(--gold)}
+.kopf p{margin-top:22px;max-width:56ch;font-size:1.08rem;color:rgba(246,248,248,.84)}
+.kopf .kn{margin-top:30px}
+.kopf .kn+.kn{margin-left:10px}
+/* Inhalt */
+main{max-width:1180px;margin:0 auto;padding:0 28px 120px}
+.inhalt{margin:58px 0 70px}
+.inhalt h2{font-size:clamp(2rem,3.6vw,3rem);line-height:1.08;margin:8px 0 8px}.inhalt h2 em{font-style:normal;color:var(--taupe)}
+.inhalt>p{max-width:60ch;color:var(--leise)}
+.themen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
+.thema{background:var(--blatt);border-radius:22px;box-shadow:inset 0 0 0 1px var(--linie);padding:22px 24px}
+.thema h3{font-size:1.35rem;line-height:1.15;display:grid;gap:3px}.thema h3 small{font:13px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}.thema h3 em{font:13px var(--mono);font-style:normal;color:var(--leise)}
+.thema ol{margin-top:12px;display:grid;gap:2px}
+.thema a{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:baseline;padding:9px 6px;border-radius:12px;transition:background-color .3s}
+.thema a:hover{background:rgba(255,255,255,.7)}.thema a b{font:13px var(--mono);color:var(--taupe)}.thema a span{font-family:var(--serif)}.thema a i{font:13px var(--mono);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+/* Kapitel */
+.kap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,60px);align-items:start;padding:54px 0;border-top:1px solid var(--linie);scroll-margin-top:20px}
+.kap:nth-of-type(even) .kap__t{order:2}
+.kap h2{font-size:clamp(1.9rem,3.2vw,2.8rem);line-height:1.08;margin:12px 0 14px;text-wrap:balance}
+.einl{color:rgba(26,31,33,.78);max-width:54ch}
+.schritte{display:grid;gap:12px;margin:22px 0}
+.schritte li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:14px;align-items:start}
+.schritte li span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold);font:13px var(--mono)}
+.schritte p{padding-top:3px}
+.wissen{padding:16px 18px;border-radius:16px;background:rgba(214,187,150,.34);font-size:14.5px;color:var(--tinte)}.wissen b{display:block;margin-bottom:3px;font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--tinte)}
+.kap__b{position:sticky;top:20px}
+.bild{display:block;width:100%;border-radius:20px;overflow:hidden;background:var(--navy);box-shadow:0 30px 50px -28px rgba(20,24,26,.6),inset 0 0 0 1px rgba(214,187,150,.3);cursor:zoom-in;transition:transform .6s var(--e2)}
+.bild:hover{transform:translateY(-3px)}.bild img{display:block;width:100%;height:auto}
+figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font:13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+/* Bild gross */
+.gross{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:3vmin;background:rgba(20,24,26,.88);cursor:zoom-out;animation:auf .35s var(--e1) both}
+.gross[hidden]{display:none}.gross img{max-width:100%;max-height:100%;border-radius:14px;box-shadow:0 40px 80px -30px #000}.gross small{position:absolute;bottom:14px;left:0;right:0;text-align:center;font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+@keyframes auf{from{opacity:0}}
+.fuss{margin-top:20px;padding:34px 0 0;border-top:1px solid var(--linie);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--leise);font-size:14px}
+@media (max-width:900px){.themen{grid-template-columns:1fr}.kap{grid-template-columns:1fr;padding:40px 0}.kap:nth-of-type(even) .kap__t{order:0}.kap__b{position:static}.kopf__in{padding:26px 18px 54px}.kopf nav{margin-bottom:36px}main{padding:0 18px 80px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.zurueck{border-bottom:1px solid currentColor}
+</style>
+</head>
+<body>
+<!-- Anleitung Markenbuch · Berghotel Gasterntal: gebaut von anleitung_bau.py aus dieser Vorlage (Aufbau wie die Anleitung in «Markenbuch» des Waldhotel Doldenhorn) -->
+<header class="kopf"><div class="kopf__in">
+  <nav><span>Anleitung · Berghotel Gasterntal</span><a href="./">Markenbuch öffnen</a></nav>
+  <h1>Fotos, Dateien <em>und die Prüfung.</em></h1>
+  <p>%%ANZAHL%% kurze Kapitel. Wie Sie ein Foto in der richtigen Grösse laden, wo Schriftzug und Farben für die Agentur liegen und wie «Markenbuch» einen Entwurf prüft.</p>
+  <a class="kn" href="./">Markenbuch öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="kn kn--hell" href="#inhalt">Zu den Kapiteln<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg></i></a>
+</div></header>
+<main>
+  <section class="inhalt" id="inhalt"><span class="mono">00 · Inhalt</span><h2>%%ANZAHL%% Kapitel, <em>fünf Themen.</em></h2><p>Jedes Kapitel zeigt den Bereich und nennt die Schritte. Ein Klick macht das Bild gross, ein zweiter oder Esc bringt es zurück.</p>
+    <div class="themen">%%INHALT%%</div></section>
+%%KAPITEL%%
+  <div class="fuss"><span>Markenbuch · Berghotel Gasterntal, Selden · 3718 Kandersteg</span><a class="zurueck" href="./">Zurück zu «Markenbuch»</a></div>
+</main>
+<div class="gross" id="gross" hidden role="dialog" aria-modal="true" aria-label="Bild gross"><img alt=""><small>Klick oder Esc zum Schliessen</small></div>
+<script src="anleitung.js"></script>
+</body>
+</html>

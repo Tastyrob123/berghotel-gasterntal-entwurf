@@ -24,9 +24,9 @@ new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes
 <title>Die Tafel · Prüfung</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="../../assets/oberflaeche/kleid/gasterntal-zeichen.svg" type="image/svg+xml">
-<script src="../../_werkzeuge/carte/fehlermelder.js?v=ac88b5921a"></script>
-<link rel="stylesheet" href="../../_werkzeuge/carte/carte.css?v=79280197cf">
-<link rel="stylesheet" href="../../_werkzeuge/carte/tafel.css?v=dcf2554131">
+<script src="../../_werkzeuge/carte/fehlermelder.js?v=1"></script>
+<link rel="stylesheet" href="../../_werkzeuge/carte/carte.css?v=3">
+<link rel="stylesheet" href="../../_werkzeuge/carte/tafel.css?v=1">
 <style>
 body.anl{padding:0}
 .anl main{max-width:900px;margin:0 auto;padding:54px 24px 90px}
@@ -44,7 +44,7 @@ body.anl{padding:0}
 .pr-quit{margin-top:12px;font-size:14px;min-height:1.4em}
 @media (max-width:560px){.rep div{flex-direction:column;align-items:stretch}.anl .gesund div{flex-direction:column}.anl .gesund div b{max-width:none;text-align:left}}
 </style>
-<link rel="stylesheet" href="../../werkbank/auftritte.css?v=cbb2007c87">
+<link rel="stylesheet" href="../../werkbank/auftritte.css?v=d98cffe582">
 </head>
 <body class="lc anl">
 <main>
@@ -58,7 +58,7 @@ body.anl{padding:0}
 <h2>Sicherungen</h2><div class="gesund" id="p-sich"></div>
 <h2>Fehler</h2><p>Die letzten Fehler, die die Tafel im Server und in den Browsern mitgeschrieben hat (neueste zuerst).</p><div class="gesund" id="p-fehler"></div>
 <h2>Alle Daten</h2><p>Alle Karten mit Stand, Entwurf, Ursprung und jeder früheren Fassung, dazu Einstellungen und Protokoll, als eine Datei für den eigenen Rechner. Dafür braucht es uns nicht.</p>
-<div class="rep"><div><p><b>Alle Daten herunterladen.</b> Eine Datei (JSON), lesbar mit jedem Texteditor.</p><a class="kn kn--klein" href="../../_werkzeuge/carte/api/export" download="die-tafel-berghotel-gasterntal.json">Herunterladen</a></div></div>
+<div class="rep"><div><p><b>Alle Daten herunterladen.</b> Eine Datei (JSON), lesbar mit jedem Texteditor.</p><a class="kn kn--klein" href="../../_werkzeuge/carte/api/export" download>Herunterladen</a></div></div>
 <h2>Reparaturen</h2><p>Keine Reparatur ändert eine Karte. Jede braucht die Rolle Direktion und zwei Klicks: der erste macht den Knopf scharf, der zweite führt aus.</p>
 <div class="rep" id="p-rep">
   <div><p><b>Sicherung jetzt anlegen.</b> Stand, Entwürfe, Verlauf und Protokoll als Archiv von heute (sonst einmal am Tag von selbst).</p><button class="kn kn--klein" type="button" data-rep="sicherung">Sicherung anlegen</button></div>
@@ -67,7 +67,7 @@ body.anl{padding:0}
 </div>
 <p class="pr-quit" id="p-quit" aria-live="polite"></p>
 </main>
-<script src="../../_werkzeuge/carte/pruefung.js?v=2d7b86c210"></script>
-<script src="../../werkbank/auftritte.js?v=8f2db02292" data-alles></script>
+<script src="../../_werkzeuge/carte/pruefung.js?v=2"></script>
+<script src="../../werkbank/auftritte.js?v=d98cffe582" data-alles></script>
 </body>
 </html>

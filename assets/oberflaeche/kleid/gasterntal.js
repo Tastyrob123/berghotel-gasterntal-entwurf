@@ -2,7 +2,7 @@
 window.WO_HAUS = { kurz: 'gasterntal', name: 'Berghotel Gasterntal', voll: 'Berghotel Gasterntal Kandersteg', ort: 'Gasterntal', welt: 'land', rahmen: 'buehne',
   foto: '/assets/img/haus-profil-l.webp', zeichen: '/assets/oberflaeche/kleid/gasterntal-zeichen.svg', zeichenMass: 1.6,
   wege: (function () { var lokal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);   /* Endprüfung 19.10.2026: online liegen Stube und Werkzeuge unter /maison/ und /werkzeuge/ */
-    return lokal ? { zentrale: '/_werkzeuge/maison/', website: '/studio/', karten: '/_werkzeuge/carte/', gaeste: '/_werkzeuge/reception/', marke: '/_werkzeuge/livre/', besuche: '/_werkzeuge/registre/', druck: '/werkzeuge/imprimerie/' }
+    return lokal ? { zentrale: '/_werkzeuge/maison/', website: '/studio/', karten: '/_werkzeuge/carte/', gaeste: '/_werkzeuge/reception/', marke: '/_werkzeuge/livre/', besuche: '/_werkzeuge/registre/', druck: '/_werkzeuge/imprimerie/' }
                  : { zentrale: '/maison/', website: '/studio/', karten: '/_werkzeuge/carte/', gaeste: '/werkzeuge/reception/', marke: '/werkzeuge/livre/', besuche: '/werkzeuge/registre/', druck: '/werkzeuge/imprimerie/' }; })() };
 document.documentElement.setAttribute('data-wo-haus', WO_HAUS.kurz);
 document.documentElement.setAttribute('data-wo-rahmen', WO_HAUS.rahmen);

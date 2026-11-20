@@ -8,7 +8,7 @@
 .eg-zahlen button:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
 .eg-zahlen button.an{background:var(--holz);color:var(--tinte);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
 .eg-zahlen b{font-family:var(--titel);font-weight:600;font-size:2rem;line-height:1}
-.eg-zahlen span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.eg-zahlen span{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
 
 .eg .leiste__l .eg-uhr{display:inline}
 .eg-filter{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
@@ -16,7 +16,7 @@
 .eg-schalter button{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:999px;font-size:14px;color:rgba(26,31,33,.7);transition:color .3s,background-color .3s}
 .eg-schalter button:hover{color:var(--tinte)}
 .eg-schalter button.an{background:var(--grund);color:var(--papier)}
-.eg-schalter i{font-style:normal;font-family:var(--mono);font-size:10.5px;opacity:.7}
+.eg-schalter i{font-style:normal;font-family:var(--mono);font-size:13px;opacity:.7}
 .eg-ab-weg{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border-radius:999px;font-size:13.5px;background:var(--kander)}
 .eg-ab-weg svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.5}
 
@@ -32,7 +32,7 @@
 .eg-a__k small{margin-left:auto;font-size:12.5px;color:var(--leise)}
 .eg-a__w{font-size:14px;color:rgba(26,31,33,.74)}
 .eg-a__n{font-size:13.5px;line-height:1.45;color:var(--leise);overflow-wrap:anywhere}
-.eg-ab{display:inline-flex;align-items:center;height:22px;padding:0 10px;border-radius:999px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;background:var(--grund);color:var(--holz)}
+.eg-ab{display:inline-flex;align-items:center;height:22px;padding:0 10px;border-radius:999px;font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;background:var(--grund);color:var(--holz)}
 .eg-ab--tisch{background:var(--tanne);color:var(--papier)}
 .eg-ab--draussen{background:var(--kander);color:var(--tinte)}
 .eg-ab--sonst{background:rgba(26,31,33,.08);color:var(--tinte)}
@@ -46,7 +46,7 @@
 .eg-d__z a:hover{color:var(--tinte)}
 .eg-d__l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px;margin:22px 0 0;padding:16px 0;border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
 .eg-d__l>div{padding:8px 0;min-width:0}
-.eg-d__l dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.eg-d__l dt{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
 .eg-d__l dd{margin:4px 0 0;font-size:15.5px;overflow-wrap:anywhere}
 .eg-d__l dd a{border-bottom:1px solid var(--holz)}
 .eg-d__n{margin-top:18px;display:grid;gap:8px}

@@ -20,16 +20,16 @@ var dw=document.write,dl=document.writeln;document.write=function(){return dw.ap
 function e(el){if(!el||el.nodeType!==1)return;['src','href','poster','action'].forEach(function(a){var v=el.getAttribute(a);if(v&&v.charAt(0)==='/'){var z=f(v);if(z!==v)sa.call(el,a,z)}});var t=el.getAttribute('srcset');if(t&&/(^|,)\s*\/[^\/]/.test(t)){var z=s(t);if(z!==t)sa.call(el,'srcset',z)}t=el.getAttribute('style');if(t&&/url\(\s*['"]?\/[^\/]/.test(t)){z=c(t);if(z!==t)sa.call(el,'style',z)}}
 new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes')e(m.target);else m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;e(n);var l=n.querySelectorAll('[src],[href],[srcset],[poster],[action],[style]');for(var i=0;i<l.length;i++)e(l[i])})})}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['src','href','srcset','poster','action','style']})})();</script><!--demo-weiche--><script src="../../../_demo/karte.js"></script><script src="../../../_demo/shim.js"></script>
 <meta charset="utf-8">
-<title>Die Tafel · Blatt</title>
+<title>Karten & Preislisten · Blatt</title>
 <meta name="robots" content="noindex, nofollow">
-<script src="../../../_werkzeuge/carte/fehlermelder.js?v=ac88b5921a"></script>
-<link rel="stylesheet" href="satz.css?v=b382b84e82">
-<link rel="stylesheet" href="../../../_werkzeuge/carte/blatt.css?v=17e2c793e9">
+<script src="../../../_werkzeuge/carte/fehlermelder.js?v=1"></script>
+<link rel="stylesheet" href="satz.css?v=1">
+<link rel="stylesheet" href="../../../_werkzeuge/carte/blatt.css?v=1">
 <style id="karte-css"></style>
 </head>
 <body>
 <main id="seiten"></main>
-<script src="../../../_werkzeuge/carte/satz/satz.js?v=733a3442c7"></script>
-<script src="../../../_werkzeuge/carte/blatt.js?v=af5036b99d"></script>
+<script src="../../../_werkzeuge/carte/satz/satz.js?v=1"></script>
+<script src="../../../_werkzeuge/carte/blatt.js?v=1"></script>
 </body>
 </html>

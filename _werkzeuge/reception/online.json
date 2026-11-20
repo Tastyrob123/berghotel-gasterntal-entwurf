@@ -1,0 +1,78 @@
+{
+ "name": "Anfragen & Chat",
+ "hinweis": "gasterntal-reception (Anfragen & Chat), Bau 17.10.2026, Vorbild Doldenhorn (dort online.json). Ersetzt api/gast.py (von gast_haeuser.py online) durch die mit «Anfragen & Chat» verbundene Fassung: Fragen und Anfragen aus dem Chat landen im Blob («reception», «reception-fragen-JJJJ-MM»); die alte Ablage /api/fragen läuft daneben weiter, wenn GAST_GEHEIM gesetzt ist. Die Anfragen des Anfrage-Fensters bleiben in api/anfragen.js (Blob «anfragen/…»); «Anfragen & Chat» liest und setzt sie dort über /api/anfragen mit x-gast-geheim (GAST_GEHEIM am Projekt nötig) und spiegelt Brief und Gestaltung in «reception». Das Oberflächen-Paket des Hauses geht mit (assets/oberflaeche). Oberfläche explizit aufgezählt, damit daten/ nie online geht. «Das weiss der Chat» bleibt online aus (wie Rivage), PDF online über das Druckfenster. Voraussetzung: _werkzeuge/online/api/_speicher.py des Gasterntal (Werkbank-Chat).",
+ "funktionen": {
+  "api/reception.py": {
+   "von": "_werkzeuge/reception/online/reception.py",
+   "dauer": 120
+  },
+  "api/gast.py": {
+   "von": "_werkzeuge/reception/online/gast.py",
+   "dauer": 60
+  }
+ },
+ "lib": {
+  "_werkzeuge/reception/online/_reception_online.py": "api/_reception_online.py",
+  "_werkzeuge/reception/reception.py": "api/_lib/reception/reception.py",
+  "_werkzeuge/reception/gedaechtnis.py": "api/_lib/reception/gedaechtnis.py",
+  "_werkzeuge/reception/haus_anfragen.py": "api/_lib/reception/haus_anfragen.py",
+  "_werkzeuge/reception/probe_ki.py": "api/_lib/reception/probe_ki.py",
+  "_werkzeuge/reception/steckbrief.json": "api/_lib/reception/steckbrief.json",
+  "_werkzeuge/reception/gast_beispiele.json": "api/_lib/reception/gast_beispiele.json",
+  "_werkzeuge/reception/gast_beispiel_fragen.json": "api/_lib/reception/gast_beispiel_fragen.json",
+  "_werkzeuge/reception/gast_beispiel_nachgetragen.json": "api/_lib/reception/gast_beispiel_nachgetragen.json",
+  "_werkzeuge/reception/gast/gast.py": "api/_lib/reception/gast/gast.py",
+  "_werkzeuge/reception/gast/gast_wissen.txt": "api/_lib/reception/gast/gast_wissen.txt",
+  "_werkzeuge/reception/gast/gast_tal.txt": "api/_lib/reception/gast/gast_tal.txt",
+  "_werkzeuge/reception/gast/gast_haus.json": "api/_lib/reception/gast/gast_haus.json",
+  "_werkzeuge/reception/gast/gast_antworten.json": "api/_lib/reception/gast/gast_antworten.json"
+ },
+ "statik": {
+  "_werkzeuge/reception/index.html": "werkzeuge/reception/index.html",
+  "_werkzeuge/reception/reception.js": "werkzeuge/reception/reception.js",
+  "_werkzeuge/reception/reception.css": "werkzeuge/reception/reception.css",
+  "_werkzeuge/reception/pruefung.html": "werkzeuge/reception/pruefung.html",
+  "_werkzeuge/reception/pruefung.js": "werkzeuge/reception/pruefung.js",
+  "_werkzeuge/reception/anleitung.html": "werkzeuge/reception/anleitung.html",
+  "_werkzeuge/reception/zeichen-gold.svg": "werkzeuge/reception/zeichen-gold.svg",
+  "_werkzeuge/reception/zeichen-gold.png": "werkzeuge/reception/zeichen-gold.png",
+  "_werkzeuge/reception/brief-pdf.html": "werkzeuge/reception/brief-pdf.html",
+  "_werkzeuge/reception/brief-pdf.css": "werkzeuge/reception/brief-pdf.css",
+  "_werkzeuge/reception/brief-pdf.js": "werkzeuge/reception/brief-pdf.js",
+  "_werkzeuge/reception/studio": "werkzeuge/reception/studio",
+  "_werkzeuge/reception/bilder": "werkzeuge/reception/bilder",
+  "_werkzeuge/reception/gasterntal.css": "werkzeuge/reception/gasterntal.css",
+  "_werkzeuge/reception/gastgeber.css": "werkzeuge/reception/gastgeber.css",
+  "assets/oberflaeche": "assets/oberflaeche"
+ },
+ "umleitungen": [
+  {
+   "source": "/_werkzeuge/reception/api/:was",
+   "destination": "/api/reception?__weg=/_werkzeuge/reception/api/:was"
+  },
+  {
+   "source": "/werkzeuge/reception/api/:was",
+   "destination": "/api/reception?__weg=/werkzeuge/reception/api/:was"
+  },
+  {
+   "source": "/_werkzeuge/reception",
+   "destination": "/werkzeuge/reception/index.html"
+  },
+  {
+   "source": "/_werkzeuge/reception/",
+   "destination": "/werkzeuge/reception/index.html"
+  },
+  {
+   "source": "/_werkzeuge/reception/:datei*",
+   "destination": "/werkzeuge/reception/:datei*"
+  }
+ ],
+ "stand": [
+  "/werkzeuge/reception/api/ueberblick",
+  "/_werkzeuge/reception/api/ueberblick"
+ ],
+ "pruefung": {
+  "weg": "/werkzeuge/reception/",
+  "kurz": false
+ }
+}

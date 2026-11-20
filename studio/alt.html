@@ -21,16 +21,15 @@ function e(el){if(!el||el.nodeType!==1)return;['src','href','poster','action'].f
 new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes')e(m.target);else m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;e(n);var l=n.querySelectorAll('[src],[href],[srcset],[poster],[action],[style]');for(var i=0;i<l.length;i++)e(l[i])})})}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['src','href','srcset','poster','action','style']})})();</script><!--demo-weiche--><script src="../_demo/karte.js"></script><script src="../_demo/shim.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Der Schreibtisch · Listen des Hauses · Berghotel Gasterntal</title>
+<title>Website bearbeiten · Listen des Hauses · Berghotel Gasterntal</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#1d2224">
 <link rel="icon" href="../assets/logo/emblem-karte-2026.jpg">
 <link rel="preload" href="../assets/fonts/barlowsemi-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="studio.css?v=2022c6b8df">
-<script src="../besuch.js?v=108cf13990" defer></script><script src="../verweil.js?v=5d7a8c4284" defer></script></head>
+<link rel="stylesheet" href="studio.css?v=3">
+</head>
 <body>
-<style>.probehinweis{position:static;display:block;padding:8px 14px;background:#14181a;color:#e9ecec;font:500 10.5px/1.4 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;text-align:center}html.eingebettet .probehinweis{display:none}</style><div class="probehinweis">Probe-Fassung · Ihre Änderungen bleiben in diesem Browser</div>
 <div id="tor" class="tor" hidden></div>
 <div id="app" class="app" hidden>
   <aside class="rand" id="rand"></aside>
@@ -44,8 +43,8 @@ new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes
 <div id="fenster" class="fenster" hidden></div>
 <div id="meldung" class="meldung" aria-live="polite"></div>
 <input type="file" id="datei" accept="image/jpeg,image/png,image/webp" hidden>
-<script src="../assets/js/listenbilder.js?v=f2451291e7"></script>
-<script src="studio.js?v=684c5b7a0b"></script>
-<script src="eingang_nav.js?v=e30163bb39" defer></script>
-</body>
+<script src="../assets/js/listenbilder.js?v=1"></script>
+<script src="studio.js?v=4"></script>
+<script src="eingang_nav.js?v=1" defer></script>
+<script src="../besuch.js" defer></script></body>
 </html>

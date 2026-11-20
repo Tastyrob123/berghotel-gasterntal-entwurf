@@ -1,0 +1,353 @@
+[
+ {
+  "vor": [
+   0,
+   9,
+   14
+  ],
+  "art": "zimmer",
+  "status": "neu",
+  "an": "gasterntal@doldenhorn.ch",
+  "abteilung": "Rezeption",
+  "seite": "/zimmer.html",
+  "seite_name": "Zimmer",
+  "web": true,
+  "name": "Lea und Jonas Brunner",
+  "kontakt": "lea.brunner@example.com",
+  "datum": "2026-10-23",
+  "personen": 2,
+  "sprache": "de",
+  "anliegen": "Anfrage Zimmer 23.10. bis 24.10., 2 Personen",
+  "nachricht": "Ich möchte gern ein Zimmer anfragen.\nAnreise: 23.10.\nAbreise: 24.10.\nGäste: 2 Personen\nZimmer: Doppelzimmer mit Kajüttenbet\nWie kommen Sie? Mit dem Auto\nKommt ein Hund mit? Ja",
+  "betreff": "Ihre Nacht im Gasterntal, 23. bis 24. Oktober",
+  "text": "Liebe Frau Brunner, lieber Herr Brunner\n\nvielen Dank für Ihre Anfrage. Wir freuen uns, dass Sie vor dem Saisonschluss noch zu uns ins Gasterntal kommen, und Ihr Hund ist herzlich willkommen.\n\nDas Doppelzimmer mit Kajütenbett hat zwei Betten übereinander, ganz aus Holz. Für die Nacht vom 23. auf den 24. Oktober [Verfügbarkeit prüfen].\n\nSie kommen mit dem Auto: Durch die Chluse darf von Viertel vor bis fünf nach hochgefahren werden, ein Kreuzen ist dort nicht möglich. Die Bewilligung für die Naturstrasse können Sie bei uns erwerben, sie gehört an die Frontscheibe.\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: zimmer.html (Doppelzimmer mit Kajütenbett), index.html (Hunde willkommen, Bewilligung im Haus), abreise.html/lage.html (Chluse).\nOffen: Zimmer für den 23.10. frei?",
+  "verlauf": [
+   [
+    "user",
+    "Über das Anfrage-Fenster der Website (Seite Zimmer): Ich möchte gern ein Zimmer anfragen.\nAnreise: 23.10.\nAbreise: 24.10.\nGäste: 2 Personen\nZimmer: Doppelzimmer mit Kajüttenbet\nWie kommen Sie? Mit dem Auto\nKommt ein Hund mit? Ja"
+   ]
+  ]
+ },
+ {
+  "vor": [
+   0,
+   11,
+   2
+  ],
+  "art": "spa",
+  "status": "neu",
+  "an": "gasterntal@doldenhorn.ch",
+  "abteilung": "Rezeption",
+  "seite": "/sauna.html",
+  "seite_name": "Sauna",
+  "web": true,
+  "name": "Sandra Keller",
+  "kontakt": "+41 79 000 00 01",
+  "datum": "2026-10-23",
+  "personen": 2,
+  "sprache": "de",
+  "anliegen": "Sauna in der alten Käserei, 23.10.2026",
+  "nachricht": "Reservation: Die Sauna in der alten Käserei\nTag: Freitag, 23.10.2026\nUhrzeit: 17:00\nPersonen: 2\nName: Sandra Keller\nWünsche: Wir sind Hotelgäste.",
+  "betreff": "Ihre Sauna in der alten Käserei am 23. Oktober",
+  "text": "Liebe Frau Keller\n\nvielen Dank für Ihre Reservation. Gern heizen wir Ihnen die Sauna in der alten Käserei ein, traditionell mit Holz.\n\nSie haben 90 Minuten Wärme, Ruhe und Natur, und nach dem Saunagang geht es hinaus in die freie Natur. Für Freitag, 17:00 Uhr, [Zeit bestätigen].\n\nDanach in die Stube: Warme Speisen gibt es bis 20:30. Möchten Sie einen Tisch, halten wir ihn Ihnen gern frei.\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: sauna.html (Holz, 90 Minuten, 2 Stunden Vorlauf), essen.html (warme Speisen bis 20:30).\nOffen: Sauna 23.10. um 17:00 frei? Tisch danach?",
+  "verlauf": [
+   [
+    "user",
+    "Über das Anfrage-Fenster der Website (Seite Sauna): Reservation: Die Sauna in der alten Käserei\nTag: Freitag, 23.10.2026\nUhrzeit: 17:00\nPersonen: 2\nName: Sandra Keller\nWünsche: Wir sind Hotelgäste."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   1,
+   15,
+   40
+  ],
+  "art": "programm",
+  "status": "gelesen",
+  "an": "gasterntal@doldenhorn.ch",
+  "abteilung": "Rezeption",
+  "seite": "/picknick.html",
+  "seite_name": "Luxus-Picknick",
+  "web": true,
+  "name": "Marco Zürcher",
+  "kontakt": "marco.zuercher@example.com",
+  "datum": "2026-10-24",
+  "personen": 4,
+  "sprache": "de",
+  "anliegen": "Luxus-Picknick, 24.10.",
+  "nachricht": "Anfrage: Luxus-Picknick\nTag: Samstag, 24.10.2026\nAbholen um: 12:00 Uhr\nPersonen: 4\nName: Marco Zürcher\nBitte nennen Sie mir, was Sie richten, und den Preis.\nWünsche: Ein Kind isst vegetarisch.",
+  "betreff": "Ihr Picknick am Samstag, 24. Oktober",
+  "text": "Lieber Herr Zürcher\n\nvielen Dank für Ihre Anfrage. Das Picknick stellen wir Ihnen gern zusammen, mit naturgerechten Produkten, wenn immer möglich direkt vom Produzenten.\n\nFür vier Personen am Samstag, abholbereit um 12:00 Uhr, richten wir: [Inhalt des Korbs und Preis nennen]. Für Ihr Kind [vegetarische Auswahl klären].\n\nWir freuen uns, wenn Sie draussen rund ums Haus einen schönen Platz finden.\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: picknick.html (das Haus stellt das Picknick zusammen und nennt den Preis), essen.html (Devise).\nOffen: Inhalt, Preis, vegetarisch.",
+  "verlauf": [
+   [
+    "user",
+    "Über das Anfrage-Fenster der Website (Seite Luxus-Picknick): Anfrage: Luxus-Picknick\nTag: Samstag, 24.10.2026\nAbholen um: 12:00 Uhr\nPersonen: 4\nName: Marco Zürcher\nBitte nennen Sie mir, was Sie richten, und den Preis.\nWünsche: Ein Kind isst vegetarisch."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   1,
+   19,
+   5
+  ],
+  "art": "programm",
+  "status": "neu",
+  "an": "gasterntal@doldenhorn.ch",
+  "abteilung": "Rezeption",
+  "seite": "/abreise.html",
+  "seite_name": "Der Weg hinunter",
+  "web": true,
+  "name": "James Whitfield",
+  "kontakt": "james.whitfield@example.com",
+  "datum": "2026-10-25",
+  "personen": 2,
+  "sprache": "en",
+  "anliegen": "Fahrt hinunter nach Kandersteg, 25.10.",
+  "nachricht": "Anfrage: Fahrt von Selden nach Kandersteg\nAbreisetag: Sonntag, 25.10.2026\nAbfahrt am Hotel: 10:00 Uhr\nPersonen: 2\nName: James Whitfield\nDazu: We have two suitcases and would like to catch the train at 11:30 in Kandersteg. Thank you!",
+  "betreff": "Your ride down to Kandersteg on 25 October",
+  "text": "Dear Mr Whitfield\n\nThank you very much for your request. The Gasternbus no longer runs from 5 October, so we will organise your ride down to Kandersteg.\n\nFor two people with two suitcases on Sunday, leaving the hotel at 10:00, [confirm time and price]. That leaves you enough time for your train at 11:30.\n\nWe look forward to your last evening in the valley with us.\n\nKind regards\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: abreise.html und offen.html (Gasternbus ab 5. Oktober nicht mehr, Transport organisiert das Haus).\nOffen: Zeit und Preis der Fahrt bestätigen.",
+  "deutsch": {
+   "betreff": "Ihre Fahrt hinunter nach Kandersteg am 25. Oktober",
+   "text": "Lieber Herr Whitfield\n\nvielen Dank für Ihre Anfrage. Ab 5. Oktober verkehrt der Gasternbus nicht mehr, deshalb organisieren wir Ihre Fahrt hinunter nach Kandersteg.\n\nFür zwei Personen mit zwei Koffern am Sonntag, Abfahrt am Hotel um 10:00, [Zeit und Preis bestätigen]. So erreichen Sie Ihren Zug um 11:30 gut.\n\nWir freuen uns auf Ihren letzten Abend bei uns im Tal.\n\nHerzliche Grüsse\n\n[Name]\nBerghotel Gasterntal"
+  },
+  "verlauf_de": [
+   "Über das Anfrage-Fenster der Website (Seite Der Weg hinunter): Anfrage: Fahrt von Selden nach Kandersteg. Abreisetag: Sonntag, 25.10.2026. Abfahrt am Hotel: 10:00 Uhr. Personen: 2. Dazu: Wir haben zwei Koffer und möchten den Zug um 11:30 in Kandersteg erreichen. Danke!"
+  ],
+  "verlauf": [
+   [
+    "user",
+    "Über das Anfrage-Fenster der Website (Seite Der Weg hinunter): Anfrage: Fahrt von Selden nach Kandersteg\nAbreisetag: Sonntag, 25.10.2026\nAbfahrt am Hotel: 10:00 Uhr\nPersonen: 2\nName: James Whitfield\nDazu: We have two suitcases and would like to catch the train at 11:30 in Kandersteg. Thank you!"
+   ]
+  ]
+ },
+ {
+  "vor": [
+   2,
+   8,
+   31
+  ],
+  "art": "tagung",
+  "status": "neu",
+  "an": "gasterntal@doldenhorn.ch",
+  "abteilung": "Rezeption",
+  "seite": "/feste.html",
+  "seite_name": "Feste und Gruppen",
+  "web": true,
+  "name": "Ruth Aebi",
+  "kontakt": "ruth.aebi@example.com",
+  "datum": "2027-07-10",
+  "personen": 30,
+  "sprache": "de",
+  "anliegen": "Das Hotel exklusiv, Familienfest",
+  "nachricht": "Das Hotel exklusiv\nAnlass: Familienfest\nDatum: 2027-07-10\nErwachsene: 24\nKinder ab 6 Jahren: 6\nName: Ruth Aebi\nWünsche: Mein Vater wird 70. Wir möchten am Abend draussen an der langen Tafel essen.",
+  "betreff": "Ihr Familienfest im ganzen Haus am 10. Juli 2027",
+  "text": "Liebe Frau Aebi\n\nvielen Dank für Ihre Anfrage und herzliche Gratulation Ihrem Vater zum 70. Geburtstag.\n\nDas ganze Hotel gehört an diesem Tag Ihrer Familie: Wir haben Zimmer für 20 Personen und ein Bettenlager für höchstens 30. Inbegriffen sind Übernachtung mit Frühstück, Aperitif, ein rustikales Nachtessen (3 Gänge), Wein, Mineral und Kaffee und ein Digestiv.\n\nFür den 10. Juli 2027 [Datum prüfen und Offerte freigeben]. Ob wir draussen an der langen Tafel decken, [je nach Wetter mit Frau Aebi klären].\n\nDamit wir alles vorbereiten können:\n- Wer schläft im Zimmer, wer im Bettenlager?\n- Gibt es Allergien oder Wünsche zum Essen?\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: feste.html und zimmer.html (Das Hotel exklusiv: Zimmer für 20, Bettenlager für 30, Inbegriffenes).\nOffen: Datum in der Saison 2027; Offerte; Tafel draussen.",
+  "verlauf": [
+   [
+    "user",
+    "Über das Anfrage-Fenster der Website (Seite Feste und Gruppen): Das Hotel exklusiv\nAnlass: Familienfest\nDatum: 2027-07-10\nErwachsene: 24\nKinder ab 6 Jahren: 6\nName: Ruth Aebi\nWünsche: Mein Vater wird 70. Wir möchten am Abend draussen an der langen Tafel essen."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   3,
+   18,
+   12
+  ],
+  "art": "aufenthalt",
+  "status": "erledigt",
+  "an": "gasterntal@doldenhorn.ch",
+  "abteilung": "Rezeption",
+  "seite": "/anreise.html",
+  "seite_name": "Vor Ihrer Anreise",
+  "web": true,
+  "name": "Peter Lehmann",
+  "kontakt": "peter.lehmann@example.com",
+  "datum": "2026-10-23",
+  "personen": 2,
+  "sprache": "de",
+  "anliegen": "Vor der Anreise: Peter Lehmann, 2026-10-23",
+  "nachricht": "Name: Peter Lehmann\nBuchungsnummer: -\nAnreise: 2026-10-23\nAbreise: 2026-10-25\nWir kommen an: 14 bis 17 Uhr\nWie kommen Sie? Mit dem Auto\nSauna am: 2026-10-23 um 18:00\nTisch am: 2026-10-23 um 19:30\nPersonen: 2",
+  "betreff": "Vor Ihrer Anreise am 23. Oktober",
+  "text": "Lieber Herr Lehmann\n\nvielen Dank, dass Sie uns Ihre Anreise vorab schreiben. Wenn Sie ankommen, steht alles bereit.\n\nDie Sauna in der alten Käserei am Freitag um 18:00 [bestätigen] und den Tisch um 19:30 [bestätigen].\n\nFür die Naturstrasse brauchen Sie eine Bewilligung an der Frontscheibe; falls Sie noch keine haben, erhalten Sie sie bei uns. Hinauf durch die Chluse geht es von Viertel vor bis fünf nach jeder Stunde.\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: anreise.html (Sauna zwei Stunden Vorlauf, Tisch), index.html (Bewilligung), lage.html (Chluse).\nErledigt: Sauna und Tisch eingetragen.",
+  "verlauf": [
+   [
+    "user",
+    "Über das Anfrage-Fenster der Website (Seite Vor Ihrer Anreise): Name: Peter Lehmann\nBuchungsnummer: -\nAnreise: 2026-10-23\nAbreise: 2026-10-25\nWir kommen an: 14 bis 17 Uhr\nWie kommen Sie? Mit dem Auto\nSauna am: 2026-10-23 um 18:00\nTisch am: 2026-10-23 um 19:30\nPersonen: 2"
+   ]
+  ]
+ },
+ {
+  "vor": [
+   0,
+   20,
+   48
+  ],
+  "art": "zimmer",
+  "status": "neu",
+  "name": "Claire Dubois",
+  "kontakt": "claire.dubois@example.com",
+  "datum": "juin 2027",
+  "personen": 6,
+  "sprache": "fr",
+  "anliegen": "Famille de six, deux nuits en juin 2027, chambre familiale.",
+  "verlauf": [
+   [
+    "user",
+    "Bonjour, nous sommes une famille de six personnes. Avez-vous une chambre pour nous tous, deux nuits en juin ?"
+   ],
+   [
+    "assistant",
+    "Bonjour ! Oui, nous avons des chambres familiales avec 4, 6 ou 8 lits dans l’annexe. L’hôtel ouvre en 2027 le 13.05.2027 (si la météo le permet). Souhaitez-vous que l’équipe vous écrive ? J’ai besoin de votre nom et d’un e-mail ou d’un numéro de téléphone."
+   ],
+   [
+    "user",
+    "Claire Dubois, claire.dubois@example.com"
+   ],
+   [
+    "assistant",
+    "Merci, Madame Dubois. Votre demande est transmise à l’équipe, la maison vous répondra personnellement."
+   ]
+  ],
+  "betreff": "Votre séjour en famille au Gasterntal, juin 2027",
+  "text": "Chère Madame Dubois\n\nMerci beaucoup pour votre demande. Nous serions ravis d’accueillir votre famille au Gasterntal l’été prochain.\n\nPour six personnes, notre chambre familiale avec 6 lits dans l’annexe convient bien. Les chambres sont simples et chaleureuses, la douche et les WC se trouvent à l’étage. Pour vos deux nuits en juin [vérifier la disponibilité].\n\nPour que nous puissions préparer votre séjour :\n- Vos dates exactes d’arrivée et de départ\n- Venez-vous en voiture ou en bus ?\n\nCordialement\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: zimmer.html (Familienzimmer mit 6 Betten im Nebenhaus, Dusche und WC auf der Etage), offen.html (Eröffnung 2027).\nOffen: Daten im Juni 2027.",
+  "deutsch": {
+   "betreff": "Ihr Familienaufenthalt im Gasterntal, Juni 2027",
+   "text": "Liebe Frau Dubois\n\nvielen Dank für Ihre Anfrage. Wir würden uns freuen, Ihre Familie im nächsten Sommer im Gasterntal zu begrüssen.\n\nFür sechs Personen passt unser Familienzimmer mit 6 Betten im Nebenhaus. Die Zimmer sind einfach und heimelig, Dusche und WC sind auf der Etage. Für Ihre zwei Nächte im Juni [Verfügbarkeit prüfen].\n\nDamit wir Ihren Aufenthalt vorbereiten können:\n- Ihre genauen An- und Abreisedaten\n- Kommen Sie mit dem Auto oder mit dem Bus?\n\nHerzliche Grüsse\n\n[Name]\nBerghotel Gasterntal"
+  },
+  "verlauf_de": [
+   "Guten Tag, wir sind eine Familie mit sechs Personen. Haben Sie ein Zimmer für uns alle, zwei Nächte im Juni?",
+   "Guten Tag! Ja, wir haben Familienzimmer mit 4, 6 oder 8 Betten im Nebenhaus. Das Haus öffnet 2027 am 13.05.2027 (falls das Wetter mitspielt). Soll das Team Ihnen schreiben? Dann brauche ich Ihren Namen und eine E-Mail oder Telefonnummer.",
+   "Claire Dubois, claire.dubois@example.com",
+   "Danke, Frau Dubois. Ihre Anfrage liegt beim Team, das Haus meldet sich persönlich bei Ihnen."
+  ]
+ },
+ {
+  "vor": [
+   2,
+   12,
+   20
+  ],
+  "art": "tisch",
+  "status": "gelesen",
+  "name": "Urs Kunz",
+  "kontakt": "+41 79 000 00 02",
+  "datum": "Samstag, 24.10.2026, 18:30",
+  "personen": 6,
+  "sprache": "de",
+  "anliegen": "Tisch für 6 Personen am Samstagabend, Fondue.",
+  "verlauf": [
+   [
+    "user",
+    "Können wir am Samstagabend mit 6 Personen bei euch Fondue essen? So um halb sieben."
+   ],
+   [
+    "assistant",
+    "Gern. Das Friburger Chäsefondue gibt es ab 2 Personen, warme Speisen bis 20:30. Soll das Team Ihnen den Tisch bestätigen? Dann brauche ich Ihren Namen und eine Telefonnummer oder E-Mail."
+   ],
+   [
+    "user",
+    "Urs Kunz, 079 000 00 02"
+   ],
+   [
+    "assistant",
+    "Danke, Herr Kunz. Ihre Anfrage liegt beim Team, das Haus meldet sich persönlich bei Ihnen."
+   ]
+  ],
+  "betreff": "Ihr Fondue am Samstag, 24. Oktober",
+  "text": "Lieber Herr Kunz\n\nvielen Dank für Ihre Anfrage. Für Ihre Runde zu sechst am Samstag um 18:30 [Tisch bestätigen], gern in der Stube.\n\nDas Friburger Chäsefondue gibt es ab 2 Personen; wer lieber etwas anderes mag, findet auf der Karte Grossis Küche und ein veganes Gericht.\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: essen.html (Fondue ab 2 Personen, Grossis Küche, vegan).\nOffen: Tisch für 6 am 24.10. um 18:30."
+ },
+ {
+  "vor": [
+   4,
+   10,
+   55
+  ],
+  "art": "feier",
+  "status": "neu",
+  "name": "Sophie Miller",
+  "kontakt": "sophie.miller@example.com",
+  "datum": "September 2027",
+  "personen": 60,
+  "sprache": "en",
+  "anliegen": "Wedding with about 60 guests in September 2027, some staying overnight.",
+  "verlauf": [
+   [
+    "user",
+    "Hi! We are planning our wedding in September 2027 with about 60 guests. Is that possible at your hotel?"
+   ],
+   [
+    "assistant",
+    "Congratulations! The hotel has room for up to 80 people at a celebration, 50 including overnight stays, indoors or outside. Shall the team write to you? I need your name and an e-mail or phone number."
+   ],
+   [
+    "user",
+    "Sophie Miller, sophie.miller@example.com"
+   ],
+   [
+    "assistant",
+    "Thank you, Ms Miller. Your request is with the team, the hotel will get back to you personally."
+   ]
+  ],
+  "betreff": "Your wedding in the Gasterntal, September 2027",
+  "text": "Dear Ms Miller\n\nThank you very much for your request, and congratulations on your engagement.\n\nWe have room for up to 80 people at a celebration, 50 of them including an overnight stay. You can celebrate indoors or outside, and our event experts will help you plan the day. Our wedding flyer is on the page «Feste und Gruppen» as a PDF.\n\nFor September 2027 [check date within the season].\n\nSo that we can prepare an offer:\n- Your preferred date\n- How many guests will stay overnight\n\nKind regards\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Grundlage: feste.html (bis 80 Personen, 50 mit Übernachtung, drinnen oder draussen, Hochzeitsflyer).\nOffen: Saison 2027 nach dem 13.05.2027 bestätigen; Saisonschluss 2027 steht noch nicht fest.",
+  "deutsch": {
+   "betreff": "Ihre Hochzeit im Gasterntal, September 2027",
+   "text": "Liebe Frau Miller\n\nvielen Dank für Ihre Anfrage und herzliche Gratulation zur Verlobung.\n\nWir haben Platz für bis zu 80 Personen am Fest, 50 davon mit Übernachtung. Sie können drinnen oder im Freien feiern, und unsere Event-Experten helfen Ihnen, den Tag zu planen. Unseren Hochzeitsflyer finden Sie auf der Seite «Feste und Gruppen» als PDF.\n\nFür September 2027 [Datum in der Saison prüfen].\n\nDamit wir ein Angebot vorbereiten können:\n- Ihr Wunschdatum\n- Wie viele Gäste übernachten\n\nHerzliche Grüsse\n\n[Name]\nBerghotel Gasterntal"
+  },
+  "verlauf_de": [
+   "Hallo! Wir planen unsere Hochzeit im September 2027 mit etwa 60 Gästen. Geht das bei Ihnen?",
+   "Herzliche Gratulation! Das Haus hat Platz für bis zu 80 Personen am Fest, 50 inklusive Übernachtung, drinnen oder draussen. Soll das Team Ihnen schreiben? Dann brauche ich Ihren Namen und eine E-Mail oder Telefonnummer.",
+   "Sophie Miller, sophie.miller@example.com",
+   "Danke, Frau Miller. Ihre Anfrage liegt beim Team, das Haus meldet sich persönlich bei Ihnen."
+  ]
+ },
+ {
+  "vor": [
+   1,
+   16,
+   30
+  ],
+  "art": "nachricht",
+  "status": "gelesen",
+  "name": "Margrit Steiner",
+  "kontakt": "margrit.steiner@example.com",
+  "datum": "",
+  "personen": "",
+  "sprache": "de",
+  "anliegen": "Dank für den Aufenthalt, Gruss an das Team in der Küche.",
+  "verlauf": [
+   [
+    "user",
+    "Guten Tag, wir waren letzte Woche bei Ihnen und möchten uns einfach bedanken. Es war wunderbar ruhig, und das Essen in der Gaststube war fein. Bitte richten Sie dem Team in der Küche einen Gruss aus."
+   ],
+   [
+    "assistant",
+    "Danke für die schönen Worte. Soll ich Ihre Nachricht an das Team weitergeben? Dann brauche ich Ihren Namen und eine E-Mail oder Telefonnummer."
+   ],
+   [
+    "user",
+    "Margrit Steiner, margrit.steiner@example.com"
+   ],
+   [
+    "assistant",
+    "Danke, Frau Steiner. Ihre Nachricht liegt beim Team."
+   ]
+  ],
+  "betreff": "Danke für Ihre Zeilen",
+  "text": "Liebe Frau Steiner\n\nvielen Dank für Ihre Nachricht. Wir haben Ihren Gruss gleich in der Küche ausgerichtet und uns alle darüber gefreut.\n\nSchön, dass Sie die Ruhe im Tal geniessen konnten. Wir freuen uns, wenn Sie wieder einmal zu uns ins Gasterntal kommen.\n\nHerzlich\n\n[Name]\nBerghotel Gasterntal",
+  "team": "Kein Anliegen, nur Dank. Gruss an die Küche ausrichten."
+ }
+]

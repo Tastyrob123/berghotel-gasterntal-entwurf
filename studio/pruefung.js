@@ -14,23 +14,23 @@ const PF = '<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5
 const SPEICHER = 'bg_studio_fehler';   // dort legt studio.js seine Fehler ab (dieselbe Adresse, derselbe Browser)
 const EIGENE_V = (/[?&]v=([\w-]+)/.exec(($('script[src*="pruefung.js"]') || {}).src || '') || [])[1] || '';
 
-// ---------------------------------------------------------------- Der Schreibtisch (17.10.2026): Meldungen mit Stichwort («STELLE · …»). «Was tun?» in der Quittung
+// ---------------------------------------------------------------- Website bearbeiten (17.10.2026): Meldungen mit Stichwort («STELLE · …»). «Was tun?» in der Quittung
 // öffnet hier #m-<stichwort> (eigene Kennungen, damit sie nicht mit den Prüfpunkten kollidieren, Fund Doldenhorn F72). Texte nach dem Lexikon des Doldenhorn und des Ruedihus.
 const LEX_SCHREIBTISCH = [
-  { id: 'm-konflikt', titel: 'KONFLIKT · In einem anderen Fenster wurde gespeichert', sehen: 'Der Schreibtisch nimmt «Speichern» nicht an und lädt die Liste neu; Ihre gelben Eingaben stehen noch da.',
-    grund: 'Der Schreibtisch ist in zwei Fenstern (oder auf zwei Rechnern) offen, und im anderen wurde inzwischen gespeichert. Damit nichts still überschrieben wird, vergleicht er den Stand des Entwurfs vor jedem Speichern.',
+  { id: 'm-konflikt', titel: 'KONFLIKT · In einem anderen Fenster wurde gespeichert', sehen: 'Website bearbeiten nimmt «Speichern» nicht an und lädt die Liste neu; Ihre gelben Eingaben stehen noch da.',
+    grund: 'Website bearbeiten ist in zwei Fenstern (oder auf zwei Rechnern) offen, und im anderen wurde inzwischen gespeichert. Damit nichts still überschrieben wird, vergleicht er den Stand des Entwurfs vor jedem Speichern.',
     tun: 'Ansehen, was das andere Fenster gespeichert hat, dann noch einmal «Speichern». Am besten nur in einem Fenster arbeiten.', worte: 'konflikt zwei fenster überschrieben 409 gleichzeitig' },
   { id: 'm-herkunft', titel: 'HERKUNFT · Anfrage von einer fremden Seite', sehen: 'Eine Meldung «Diese Anfrage kam von einer fremden Seite oder Adresse und wurde abgewiesen».',
-    grund: 'Eine Anfrage kam nicht vom Schreibtisch selbst, sondern von einer anderen Adresse. So kann keine fremde Seite heimlich etwas an der Website ändern.',
-    tun: 'Den Schreibtisch immer über seine eigene Adresse öffnen. Erscheint die Meldung beim normalen Arbeiten: Robert Bescheid geben.', worte: 'herkunft fremd 403 421 adresse abgewiesen' },
+    grund: 'Eine Anfrage kam nicht von «Website bearbeiten» selbst, sondern von einer anderen Adresse. So kann keine fremde Seite heimlich etwas an der Website ändern.',
+    tun: '«Website bearbeiten» immer über seine eigene Adresse öffnen. Erscheint die Meldung beim normalen Arbeiten: Robert Bescheid geben.', worte: 'herkunft fremd 403 421 adresse abgewiesen' },
   { id: 'm-grenze', titel: 'GRENZE · Zu viele Anfragen in kurzer Zeit', sehen: 'Eine Meldung «Zu viele Anfragen in kurzer Zeit».',
-    grund: 'Mehr als 60 Speicherungen oder 600 Abfragen in einer Minute vom selben Rechner. Der Schreibtisch macht eine Minute Pause, damit niemand den Server überlasten kann. Nichts geht verloren.',
+    grund: 'Mehr als 60 Speicherungen oder 600 Abfragen in einer Minute vom selben Rechner. Website bearbeiten macht eine Minute Pause, damit niemand den Server überlasten kann. Nichts geht verloren.',
     tun: 'Eine Minute warten, dann noch einmal.', worte: 'grenze zu viele 429 minute pause' },
   { id: 'm-groesse', titel: 'GROESSE · Die Anfrage ist zu gross', sehen: 'Ein Foto oder eine Eingabe wird abgewiesen, «grösser als 32 MB» oder «grösser als 25 MB».',
     grund: 'Eine Datei oder Eingabe ist grösser als 32 MB (ein Foto: höchstens 25 MB). Sie wird abgewiesen, bevor sie den Server belastet.',
     tun: 'Foto kleiner exportieren: für die Website reichen 2000 Pixel Breite (meist 1 bis 3 MB).', worte: 'gross mb foto datei 413 zu gross' },
   { id: 'm-stelle', titel: 'STELLE · Diese Stelle oder Seite gibt es nicht mehr', sehen: 'Ein Text, Abschnitt oder eine Seite lässt sich nicht mehr öffnen oder ausblenden.',
-    grund: 'Die Website wurde inzwischen neu gebaut. Der Schreibtisch kennt die alte Stelle noch.',
+    grund: 'Die Website wurde inzwischen neu gebaut. Website bearbeiten kennt die alte Stelle noch.',
     tun: 'Seite neu laden. Bleibt es: unter «Entwurf & Vergleich» nachsehen, ob die Änderung ihre Stelle verloren hat, und neu eingeben.', worte: 'stelle abschnitt seite nicht mehr umgebaut' },
   { id: 'm-bild', titel: 'BILD · Mit dem Foto stimmt etwas nicht', sehen: 'Ein Foto wird nicht übernommen: zu klein, zu gross, kein Bild oder ein iPhone-Foto im HEIC-Format.',
     grund: 'Fotos brauchen mindestens 900 Pixel Breite (Startbild, Fenster und Seitenköpfe 1400), höchstens 25 MB, und müssen JPG, PNG oder WebP sein. Auf der Website ändert sich nichts.',
@@ -46,12 +46,12 @@ const LEX_SCHREIBTISCH = [
     tun: 'Text eintragen, Datum mit dem Kalender wählen, Link mit https:// oder eine Seite wie anreise.html.', worte: 'hinweis band gäste text datum link' },
   { id: 'm-laeuft', titel: 'LAEUFT · Es wird gerade veröffentlicht', sehen: '«Es wird gerade veröffentlicht. Einen Moment.»',
     grund: 'Ein Veröffentlichen ist noch nicht fertig. Ein zweites startet erst, wenn das erste fertig ist.',
-    tun: 'Warten, bis «Ist online.» oder «Nicht veröffentlicht.» erscheint; der Schreibtisch zeigt den Fortschritt auch nach dem Neuladen.', worte: 'läuft veröffentlichen warten' },
+    tun: 'Warten, bis «Ist online.» oder «Nicht veröffentlicht.» erscheint; «Website bearbeiten» zeigt den Fortschritt auch nach dem Neuladen.', worte: 'läuft veröffentlichen warten' },
   { id: 'm-pruefung', titel: 'PRUEFUNG · Vor dem Umschalten ist etwas aufgefallen', sehen: '«Nicht veröffentlicht.» mit einem Befund; die Website ist unverändert.',
-    grund: 'Der Schreibtisch setzt beim Veröffentlichen alle Seiten zuerst in einem Bauordner und prüft sie: jede Seite endet sauber, keine Kennzeichen der Vorschau, keine Seite um mehr als 40 % kleiner, keine alte Telefonnummer oder Adresse mehr, jede Änderung an ihrer Stelle.',
+    grund: 'Website bearbeiten setzt beim Veröffentlichen alle Seiten zuerst in einem Bauordner und prüft sie: jede Seite endet sauber, keine Kennzeichen der Vorschau, keine Seite um mehr als 40 % kleiner, keine alte Telefonnummer oder Adresse mehr, jede Änderung an ihrer Stelle.',
     tun: 'Den Satz der Meldung lesen. Steht dort «hat ihre Stelle nicht gefunden»: unter «Entwurf & Vergleich» die Änderung neu eingeben. Sonst Robert Bescheid geben.', worte: 'prüfung veröffentlichen befund bauordner' },
   { id: 'm-nachpruefung', titel: 'NACHPRUEFUNG · Nach dem Übernehmen nicht gleich', sehen: '«Nicht veröffentlicht.», obwohl die Prüfung vorher grün war.',
-    grund: 'Nach dem Übernehmen vergleicht der Schreibtisch jede neue Seite Byte für Byte mit der geprüften. Eine stimmte nicht (Platte voll, Datei von aussen geändert). Alles wurde aus der Sicherung zurückgestellt: die Website ist unverändert.',
+    grund: 'Nach dem Übernehmen vergleicht «Website bearbeiten» jede neue Seite Byte für Byte mit der geprüften. Eine stimmte nicht (Platte voll, Datei von aussen geändert). Alles wurde aus der Sicherung zurückgestellt: die Website ist unverändert.',
     tun: 'Noch einmal veröffentlichen. Bleibt es: Robert Bescheid geben.', worte: 'nachprüfung byte gleich zurückgestellt' },
   { id: 'm-bau', titel: 'BAU · Die Seiten liessen sich nicht setzen', sehen: 'Speichern oder Veröffentlichen scheitert mit dem Stichwort BAU.',
     grund: 'Der Bau der Website mit den Änderungen ist gescheitert. Nichts wurde gespeichert oder veröffentlicht, die Website ist unverändert.',
@@ -60,25 +60,25 @@ const LEX_SCHREIBTISCH = [
     grund: 'Die Fassung liegt nicht mehr im Verlauf oder ist beschädigt. Nichts wurde geändert.',
     tun: 'Seite neu laden und eine andere Fassung wählen. «Ursprünglicher Stand» geht immer.', worte: 'verlauf fassung zurückholen' },
   { id: 'm-rueckgaengig', titel: 'RUECKGAENGIG · Dieser Schritt ist nicht mehr da', sehen: '«Rückgängig» in einer Quittung geht nicht mehr.',
-    grund: 'Der Schreibtisch hebt die letzten 80 Speicherungen für «Rückgängig» auf; in der Probe-Fassung nur bis zum nächsten Neustart des Servers. Der Entwurf ist unverändert.',
+    grund: 'Website bearbeiten hebt die letzten 80 Speicherungen für «Rückgängig» auf; in der Probe-Fassung nur bis zum nächsten Neustart des Servers. Der Entwurf ist unverändert.',
     tun: 'Unter «Entwurf & Vergleich» einzelne Änderungen zurücknehmen oder unter «Frühere Fassungen» zurückholen.', worte: 'rückgängig schritt' },
   { id: 'm-seite', titel: 'SEITE · Das ist keine Seite der Website', sehen: 'Die Vorschau rechts bleibt leer oder meldet «keine Seite der Website».',
     grund: 'Die Vorschau sollte eine Seite zeigen, die es im Entwurf nicht gibt, meist nach einem Umbau oder einer entfernten eigenen Seite.',
-    tun: 'Den Schreibtisch neu laden und die Seite neu wählen.', worte: 'seite vorschau leer' },
+    tun: '«Website bearbeiten» neu laden und die Seite neu wählen.', worte: 'seite vorschau leer' },
   { id: 'm-weg', titel: 'WEG · Unbekannte Anfrage', sehen: 'Eine Meldung mit dem Stichwort WEG.',
     grund: 'Oberfläche und Server passen nicht zusammen: eine Datei wurde ersetzt, die andere noch nicht.',
     tun: 'Oben «Studio frisch laden» oder die Seite mit Cmd+Shift+R neu laden.', worte: 'weg unbekannt fassung' },
-  { id: 'm-zugang', titel: 'ZUGANG · Bitte anmelden', sehen: 'Der Schreibtisch verlangt eine Anmeldung.',
-    grund: 'Der Schreibtisch ist mit Passwort geschützt und Sie sind nicht (mehr) angemeldet. Die Anmeldung hält 12 Stunden.',
+  { id: 'm-zugang', titel: 'ZUGANG · Bitte anmelden', sehen: 'Website bearbeiten verlangt eine Anmeldung.',
+    grund: 'Website bearbeiten ist mit Passwort geschützt und Sie sind nicht (mehr) angemeldet. Die Anmeldung hält 12 Stunden.',
     tun: 'Unter «Zugang» anmelden, dann weiterarbeiten. Ungespeicherte Eingaben bleiben im Fenster stehen.', worte: 'zugang anmelden passwort' },
-  { id: 'm-verbindung', titel: 'VERBINDUNG · Keine Verbindung zum Schreibtisch', sehen: 'Speichern scheitert mit «Keine Verbindung zum Schreibtisch».',
+  { id: 'm-verbindung', titel: 'VERBINDUNG · Keine Verbindung zu «Website bearbeiten»', sehen: 'Speichern scheitert mit «Keine Verbindung zu «Website bearbeiten»».',
     grund: 'Der Browser erreicht den Server nicht (Netz weg, Server aus). Nichts wurde gespeichert; Ihre Eingaben sind noch im Fenster, gelb markiert.',
     tun: 'Verbindung prüfen, dann noch einmal «Speichern». Die Eingaben gehen nicht verloren, solange das Fenster offen bleibt.', worte: 'verbindung netz offline speichern' },
   { id: 'm-server', titel: 'SERVER · Unerwarteter Fehler', sehen: 'Eine Meldung mit dem Stichwort SERVER.',
-    grund: 'Etwas, mit dem der Schreibtisch nicht gerechnet hat. Der Fehler steht im Fehlerprotokoll unten. Ihre Eingaben sind noch im Fenster.',
+    grund: 'Etwas, mit dem «Website bearbeiten» nicht gerechnet hat. Der Fehler steht im Fehlerprotokoll unten. Ihre Eingaben sind noch im Fenster.',
     tun: 'Oben «Noch einmal prüfen» und «Bericht kopieren», an Robert schicken.', worte: 'server fehler unerwartet' },
-  { id: 'schreibtisch-teile', titel: 'Teile des Schreibtischs fehlen', sehen: 'Der Punkt «Der Schreibtisch» ist rot.',
-    grund: 'Eine Datei des Schreibtischs (Programm oder Oberfläche) liegt nicht auf dem Server, meist nach einem unvollständigen Hochladen.',
+  { id: 'schreibtisch-teile', titel: 'Teile von «Website bearbeiten» fehlen', sehen: 'Der Punkt «Website bearbeiten» ist rot.',
+    grund: 'Eine Datei von «Website bearbeiten» (Programm oder Oberfläche) liegt nicht auf dem Server, meist nach einem unvollständigen Hochladen.',
     tun: 'Robert Bescheid geben. Bis dahin laufen die früheren Ansichten weiter unter /studio/alt.html.', worte: 'schreibtisch teile fehlen datei' },
   { id: 'bauordner', titel: 'Reste eines abgebrochenen Veröffentlichens', sehen: 'Der Punkt «Bauordner» ist gelb.',
     grund: 'Ein Veröffentlichen wurde abgebrochen (Server neu gestartet, Rechner ausgeschaltet). Der Bauordner neben der Website blieb liegen. Die Website selbst ist davon nicht betroffen.',
@@ -291,7 +291,7 @@ async function pruefeHier() {
   }
   // Fassung: die Marke des Servers gegen die Marke, mit der studio.js und diese Seite geladen wurden
   const seite = await hole('/studio/', {}, 15000);
-  const mv = /(?:bureau|studio)\.js\?v=([\w-]+)/.exec(seite.text || '');   // /studio/ ist seit 17.10.2026 der Schreibtisch (bureau.js)
+  const mv = /(?:bureau|studio)\.js\?v=([\w-]+)/.exec(seite.text || '');   // /studio/ ist seit 17.10.2026 «Website bearbeiten» (bureau.js)
   const geladen = mv ? mv[1] : '';
   if (!st.version) p.push(punkt('fassung', 'Fassung des Studios', 'hinweis', 'Der Server nennt keine Fassung. Das ist eine ältere Fassung des Servers.', 'alte-fassung'));
   else if (!/^[0-9a-f]{8}$/.test(geladen) && !/^[0-9a-f]{8}$/.test(EIGENE_V)) p.push(punkt('fassung', 'Fassung des Studios', 'ok', `Fassung ${st.version} (lokal, ohne Stempel im Browser).`, null));
@@ -402,7 +402,7 @@ function griffe() {
   $$('#griffe .griff').forEach(el => {
     const x = g.find(y => y.id === el.dataset.g), b = $('button', el);
     b.addEventListener('click', async () => {
-      /* Der Schreibtisch (R23): jede Reparatur erst nach dem zweiten Klick */
+      /* Website bearbeiten (R23): jede Reparatur erst nach dem zweiten Klick */
       if (x.id !== 'laden' && WARTE !== x.id) { WARTE = x.id; const alt = b.innerHTML; b.innerHTML = 'Wirklich? Noch einmal klicken' + PF; setTimeout(() => { if (WARTE === x.id) { WARTE = null; b.innerHTML = alt; } }, 6000); return; }
       WARTE = null;
       b.disabled = true;
@@ -473,5 +473,5 @@ $('#nochmal').addEventListener('click', start);
 $('#such').addEventListener('input', ev => lexikon(ev.target.value));
 addEventListener('error', ev => { try { const l = eigeneFehler(); l.unshift({ zeit: new Date().toISOString(), art: 'pruefung', text: String(ev.message || '').slice(0, 300), ort: 'pruefung.html' }); localStorage.setItem(SPEICHER, JSON.stringify(l.slice(0, 30))); } catch (e) {} });
 lexikon('');
-start().then(() => { const m = /^#(?:lex-)?(m-[\w-]+)$|^#lex-([\w-]+)/.exec(location.hash); if (m) oeffneLex(m[1] || m[2]); });   // #m-<stichwort> aus dem Schreibtisch, #lex-<id> aus der Prüfung
+start().then(() => { const m = /^#(?:lex-)?(m-[\w-]+)$|^#lex-([\w-]+)/.exec(location.hash); if (m) oeffneLex(m[1] || m[2]); });   // #m-<stichwort> aus dem Website bearbeiten, #lex-<id> aus der Prüfung
 })();

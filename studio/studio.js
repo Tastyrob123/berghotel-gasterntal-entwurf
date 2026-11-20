@@ -1,14 +1,14 @@
 /* Studio · Berghotel Gasterntal. Das Werkzeug, mit dem die Seite gepflegt wird. Ohne Bibliothek. Aufbau wie das Studio der Salt-&-Silver-Seite. */
 (() => {
 'use strict';
-/* Der Schreibtisch (17.10.2026): dieses frühere Studio läuft als alt.html weiter; der Schreibtisch bettet seine Ansichten ein (Saison & Takt, Zimmer & Preise,
+/* Website bearbeiten (17.10.2026): dieses frühere Studio läuft als alt.html weiter; «Website bearbeiten» bettet seine Ansichten ein (Saison & Takt, Zimmer & Preise,
    Ässe u trinke, Anlass, Das Haus, Menü & Seiten, Bilder, Besuche, Zugang, einzelne Listen). Eingebettet ohne Rand und Leiste; jede gespeicherte Änderung
-   meldet es an den Schreibtisch, dann stimmen Leiste, Rand und Zahlen dort sofort. */
+   meldet es an «Website bearbeiten», dann stimmen Leiste, Rand und Zahlen dort sofort. */
 const EIN = new URLSearchParams(location.search).has('eingebettet') && window.parent !== window;
 if (EIN) document.documentElement.classList.add('eingebettet');
 const melden = () => { if (EIN) window.parent.postMessage({ bureau: 'geaendert' }, '*'); };
-/* Ist Die Tafel (La Carte) angeschlossen, pflegt sie Zeilen, Preise, Rubriken und PDF der Karte; «Ässe u trinke» bleibt hier dann nur zum Ansehen,
-   damit nie zwei Werkzeuge dieselben Zeilen ändern (wie Ruedihus). Der Schreibtisch öffnet die Ansicht dann mit ?tafel=1. */
+/* Ist Karten & Preislisten angeschlossen, pflegt sie Zeilen, Preise, Rubriken und PDF der Karte; «Ässe u trinke» bleibt hier dann nur zum Ansehen,
+   damit nie zwei Werkzeuge dieselben Zeilen ändern (wie Ruedihus). Website bearbeiten öffnet die Ansicht dann mit ?tafel=1. */
 const TAFEL = EIN && new URLSearchParams(location.search).has('tafel');
 if (TAFEL) document.documentElement.classList.add('tafel');
 const $ = (s, r = document) => r.querySelector(s);
@@ -149,7 +149,7 @@ function rand() {
   const n = Z.aenderungen.length, teil = location.hash.split('/')[1] || 'uebersicht', an = teil === 'seite' ? 'seiten' : teil;
   $('#rand').innerHTML = `<a class="rand__marke" href="#/uebersicht"><img src="/assets/logo/schrift-berghotel-gasterntal.svg" alt="Berghotel Gasterntal"><span>Studio</span></a>
   <nav aria-label="Bereiche">${NAV.map(p => p ? `<a href="#/${p[0]}" class="${an === p[0] ? 'an' : ''}">${ik(p[2])}${p[1]}${p[0] === 'aenderungen' && n ? `<b>${n}</b>` : ''}</a>` : '<div class="rand__trenn"></div>').join('')}</nav>
-  <div class="rand__fuss"><a href="/live/index.html" target="_blank" rel="noopener">Website ansehen ${PF}</a><a href="pruefung.html" title="Prüft Verbindung, Browser, Daten und Bau; kennt jede Fehlerquelle">Prüfung</a>${OFFEN || PROBE ? '' : '<button type="button" data-akt="abmelden">Abmelden</button>'}</div>`;
+  <div class="rand__fuss"><a href="/" target="_blank" rel="noopener">Website ansehen ${PF}</a><a href="pruefung.html" title="Prüft Verbindung, Browser, Daten und Bau; kennt jede Fehlerquelle">Prüfung</a>${OFFEN || PROBE ? '' : '<button type="button" data-akt="abmelden">Abmelden</button>'}</div>`;
   const aktiv = $('#rand nav a.an');
   if (aktiv && innerWidth <= 860) aktiv.scrollIntoView({ block: 'nearest', inline: 'center' });
 }
@@ -223,7 +223,7 @@ function leiste() {
   el.innerHTML = n ? `<button class="leiste__l" type="button" data-akt="lade" aria-label="Liste der Änderungen zeigen"><i class="leiste__z">${n}</i><span><b>${n === 1 ? 'Änderung' : 'Änderungen'} im Entwurf</b><small>Zuletzt: ${h(neueste.satz)}${neueste.zeit ? ' · ' + vor(neueste.zeit) : ''}</small></span></button>
     <div class="leiste__r"><button class="kn kn--klein kn--linie" type="button" data-akt="lade">Liste zeigen</button><a class="kn kn--klein kn--linie" href="/entwurf/${W ? encodeURIComponent(W.datei) : 'index.html'}" target="_blank" rel="noopener">Entwurf ansehen</a><button class="kn kn--hell" type="button" data-akt="raus">Veröffentlichen${KNI}</button></div>`
     : `<div class="leiste__l"><i class="leiste__z ok">${HAKEN}</i><span><b>Alles veröffentlicht</b><small>${zuletzt ? 'Stand vom ' + datum(zuletzt.zeit) : 'Die Website zeigt den neuesten Stand.'}</small></span></div>
-    <div class="leiste__r"><a class="kn kn--klein kn--linie" href="/live/index.html" target="_blank" rel="noopener">Website ansehen</a></div>`;
+    <div class="leiste__r"><a class="kn kn--klein kn--linie" href="/" target="_blank" rel="noopener">Website ansehen</a></div>`;
   if (letzteZahl !== null && letzteZahl !== n && n) $('.leiste__z', el).classList.add('hupf');
   letzteZahl = n;
   if (!$('#lade').hidden) lade();
@@ -333,7 +333,7 @@ function seiten() {
 // ---------------------------------------------------------------- Seite bearbeiten
 const RSTIL = `.studio-hov,.studio-an{position:absolute;z-index:2147483000;pointer-events:none;border-radius:5px;display:none;box-sizing:border-box}
 .studio-hov{outline:calc(1.5px*var(--studio-k,1)) dashed #c5000f;outline-offset:calc(4px*var(--studio-k,1))}
-.studio-hov::before{content:attr(data-w);position:absolute;left:-4px;bottom:calc(100% + 9px*var(--studio-k,1));background:#c5000f;color:#fff;font:500 10px/1 'DM Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;border-radius:5px;white-space:nowrap;transform:scale(var(--studio-k,1));transform-origin:0 100%}
+.studio-hov::before{content:attr(data-w);position:absolute;left:-4px;bottom:calc(100% + 9px*var(--studio-k,1));background:#c5000f;color:#fff;font:500 13px/1 'DM Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;border-radius:5px;white-space:nowrap;transform:scale(var(--studio-k,1));transform-origin:0 100%}
 .studio-hov[data-w=""]::before{display:none}
 .studio-an{outline:calc(2px*var(--studio-k,1)) solid #c5000f;outline-offset:calc(4px*var(--studio-k,1));background:rgba(197,0,15,.07)}
 .studio-werk [data-e]{cursor:text}.studio-werk img[data-b]{cursor:pointer;pointer-events:auto!important}.studio-werk .hinweisband{display:none!important}`;
@@ -751,7 +751,7 @@ function listenSeite(titel, text, keys, link) {
   if (blitz) blitz.scrollIntoView({ block: 'center' });
   sicht.querySelector('.in').addEventListener('click', listenKlick);
 }
-/* Der Schreibtisch: eine einzelne Liste des Hauses (#/liste/<Schlüssel>), z. B. «Der Weg hinunter» oder «Das Tal: die Orte der Karte» */
+/* Website bearbeiten: eine einzelne Liste des Hauses (#/liste/<Schlüssel>), z. B. «Der Weg hinunter» oder «Das Tal: die Orte der Karte» */
 function listeS(key) { const g = Z.listen[key]; if (!g) return uebersicht(); listenSeite(h(g.label).replace(/^(\S+)(.*)$/, (m, a, c) => c ? `${a}<em>${c}</em>` : `<em>${a}</em>`), h(g.hinweis || ''), [key], ''); }
 function zimmerS() { listenSeite('Zimmer <em>& Preise.</em>', 'Die Zimmerarten mit ihren Fotos, jede Preiszeile, das Hotel exklusiv, das Package mit dem Waldhotel Doldenhorn und die Zahlen der Sauna. Jede Änderung wird bestätigt und steht danach auf der Zimmer-Seite und auf der Startseite.', ['zimmerarten', 'zimmer', 'exklusiv', 'package', 'sauna'], 'zimmer.html'); }
 function hausS() { listenSeite('Das <em>Haus.</em>', 'Was die Startseite über das Haus erzählt: «Was Sie hier nicht finden», der Weg hinauf in vier Etappen, die Produzenten der Küche und die Häuser der Familie im Fuss jeder Seite.', ['nicht', 'dafuer', 'etappen', 'produzenten', 'haeuser'], 'index.html'); }
@@ -796,7 +796,7 @@ function listeFenster(key, i) {
     if (!ok) return;
     fensterZu();
     BLITZ = key + ':' + (neu ? liste.length - 1 : i);
-    const ziel = location.hash.startsWith('#/liste/') ? location.hash : ['zimmerarten', 'zimmer', 'exklusiv', 'package', 'sauna'].includes(key) ? '#/zimmer' : '#/hausS';   // eine einzelne Liste (Der Schreibtisch) bleibt stehen
+    const ziel = location.hash.startsWith('#/liste/') ? location.hash : ['zimmerarten', 'zimmer', 'exklusiv', 'package', 'sauna'].includes(key) ? '#/zimmer' : '#/hausS';   // eine einzelne Liste (Website bearbeiten) bleibt stehen
     if (W) neuLaden({}); else if (location.hash !== ziel) location.hash = ziel; else neuZeichnen();
   });
   const erstes = $('#lf-0');
@@ -843,7 +843,7 @@ function karteS(reihe) {
       `<a class="kn kn--linie" href="/entwurf/essen.html" target="_blank" rel="noopener">Karte im Entwurf ansehen</a><button class="kn" type="button" data-akt="neu-oben">Zeile hinzufügen${KNI}</button>`)}
     <div class="reihenwahl">${Object.entries(REIHEN).map(([r, n]) => `<a class="${r === reihe ? 'an' : ''}" href="#/karte/${r}">${n}<span>${mal(Z.karte[r].liste.reduce((a, g) => a + g.l.filter(x => !x.zw).length, 0), 'Zeile', 'Zeilen')}</span></a>`).join('')}<button class="kn kn--klein kn--linie" type="button" data-akt="r-neu" style="margin-left:auto;color:var(--tinte)">Neue Rubrik</button></div>
     ${k.geaendert ? '<p class="hinweis" style="margin:8px 0 0"><b>Im Entwurf geändert.</b> <button class="link" type="button" data-akt="std">Alle Änderungen an den ' + REIHEN[reihe] + ' zurücknehmen</button></p>' : ''}
-    ${TAFEL ? '<p class="hinweis tafel-hin">Zeilen, Preise, Rubriken und PDF der Karte pflegt Die Tafel (Knopf oben im Schreibtisch). Hier steht die Karte nur zum Ansehen.</p>' : ''}
+    ${TAFEL ? '<p class="hinweis tafel-hin">Zeilen, Preise, Rubriken und PDF der Karte pflegt Karten & Preislisten (Knopf oben in «Website bearbeiten»). Hier steht die Karte nur zum Ansehen.</p>' : ''}
     ${k.liste.map(rubrik).join('')}
     ${wegR.map(q => `<section class="blatt gruppe"><div class="gruppe__k"><h3 style="text-decoration:line-through;color:var(--leise)">${h(q.t)}</h3><i class="marke grau">Rubrik entfernt, noch nicht veröffentlicht</i><button class="kn kn--klein kn--linie" type="button" data-akt="r-hol" data-id="${h(q.id)}" style="margin-left:auto">Zurückholen</button></div></section>`).join('')}
     <h2 class="reiheT">Karte als PDF</h2>
@@ -855,7 +855,7 @@ function karteS(reihe) {
   sicht.querySelector('.in').addEventListener('click', ev => {
     const b = ev.target.closest('[data-akt]');
     if (!b) return;
-    if (TAFEL) { sag('Zeilen, Preise, Rubriken und PDF der Karte pflegt Die Tafel (Knopf oben im Schreibtisch).'); return; }
+    if (TAFEL) { sag('Zeilen, Preise, Rubriken und PDF der Karte pflegt Karten & Preislisten (Knopf oben in «Website bearbeiten»).'); return; }
     const akt = b.dataset.akt, alt = JSON.parse(JSON.stringify(k.liste)), l = JSON.parse(JSON.stringify(k.liste));
     const sende = async (rubriken, titel, text) => { if (await tun({ art: 'karte', reihe, rubriken }, { titel, text, id: 'k:' + reihe, zurueck: { art: 'karte', reihe, rubriken: alt } })) neuZeichnen(); };
     if (akt === 'neu-oben') return gerichtFenster(reihe, undefined, undefined);
@@ -1251,7 +1251,7 @@ function veroeffentlichen() {
       leiste();
       fenster(`<div class="erfolg"><i>${HAKEN}</i><h2>Veröffent<em>licht.</em></h2><p>Die Website zeigt jetzt den neuen Stand. Das ist live:</p></div>
         <ul class="quittliste ok">${cs.map(c => `<li><i>${HAKEN}</i><span>${h(c.satz)}</span></li>`).join('')}</ul>
-        <div class="fenster__kn"><a class="kn kn--linie" href="/live/index.html" target="_blank" rel="noopener">Website ansehen</a><button class="kn" type="button" data-zu>Fertig${KNI}</button></div>`);
+        <div class="fenster__kn"><a class="kn kn--linie" href="/" target="_blank" rel="noopener">Website ansehen</a><button class="kn" type="button" data-zu>Fertig${KNI}</button></div>`);
       if (W) neuLaden({}); else zeige(true);
     } catch (e) { sag(e.message, true); ev.target.disabled = false; ev.target.firstChild.textContent = 'Jetzt veröffentlichen'; }
   });

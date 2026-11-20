@@ -1,6 +1,6 @@
-/* Die Werkstatt des Berghotel Gasterntal: Werkzeug-Oberfläche «Die Bühne» (Nachtrag Chef-Chat Gasterntal 17.10.2026, UMSTELLUNG.md im Stamm, Paket assets/oberflaeche).
+/* Drucksachen & Feed des Berghotel Gasterntal: Werkzeug-Oberfläche «Die Bühne» (Nachtrag Chef-Chat Gasterntal 17.10.2026, UMSTELLUNG.md im Stamm, Paket assets/oberflaeche).
    Gleicher Weg wie die Werkstatt des Landgasthof Ruedihus (haeuser/ruedihus/oberflaeche.js dort, nur gelesen und übernommen).
-   Die Werkstatt hat ein eigenes Gerüst (Übersicht #start mit .ms-leiste/.ms-kopf, Arbeitsfläche mit header.kopf/aside.links); der Kern
+   Drucksachen & Feed hat ein eigenes Gerüst (Übersicht #start mit .ms-leiste/.ms-kopf, Arbeitsfläche mit header.kopf/aside.links); der Kern
    (_Drucksachen-Studio, über Carlton und Doldenhorn) bleibt unberührt. Diese Hausschicht legt nur an, was in allen Werkzeugen des Hauses gleich ist:
    die Marke im Kopf (Zeichen, Name in der Titelschrift, Unterzeile), die runden Knöpfe und «Website ansehen» als goldene Pille, die Startbilder
    (Übersicht «voll» mit dem Haus, jede Ansicht «buehne» mit ihrem Raum). Ids, Knoten und Handler bleiben: Knöpfe und Felder werden nur umgehängt.
@@ -26,7 +26,7 @@
     if (ms && !ms.__wo) {
       var z = ms.querySelector('#msKopfZeichen'), n = ms.querySelector('.ms-kopf-name');
       if (z && n) {
-        var b = document.createElement('button'); b.type = 'button'; b.className = 'wo-marke-w ws-marke'; b.setAttribute('data-ansicht', 'start'); b.setAttribute('aria-label', 'Die Werkstatt, Übersicht');
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'wo-marke-w ws-marke'; b.setAttribute('data-ansicht', 'start'); b.setAttribute('aria-label', 'Drucksachen & Feed, Übersicht');
         b.innerHTML = MARKE(); ms.insertBefore(b, z); z.hidden = true; n.hidden = true; ms.__wo = 1;
       }
     }

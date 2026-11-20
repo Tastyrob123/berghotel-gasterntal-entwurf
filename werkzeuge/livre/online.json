@@ -1,0 +1,65 @@
+{
+ "name": "Markenbuch",
+ "hinweis": "bg-livre, 17.10.2026 (Form wie Markenbuch Doldenhorn und Carlton online.json). Funktion api/livre.py aus _werkzeuge/livre/online/livre_online.py, Logik und Daten als lib (livre.py, livre.json). Oberfläche statisch unter /werkzeuge/livre/ (nur die genannten Dateien, keine Quellen, kein _quellen.json, keine Prüfordner). Rahmen aus dem Paket «Werkzeug-Oberfläche» unter /assets/oberflaeche/ (statik assets/oberflaeche: das Paket muss vorher einmal ins Haus, UMSTELLUNG.md Schritt 2, siehe LIEFERUNG). Markenbuch speichert nichts und braucht den Blob-Speicher nicht; braucht api/_speicher.py des gemeinsamen Online-Wegs (sende, antwort, weg_von, koerper). Downloads online in Website-Grösse (Originale liegen nur lokal). KI nur mit ANTHROPIC_API_KEY am Vercel-Projekt (Roberts Wort, Regel 54), sonst Probe-Antwort; requirements: Pillow, PyMuPDF. Fotos aus /assets/img/, Schriften /assets/fonts/. Drucksachen & Feed ruft die Markenprüfung unter /marke/api/pruefen und liest /marke/livre.json. Prüfung: Laden ja, kurz nein (nichts zu speichern), voll nein (Claude kostet).",
+ "funktionen": {
+  "api/livre.py": {
+   "von": "_werkzeuge/livre/online/livre_online.py",
+   "dauer": 120
+  }
+ },
+ "lib": {
+  "_werkzeuge/livre/livre.py": "api/_lib/livre/livre.py",
+  "_werkzeuge/livre/livre.json": "api/_lib/livre/livre.json"
+ },
+ "statik": {
+  "_werkzeuge/livre/index.html": "werkzeuge/livre/index.html",
+  "_werkzeuge/livre/livre.css": "werkzeuge/livre/livre.css",
+  "_werkzeuge/livre/livre.js": "werkzeuge/livre/livre.js",
+  "_werkzeuge/livre/start.js": "werkzeuge/livre/start.js",
+  "_werkzeuge/livre/rundgang.js": "werkzeuge/livre/rundgang.js",
+  "_werkzeuge/livre/zur-werkbank.js": "werkzeuge/livre/zur-werkbank.js",
+  "_werkzeuge/livre/livre.json": "werkzeuge/livre/livre.json",
+  "_werkzeuge/livre/buch.html": "werkzeuge/livre/buch.html",
+  "_werkzeuge/livre/buch.css": "werkzeuge/livre/buch.css",
+  "_werkzeuge/livre/buch.js": "werkzeuge/livre/buch.js",
+  "_werkzeuge/livre/anleitung.html": "werkzeuge/livre/anleitung.html",
+  "_werkzeuge/livre/anleitung.js": "werkzeuge/livre/anleitung.js",
+  "_werkzeuge/livre/herkunft-chluse.webp": "werkzeuge/livre/herkunft-chluse.webp",
+  "_werkzeuge/livre/herkunft-haus-profil.webp": "werkzeuge/livre/herkunft-haus-profil.webp",
+  "_werkzeuge/livre/herkunft-tal-blick.webp": "werkzeuge/livre/herkunft-tal-blick.webp",
+  "_werkzeuge/livre/herkunft-z-dach.webp": "werkzeuge/livre/herkunft-z-dach.webp",
+  "_werkzeuge/livre/dateien": "werkzeuge/livre/dateien",
+  "_werkzeuge/livre/original": "werkzeuge/livre/original",
+  "_werkzeuge/livre/beispiel": "werkzeuge/livre/beispiel",
+  "_werkzeuge/livre/mini": "werkzeuge/livre/mini",
+  "_werkzeuge/livre/anleitung": "werkzeuge/livre/anleitung",
+  "assets/oberflaeche": "assets/oberflaeche"
+ },
+ "umleitungen": [
+  {
+   "source": "/werkzeuge/livre/api/:pfad*",
+   "destination": "/api/livre?__weg=/werkzeuge/livre/api/:pfad*"
+  },
+  {
+   "source": "/_werkzeuge/livre/api/:pfad*",
+   "destination": "/api/livre?__weg=/_werkzeuge/livre/api/:pfad*"
+  },
+  {
+   "source": "/marke/api/:pfad*",
+   "destination": "/api/livre?__weg=/marke/api/:pfad*"
+  },
+  {
+   "source": "/marke/livre.json",
+   "destination": "/werkzeuge/livre/livre.json"
+  },
+  {
+   "source": "/_werkzeuge/livre/:pfad*",
+   "destination": "/werkzeuge/livre/:pfad*"
+  }
+ ],
+ "stand": "/marke/livre.json",
+ "pruefung": {
+  "weg": "/werkzeuge/livre/",
+  "kurz": false
+ }
+}

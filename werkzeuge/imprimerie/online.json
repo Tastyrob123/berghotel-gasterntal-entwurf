@@ -1,0 +1,80 @@
+{
+ "name": "Drucksachen & Feed",
+ "hinweis": "bg-imprimerie (Drucksachen & Feed), 17.10.2026 (Form wie Carlton, Doldenhorn und Ruedihus _werkzeuge/imprimerie/online.json). Oberfläche statisch unter /werkzeuge/imprimerie/, «Markenbuch» daneben unter /werkzeuge/livre/ (livre.json, dateien/, Fotos über «fl» = /assets/img/). KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py (Wissen und Marke als lib); ohne ANTHROPIC_API_KEY am Vercel-Projekt melden nur «Fünf Entwürfe» und Bildtext «nicht erreichbar», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort (Regel 54). Kein Blob-Speicher: die Werkstatt legt alles im Browser des Hauses ab. Die grossen Fotos (haeuser/gasterntal/bilder) gehen nur unter «zusatz» mit (I08): mit «Markenbuch» online braucht sie niemand. Mail-Bilder (haeuser/gasterntal/mail) zeigen in verschickten Mails auf diese Adresse: nach dem ersten Versand nie mehr entfernen (Regel 61, versand_schutz.py merken). Werkzeug-Oberfläche «Die Bühne» (UMSTELLUNG.md): Paket assets/oberflaeche unter statik (geht mit, wie bei jedem umgestellten Werkzeug), Hausschicht haeuser/gasterntal/oberflaeche.*.",
+ "funktionen": {
+  "api/imprimerie_entwurf.py": {
+   "von": "_werkzeuge/imprimerie/api/entwurf.py",
+   "dauer": 60,
+   "includeFiles": "api/_lib/imprimerie/**"
+  }
+ },
+ "lib": {
+  "_werkzeuge/imprimerie/api/_daten": "api/_lib/imprimerie/_daten"
+ },
+ "statik": {
+  "assets/oberflaeche": "assets/oberflaeche",
+  "_werkzeuge/imprimerie/index.html": "werkzeuge/imprimerie/index.html",
+  "_werkzeuge/imprimerie/mail.html": "werkzeuge/imprimerie/mail.html",
+  "_werkzeuge/imprimerie/pruefung.html": "werkzeuge/imprimerie/pruefung.html",
+  "_werkzeuge/imprimerie/satz.js": "werkzeuge/imprimerie/satz.js",
+  "_werkzeuge/imprimerie/eigene.js": "werkzeuge/imprimerie/eigene.js",
+  "_werkzeuge/imprimerie/vorlagen.js": "werkzeuge/imprimerie/vorlagen.js",
+  "_werkzeuge/imprimerie/druck.js": "werkzeuge/imprimerie/druck.js",
+  "_werkzeuge/imprimerie/studio.js": "werkzeuge/imprimerie/studio.js",
+  "_werkzeuge/imprimerie/instagram.js": "werkzeuge/imprimerie/instagram.js",
+  "_werkzeuge/imprimerie/lelivre.js": "werkzeuge/imprimerie/lelivre.js",
+  "_werkzeuge/imprimerie/katalog.js": "werkzeuge/imprimerie/katalog.js",
+  "_werkzeuge/imprimerie/siegel.js": "werkzeuge/imprimerie/siegel.js",
+  "_werkzeuge/imprimerie/start.js": "werkzeuge/imprimerie/start.js",
+  "_werkzeuge/imprimerie/fuehrung.js": "werkzeuge/imprimerie/fuehrung.js",
+  "_werkzeuge/imprimerie/mail.js": "werkzeuge/imprimerie/mail.js",
+  "_werkzeuge/imprimerie/mail-satz.js": "werkzeuge/imprimerie/mail-satz.js",
+  "_werkzeuge/imprimerie/zur-werkbank.js": "werkzeuge/imprimerie/zur-werkbank.js",
+  "_werkzeuge/imprimerie/studio.css": "werkzeuge/imprimerie/studio.css",
+  "_werkzeuge/imprimerie/ms-bureau.css": "werkzeuge/imprimerie/ms-bureau.css",
+  "_werkzeuge/imprimerie/mail.css": "werkzeuge/imprimerie/mail.css",
+  "_werkzeuge/imprimerie/lib": "werkzeuge/imprimerie/lib",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/marke.json": "werkzeuge/imprimerie/haeuser/gasterntal/marke.json",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/druck.json": "werkzeuge/imprimerie/haeuser/gasterntal/druck.json",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/buehne.js": "werkzeuge/imprimerie/haeuser/gasterntal/buehne.js",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/feder.js": "werkzeuge/imprimerie/haeuser/gasterntal/feder.js",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/feder.css": "werkzeuge/imprimerie/haeuser/gasterntal/feder.css",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/hell.css": "werkzeuge/imprimerie/haeuser/gasterntal/hell.css",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/tapete-dunkel.webp": "werkzeuge/imprimerie/haeuser/gasterntal/tapete-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/tapete-hell.webp": "werkzeuge/imprimerie/haeuser/gasterntal/tapete-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/tapete-ui-dunkel.webp": "werkzeuge/imprimerie/haeuser/gasterntal/tapete-ui-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/tapete-ui-hell.webp": "werkzeuge/imprimerie/haeuser/gasterntal/tapete-ui-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/schriften": "werkzeuge/imprimerie/haeuser/gasterntal/schriften",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/vorlagen": "werkzeuge/imprimerie/haeuser/gasterntal/vorlagen",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/kopf": "werkzeuge/imprimerie/haeuser/gasterntal/kopf",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/mini": "werkzeuge/imprimerie/haeuser/gasterntal/mini",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/mail": "werkzeuge/imprimerie/haeuser/gasterntal/mail",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/oberflaeche.js": "werkzeuge/imprimerie/haeuser/gasterntal/oberflaeche.js",
+  "_werkzeuge/imprimerie/haeuser/gasterntal/oberflaeche.css": "werkzeuge/imprimerie/haeuser/gasterntal/oberflaeche.css"
+ },
+ "zusatz": {
+  "_": "Nur nötig, wenn «Markenbuch» online fehlt. Wie beim Carlton in ein Zusatz-Projekt, falls das Hauptprojekt zu gross wird; Umleitung unten. Name ohne Nummer (-2 bis -4 vergibt die Website-Aufteilung von online.py).",
+  "berghotel-gasterntal-werkstatt": {
+   "_werkzeuge/imprimerie/haeuser/gasterntal/bilder": "werkzeuge/imprimerie/haeuser/gasterntal/bilder"
+  }
+ },
+ "umleitungen": [
+  {
+   "source": "/werkzeuge/imprimerie/api/entwurf",
+   "destination": "/api/imprimerie_entwurf"
+  },
+  {
+   "source": "/_werkzeuge/imprimerie/:pfad*",
+   "destination": "/werkzeuge/imprimerie/:pfad*"
+  },
+  {
+   "source": "/werkzeuge/imprimerie/haeuser/gasterntal/bilder/:pfad*",
+   "destination": "https://berghotel-gasterntal-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/gasterntal/bilder/:pfad*"
+  }
+ ],
+ "stand": "",
+ "pruefung": {
+  "weg": "/werkzeuge/imprimerie/",
+  "kurz": true
+ }
+}

@@ -31,7 +31,7 @@ new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes
 :root{--marine:#1d2224;--nacht:#14181a;--papier:#e9ecec;--creme:#dce1e2;--gold:#d6bb96;--gold2:#a98f68;--tinte:#1a1f21;--rot:#c5000f;--gruen:#1e4a3b}
 *{box-sizing:border-box}body{margin:0;background:var(--papier);color:var(--tinte);font:15px/1.55 "Instrument Sans",system-ui,-apple-system,sans-serif}
 header{background:linear-gradient(rgba(20,24,26,.5),rgba(20,24,26,.5)),url(haeuser/gasterntal/tapete-ui-dunkel.webp) 50% 0/44px auto,var(--nacht);color:var(--papier);padding:36px 24px 30px}
-header .in,main{max-width:980px;margin:0 auto}header small{letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-size:11px}
+header .in,main{max-width:980px;margin:0 auto}header small{letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-size:13px}
 h1{font:400 34px/1.15 "LB",Georgia,serif;margin:8px 0 6px}h1 em{color:var(--gold)}header p{margin:0;opacity:.85;max-width:620px}
 header a{color:var(--gold)}main{padding:24px 16px 60px}h2{font:400 21px "LB",Georgia,serif;margin:34px 0 10px}
 .platte{background:#f6f8f8;border-radius:14px;box-shadow:0 1px 0 rgba(26,31,33,.06),0 10px 30px -18px rgba(26,31,33,.35);padding:6px 18px}
@@ -44,7 +44,7 @@ button{font:inherit;border:0;border-radius:999px;padding:9px 16px;background:var
 .rep{display:flex;flex-wrap:wrap;gap:10px;padding:14px 0}.leise{color:#55607a;font-size:13.5px}
 @media (max-width:600px){h1{font-size:27px}.z{grid-template-columns:18px 1fr}.z>:last-child{grid-column:2}}
 </style>
-<link rel="stylesheet" href="../../werkbank/auftritte.css?v=cbb2007c87">
+<link rel="stylesheet" href="../../werkbank/auftritte.css?v=d98cffe582">
 </head>
 <body>
 <header><div class="in"><small>BG · Die Werkstatt</small><h1>Ist alles <em>in Ordnung?</em></h1>
@@ -131,7 +131,6 @@ button{font:inherit;border:0;border-radius:999px;padding:9px 16px;background:var
   document.addEventListener('click', e => { if (e.target.closest('[data-rep]')) $('#repText').textContent = 'Zum Ausführen doppelt klicken.'; });
 })();
 </script>
-<script src="../../werkbank/auftritte.js?v=8f2db02292" data-alles></script>
-<script src="../../besuch.js" defer></script>
-</body>
+<script src="../../werkbank/auftritte.js?v=d98cffe582" data-alles></script>
+<script src="../../besuch.js" defer></script></body>
 </html>

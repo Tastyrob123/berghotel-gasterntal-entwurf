@@ -1,10 +1,10 @@
 /* Eingang · Studio · Berghotel Gasterntal (17.10.2026). Die Anfragen aus dem Anfrage-Fenster der Website (assets/js/anfrage.js) für das Team:
    Anliegen, Datum, Personen, Name, Kontakt, Nachricht. Alles geht an gasterntal@doldenhorn.ch; sortiert wird nach Art (Zimmer, Tisch und Sauna, Picknick und Fahrt, Übrige),
-   abgelesen am Anliegen, das die Formulare der Seite vorbelegen. Vorlage: Eingang des Waldhotel Doldenhorn (studio/eingang.js), dort nach La Réception des Grand Beau-Rivage
+   abgelesen am Anliegen, das die Formulare der Seite vorbelegen. Vorlage: Eingang des Waldhotel Doldenhorn (studio/eingang.js), dort nach «Anfragen & Chat» des Grand Beau-Rivage
    (Filter Neu/Offen/Erledigt, Detail, gelesen beim Öffnen, erledigt/wieder offen, löschen, alle zwei Minuten von selbst nachsehen).
    Liest und schreibt nur über /api/anfragen (online api/anfragen.js mit dem privaten Blob-Speicher, lokal studio.py → _dienste/anfragen.jsonl + anfragen_stand.json).
    Aus dem Eingang wird nichts verschickt und kein Mailprogramm geöffnet (17.10.2026): «Antwort-Text kopieren» legt Anrede und Anfrage in die Zwischenablage.
-   Der Eingang ist im Gastgeber (La Réception, _werkzeuge/reception/) aufgegangen; diese Seite bleibt nur als Rückfall (eingang-fehler.js leitet weiter). */
+   Der Eingang ist in «Anfragen & Chat» (Anfragen & Chat, _werkzeuge/reception/) aufgegangen; diese Seite bleibt nur als Rückfall (eingang-fehler.js leitet weiter). */
 (() => {
 'use strict';
 const $ = (s, r = document) => r.querySelector(s);
@@ -129,7 +129,7 @@ function detail(a) {
       ${a.beispiel ? '' : a.stand === 'erledigt' ? '<button class="kn kn--linie kn--klein" type="button" data-akt="offen">Wieder offen</button>' : `<button class="kn kn--hell kn--klein" type="button" data-akt="erledigt">Erledigt<i>${SYM_OK}</i></button>`}
       ${a.beispiel ? '' : `<button class="kn kn--linie kn--klein eg-weg" type="button" data-akt="loeschen">${MITHALT === a.id ? 'Wirklich löschen?' : 'Löschen'}</button>`}
     </div>
-    <p class="eg-d__f leise">${a.beispiel ? 'Das ist ein Beispiel, kein echter Gast.' : mail ? 'Antwort-Text kopieren legt Betreff, Anrede und die Anfrage in die Zwischenablage. Verschickt wird hier nichts, und es öffnet sich kein Mailprogramm. Mit Brief und Gestaltung antworten Sie im Gastgeber.' : tel ? 'Der Gast hat eine Telefonnummer angegeben. Anrufen wählt sie auf diesem Gerät.' : 'Der Gast hat weder eine Mail-Adresse noch eine Telefonnummer angegeben, nur das, was oben unter Kontakt steht.'}</p>
+    <p class="eg-d__f leise">${a.beispiel ? 'Das ist ein Beispiel, kein echter Gast.' : mail ? 'Antwort-Text kopieren legt Betreff, Anrede und die Anfrage in die Zwischenablage. Verschickt wird hier nichts, und es öffnet sich kein Mailprogramm. Mit Brief und Gestaltung antworten Sie in «Anfragen & Chat».' : tel ? 'Der Gast hat eine Telefonnummer angegeben. Anrufen wählt sie auf diesem Gerät.' : 'Der Gast hat weder eine Mail-Adresse noch eine Telefonnummer angegeben, nur das, was oben unter Kontakt steht.'}</p>
   </article>`;
 }
 

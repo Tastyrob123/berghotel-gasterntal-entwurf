@@ -29,7 +29,7 @@
     var lokal = function () { return new Response(JSON.stringify(antworte(f, d.sprache)), { status: 200, headers: { 'content-type': 'application/json' } }); };
     var self = this, args = arguments;
     /* Antwortet der Server aus dem Buch (die KI ist aus), antwortet ab dann das Fenster sofort selbst; die Frage geht im Hintergrund
-       trotzdem an den Server, damit sie im Gastgeber steht. Sonst gilt: Server zuerst, nach 0,9 s ohne Antwort das Buch. */
+       trotzdem an den Server, damit sie in «Anfragen & Chat» steht. Sonst gilt: Server zuerst, nach 0,9 s ohne Antwort das Buch. */
     if (BUCHMODUS) { echt.apply(self, args).catch(function () {}); return Promise.resolve(lokal()); }
     return new Promise(function (ja) {
       var fertig = false, uhr = setTimeout(function () { if (!fertig) { fertig = true; ja(lokal()); } }, 900);
