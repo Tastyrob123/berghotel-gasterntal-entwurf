@@ -9,7 +9,7 @@
   ],
   "link": "berghotel-gasterntal.ch",
   "zahlen": {
-   "beitraege": "27",
+   "beitraege": "60",
    "follower": "–",
    "gefolgt": "–"
   },
@@ -66,62 +66,194 @@
   },
   {
    "n": "13",
-   "cap": "Neu: die Sauna in der alten Käserei. 90 Minuten Wärme, Ruhe und Natur, traditionell mit Holz eingeheizt."
+   "cap": "Die Gaststube, Bugholzstühle an den Fenstern. Warme Küche bis 20.30 Uhr."
   },
   {
    "n": "14",
-   "cap": "Steinboden, Kupferkessel, Käselaibe."
+   "cap": "Ein Doppelzimmer unter der Dachschräge."
   },
   {
    "n": "15",
-   "cap": "Reservation mindestens 2 Stunden im Voraus."
+   "cap": "Ein Geweih an der Holzwand, darunter ein Tisch mit Spitzendecke."
   },
   {
    "n": "16",
-   "cap": "Der Vorraum der Sauna mit Holzbank und Lichtband."
+   "cap": "Zwei Betten, dazwischen ein Tisch mit frischen Handtüchern."
   },
   {
    "n": "17",
-   "cap": "Nach dem Saunagang hinaus: die Kander und die Weiden von oben."
+   "cap": "Eine alte Wäschemangel an der Holzwand."
   },
   {
    "n": "18",
-   "cap": "Das Säli, gedeckt unter der Balkendecke."
+   "cap": "Die Feuerstelle vor dem grossen Felsblock beim Haus."
   },
   {
    "n": "19",
-   "cap": "Doppelzimmer mit Kajütenbett, ganz aus Holz."
+   "cap": "Wiesenblumen im Krug auf der Kommode, dahinter der lange Gang."
   },
   {
    "n": "20",
-   "cap": "Waschtisch mit Krug und Schüssel. Dusche, WC und Waschgelegenheit sind auf der Etage."
+   "cap": "Das Doppelzimmer mit eigener Dusche und WC: Balken, ein Ofen, zwei Sessel."
   },
   {
    "n": "21",
-   "cap": "Ein Einzelzimmer, das Bett unter dem Fenster."
+   "cap": "Von Stube zu Stube, durch die offene Tür."
   },
   {
    "n": "22",
-   "cap": "Das alte Holzhaus mit der Holzbeige in der Wiese."
+   "cap": "Die Kegelbahn im Freien, die Kegel stehen bereit."
   },
   {
    "n": "23",
-   "cap": "Die Chluse. Die Strasse unter dem Fels, aus dem Auto gesehen."
+   "cap": "Leinentücher am Holzständer, unter dem Dach."
   },
   {
    "n": "24",
-   "cap": "Der Blick hinaus ins Tal."
+   "cap": "Im Einzelzimmer: eine alte Bettstatt aus dunklem Holz, darüber gerahmte Blumen."
   },
   {
    "n": "25",
-   "cap": "Der Takt an der Chluse: hinauf von Viertel vor bis fünf nach, hinunter von Viertel nach bis fünf nach halb."
+   "cap": "Weisses Leinen, daneben ein Nachttisch mit Marmorplatte."
   },
   {
    "n": "26",
-   "cap": "Das Berghotel Gasterntal in Selden, drei Stockwerke Holz und rote Läden."
+   "cap": "Lange Tische vor den hellen Fenstern."
   },
   {
    "n": "27",
+   "cap": "Der grün gestrichene Schrank mit den Kupfertellern."
+  },
+  {
+   "n": "28",
+   "cap": "Neu: die Sauna in der alten Käserei. 90 Minuten Wärme, Ruhe und Natur, traditionell mit Holz eingeheizt."
+  },
+  {
+   "n": "29",
+   "cap": "Steinboden, Kupferkessel, Käselaibe."
+  },
+  {
+   "n": "30",
+   "cap": "Reservation mindestens 2 Stunden im Voraus."
+  },
+  {
+   "n": "31",
+   "cap": "Der Vorraum der Sauna mit Holzbank und Lichtband."
+  },
+  {
+   "n": "32",
+   "cap": "Nach dem Saunagang hinaus: die Kander und die Weiden von oben."
+  },
+  {
+   "n": "33",
+   "cap": "Das Säli, gedeckt unter der Balkendecke."
+  },
+  {
+   "n": "34",
+   "cap": "Doppelzimmer mit Kajütenbett, ganz aus Holz."
+  },
+  {
+   "n": "35",
+   "cap": "Waschtisch mit Krug und Schüssel. Dusche, WC und Waschgelegenheit sind auf der Etage."
+  },
+  {
+   "n": "36",
+   "cap": "Ein Einzelzimmer, das Bett unter dem Fenster."
+  },
+  {
+   "n": "37",
+   "cap": "Das alte Holzhaus mit der Holzbeige in der Wiese."
+  },
+  {
+   "n": "38",
+   "cap": "Die Chluse. Die Strasse unter dem Fels, aus dem Auto gesehen."
+  },
+  {
+   "n": "39",
+   "cap": "Der Blick hinaus ins Tal."
+  },
+  {
+   "n": "40",
+   "cap": "Das Familienzimmer für vier im Nebenhaus, rot karierte Vorhänge am Fenster."
+  },
+  {
+   "n": "41",
+   "cap": "Ein bestickter Leinenbeutel am Haken."
+  },
+  {
+   "n": "42",
+   "cap": "Die Laube am Eingang, darüber die Fahnen."
+  },
+  {
+   "n": "43",
+   "cap": "Der gedeckte Sitzplatz hinter dem Haus."
+  },
+  {
+   "n": "44",
+   "cap": "Zwei rote Samtstühle, an der Wand ein gewebtes Tuch."
+  },
+  {
+   "n": "45",
+   "cap": "Das Familienzimmer für sechs, unter der Balkendecke."
+  },
+  {
+   "n": "46",
+   "cap": "Ein Doppelbett unter dem alten Balken."
+  },
+  {
+   "n": "47",
+   "cap": "Krug und Schüssel am Fenster, darunter frische Tücher."
+  },
+  {
+   "n": "48",
+   "cap": "Unter dem grossen Baum. Vierbeiner sind bei uns willkommen."
+  },
+  {
+   "n": "49",
+   "cap": "Gartenstühle unter den Bäumen, dahinter der Fels."
+  },
+  {
+   "n": "50",
+   "cap": "Unter der Schräge hängt ein alter Stich."
+  },
+  {
+   "n": "51",
+   "cap": "Unter dem Dach das Familienzimmer für acht, mit langem Tisch."
+  },
+  {
+   "n": "52",
+   "cap": "Ein Zimmer mit Waschtisch, auf dem Boden ein Teppich."
+  },
+  {
+   "n": "53",
+   "cap": "Oben an der Treppe: ein Tisch mit Deckchen und ein alter Schrank."
+  },
+  {
+   "n": "54",
+   "cap": "Die Haustür, davor Geranien und eine Sonnenblume."
+  },
+  {
+   "n": "55",
+   "cap": "Selde, 1545 Meter. Zu Fuss sind es drei Stunden bis Kandersteg."
+  },
+  {
+   "n": "56",
+   "cap": "Dusche und WC, hell gekachelt."
+  },
+  {
+   "n": "57",
+   "cap": "Ein Doppelbett mit weissem Leinen."
+  },
+  {
+   "n": "58",
+   "cap": "Der Takt an der Chluse: hinauf von Viertel vor bis fünf nach, hinunter von Viertel nach bis fünf nach halb."
+  },
+  {
+   "n": "59",
+   "cap": "Das Berghotel Gasterntal in Selden, drei Stockwerke Holz und rote Läden."
+  },
+  {
+   "n": "60",
    "cap": "Die Naturstrasse, 14 km von Kandersteg, führt bis vor das Haus."
   }
  ],
