@@ -67,12 +67,12 @@
     var was = t.code >= 95 ? 'Gewitter' : 'Starkregen';
     box.forEach(function (b) { b.innerHTML = '<span class="dn-gewitter__ic">' + icon(t.code, 1) + '</span><div><b>Für ' + wann + ' sagt die Vorhersage ' + was + ' an.</b><p>«' + esc(DATEN.sperrung) + '» Vor der Fahrt kurz anrufen: <a href="tel:+41336758181">' + esc(DATEN.tel) + '</a></p></div>'; b.hidden = false; });
   }
-  var WETTER = null;
+  var WETTER = null, OHNE_DIENST = /\.github\.io$/.test(location.hostname);   /* Entwurf auf GitHub Pages: dort gibt es keinen Wetterdienst, das Wetter bleibt weg statt eines Fehlers (Prüfung 20.11.2026) */
   var holeWetter = function () { if (!WETTER) WETTER = fetch('/api/dienste?was=wetter').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); return WETTER; };
-  if ($('[data-gewitter]') && window.fetch) holeWetter().then(function (w) { if (w.selden) gewitter(w.selden.tage.slice(0, 2)); }).catch(function () {});
+  if ($('[data-gewitter]') && window.fetch && !OHNE_DIENST) holeWetter().then(function (w) { if (w.selden) gewitter(w.selden.tage.slice(0, 2)); }).catch(function () {});
 
   function reiseWetter(an, ab, ziel) {
-    if (!ziel || !an || !ab || !window.fetch) return;
+    if (!ziel || !an || !ab || !window.fetch || OHNE_DIENST) return;
     ziel.innerHTML = '';
     fetch('/api/dienste?was=reisewetter&an=' + an + '&ab=' + ab).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (w) {
       var L = w.tage.filter(function (t) { return t.max != null; });

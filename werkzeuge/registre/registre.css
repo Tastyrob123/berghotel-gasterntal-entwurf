@@ -450,3 +450,9 @@ html:not(#q1):not(#q2):not(#q3) .zwei>*{min-width:0}
   html:not(#q1):not(#q2):not(#q3) .wochen li em{grid-column:2/-1;text-align:left}
 }
 @media (max-width:700px){html:not(#q1):not(#q2):not(#q3) .wahl3.wahl3--filter:has(>button:nth-child(4):last-child)>button:first-child{grid-column:auto}}   /* vier Wahlen: zwei mal zwei, keine allein */
+
+/* Tafeln mit ungleich viel Inhalt stehen untereinander (Leerraum-Regel, Prüfung 20.11.2026) */
+html:not(#q1) .zwei--untereinander{grid-template-columns:minmax(0,1fr)}
+
+/* Am Handy bricht die Zeile unter dem Ort um statt abgeschnitten zu werden (Prüfung 20.11.2026) */
+@media (max-width:600px){html:not(#q1) .besuch__n small{white-space:normal}}

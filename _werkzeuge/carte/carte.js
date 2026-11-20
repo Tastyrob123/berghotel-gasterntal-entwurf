@@ -29,7 +29,9 @@ const ROLLEN = { kueche: 'Küche', service: 'Service', direktion: 'Direktion' };
 const NAME = 'Die Tafel', STUBE = 'Die Stube', SCHREIBTISCH = 'Der Schreibtisch';
 /* Die Website und die anderen Werkzeuge des Hauses: lokal auf dem Server der Website (8918), online auf derselben Adresse wie die Tafel */
 const HAUS = location.port ? location.protocol + '//' + location.hostname + ':8918/' : '/';
-const API = '/_werkzeuge/carte/api/';   // lokal (serve.py) und online (vercel.json → api/carte.py) derselbe Weg
+const API = '/_werkzeuge/carte/api/';
+/* Entwurf auf GitHub Pages: ohne Server liegt die veröffentlichte Karte als Datei unter /unterlagen/pdf/ (Prüfung 20.11.2026) */
+const PDF_LIVE = () => /\.github\.io$/.test(location.hostname) ? (window.__W || '/') + 'unterlagen/pdf/karte-2026.pdf' : `${API}pdf?z=${Z}&q=live`;   // lokal (serve.py) und online (vercel.json → api/carte.py) derselbe Weg
 /* Wo die Karte auf der Website steht: Seite «Ässe u trinke» (ganze Karte als Zettel-Tisch), «Picknick» (Öpis chalts), Startseite (Auszug) */
 const SEITE_DER_KARTE = { 'karte-2026': 'essen.html' };
 const ORT_DER_KARTE = { 'essen.html': 'Ässe u trinke', 'picknick.html': 'Picknick', 'index.html': 'Startseite' };
@@ -194,7 +196,7 @@ function zeichenHaus(kl) { return (SATZ_ZEICHEN.ZEICHEN || '').replace('<svg ', 
 function rand() {
   const karten = LISTE.map(k => `<li><button class="wo-rk kw" type="button" data-z="${k.ziel}" aria-current="${k.ziel === Z}"><span class="wo-rk__b" style="background-image:url('/_werkzeuge/carte/kachel/${FOTO[k.ziel] || 'stube'}.webp')"></span><span class="wo-rk__t"><b>${h(k.name)}</b><small>${h(k.gruppe)} · ${k.seiten} ${k.seiten === 1 ? 'Seite' : 'Seiten'}</small></span>${k.entwurf || (k.ziel === Z && D && geaendert()) ? '<em class="wo-marke">Entwurf</em>' : ''}</button></li>`).join('');
   const wege = [
-    { text: 'Frühere Fassungen', attr: 'data-akt="verlauf"' }, { text: 'Veröffentlichte PDF', href: `${API}pdf?z=${Z}&q=live`, attr: 'target="_blank" rel="noopener"' },
+    { text: 'Frühere Fassungen', attr: 'data-akt="verlauf"' }, { text: 'Veröffentlichte PDF', href: PDF_LIVE(), attr: 'target="_blank" rel="noopener"' },
     { text: 'Unterlagen ansehen', href: `${HAUS}unterlagen/`, attr: 'target="_blank" rel="noopener"' }, { text: 'Zur Werkbank', href: `${HAUS}werkbank/`, attr: 'target="_blank" rel="noopener"' },
     { text: `${ORT_DER_KARTE[SEITE_DER_KARTE[Z]] || 'Ässe u trinke'} auf der Website`, href: `${HAUS}${SEITE_DER_KARTE[Z] || 'essen.html'}#karte`, attr: 'target="_blank" rel="noopener"' },
     { text: SCHREIBTISCH, href: (WO.haus.wege || {}).website || `${HAUS}studio/`, attr: 'target="_blank" rel="noopener"' },
@@ -801,7 +803,7 @@ async function verlaufFenster() {
   try { l = (await api('verlauf?z=' + Z)).liste; } catch (e) { return fehlerSagen('Verlauf nicht lesbar', e); }
   fenster(`<h2>Frühere <em>Fassungen.</em></h2><p class="satz">Jede veröffentlichte Fassung bleibt aufbewahrt, dazu jeder verworfene Entwurf und der Stand, mit dem die Tafel begonnen hat. Eine Fassung zurückholen legt sie in den Entwurf; die PDF ändert sich erst beim Veröffentlichen. Zurückholen darf die Direktion.</p>
     <div class="verlauf"><div class="verlauf__z"><div><b>Ursprünglicher Stand</b><br><span class="mono">so, wie die Karte eingelesen wurde</span></div><div><button class="kn kn--klein kn--hell" type="button" data-d="grundstand">In den Entwurf holen</button></div></div>
-    ${l.map(x => `<div class="verlauf__z"><div><b>${x.art === 'verworfen' ? 'Verworfener Entwurf' : 'Veröffentlicht'}</b><br><span class="mono">${h(x.zeit)}${x.wer ? ' · ' + h(x.wer) : ''}</span></div><div>${x.pdf ? `<a class="kn kn--klein kn--hell" href="${API}pdf?z=${Z}&q=live" style="display:none"></a>` : ''}<button class="kn kn--klein kn--hell" type="button" data-d="${h(x.datei)}">In den Entwurf holen</button></div></div>`).join('') || [   /* M27 (Robert 18.10.2026): nie leer, solange nichts veröffentlicht ist, stehen beschriftete Beispiele da */
+    ${l.map(x => `<div class="verlauf__z"><div><b>${x.art === 'verworfen' ? 'Verworfener Entwurf' : 'Veröffentlicht'}</b><br><span class="mono">${h(x.zeit)}${x.wer ? ' · ' + h(x.wer) : ''}</span></div><div>${x.pdf ? `<a class="kn kn--klein kn--hell" href="${PDF_LIVE()}" style="display:none"></a>` : ''}<button class="kn kn--klein kn--hell" type="button" data-d="${h(x.datei)}">In den Entwurf holen</button></div></div>`).join('') || [   /* M27 (Robert 18.10.2026): nie leer, solange nichts veröffentlicht ist, stehen beschriftete Beispiele da */
       ['Veröffentlicht', '16.10.2026 17:20 · Direktion'], ['Verworfener Entwurf', '12.10.2026 10:45 · Küche'], ['Veröffentlicht', '05.10.2026 09:10 · Direktion']]
       .map(([t, z]) => `<div class="verlauf__z verlauf__z--bsp"><div><b>${t}</b><br><span class="mono">Beispiel · ${z}</span></div><div><span class="kn kn--klein kn--hell" aria-disabled="true">In den Entwurf holen</span></div></div>`).join('')
       + '<p class="verlauf__bsp">Beispiele. So steht hier jede Fassung, sobald die erste PDF veröffentlicht ist.</p>'}</div>
@@ -895,7 +897,7 @@ async function veroeffentlichen() {
       await lade(Z, true);
       const b = s.bericht || {};
       return fenster(`<h2>Veröffentlicht. <em>Die neue Fassung steht.</em></h2><p class="satz">${h(s.fertig)}. ${b.mass ? `Schriftmass ${Math.min(...b.mass)} bis ${Math.max(...b.mass)} %. ` : ''}${b.anschluss === 'demo' ? 'Demo: Die Website bleibt, wie sie ist; mit dem Auftrag erscheint die neue Karte dort von selbst.' : b.anschluss && b.anschluss !== 'aus' ? `Die PDF liegt auch auf der Website (${h(b.anschluss)}).` : 'Die Website bleibt bei ihrer PDF, solange der Anschluss aus ist.'} Die vorige Fassung liegt unter «Frühere Fassungen».</p>
-        <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><a class="kn kn--gold" href="${API}pdf?z=${Z}&q=live" target="_blank" rel="noopener">PDF öffnen<i>${PF}</i></a></div>`);
+        <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><a class="kn kn--gold" href="${PDF_LIVE()}" target="_blank" rel="noopener">PDF öffnen<i>${PF}</i></a></div>`);
     }
     if (Date.now() - t0 > 300000) { zu(); return sag('Das dauert ungewöhnlich lange', 'Bitte die Seite später neu laden.', [], true); }
   }

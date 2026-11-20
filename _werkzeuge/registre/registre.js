@@ -351,7 +351,7 @@ function saeulen(werte, beschrift, tip, klasse = '', vorher) {
 function karteBesuch(b, i, aktiv) {
   const marke = b.buchung ? 'Zur Buchung' : b.anfrage ? 'Anfrage' : b.kontakt ? 'Kontakt' : b.chat ? 'Chat' : esc(GERAET[b.g] || '');
   return `<button class="besuch rg-a${b.buchung ? ' gold' : ''}${aktiv ? ' aktiv' : ''}" type="button" data-gehe="besuche" data-wahl="${i}" aria-pressed="${aktiv}">
-    <span class="besuch__b">${sbild(b.weg && b.weg[0] ? b.weg[0].s : 'index.html')}<span class="besuch__l">${esc(b.l && b.l !== '??' ? b.l : '–')}</span></span>
+    <span class="besuch__b">${sbild((b.weg || []).map(x => x.s).find(s => s && s !== 'index.html') || 'index.html')}<span class="besuch__l">${esc(b.l && b.l !== '??' ? b.l : '–')}</span></span>
     <span class="besuch__n"><b>${esc(ort(b))}</b><small>${esc(tagWort(b.tag))}, ${esc(b.z)} Uhr · ${mal(b.seiten, 'eine Seite', 'Seiten')}${b.dauer ? ' · ' + dauer(b.dauer, true) : ''}</small></span>
     <span class="besuch__z">${marke}<small>${esc(SPRACHE[b.sp] || b.sp)}</small></span></button>`;
 }
@@ -415,7 +415,7 @@ function start() {
       <header><h3>Besuche je Tag</h3><p>${esc(datum(d.von))} bis ${esc(datum(d.bis))} · <button class="link" type="button" data-gehe="verlauf">Verlauf</button></p></header>
       ${saeulen(d.je_tag.map(t => t.besuche), i => (viele - 1 - i) % schritt === 0 ? kurzDatum(d.je_tag[i].tag) : '', Object.assign((i, z) => tagWort(d.je_tag[i].tag) + ': ' + mal(z, 'ein Besuch', 'Besuche'), { label: 'Besuche je Tag' }))}
     </section>
-    <div class="zwei">
+    <div class="zwei zwei--untereinander">
       <section class="blatt"><header><h3>Woher die Gäste kommen</h3><button class="link" type="button" data-gehe="herkunft">Alle Länder</button></header>
         ${balken(d.laender.slice(0, 6), x => esc(land(x.k) || 'Ort nicht bekannt'), null, u.besuche)}</section>
       <section class="blatt"><header><h3>Am meisten angesehen</h3><button class="link" type="button" data-gehe="seiten">Alle Seiten</button></header>
@@ -481,7 +481,7 @@ function herkunft() {
       <div><span class="mono">Aus dem Ausland</span><b>${ch ? prozent(100 - 100 * ch.n / ges, 0) : '–'}</b></div>
       <div><span class="mono">Länder</span><b>${n(d.summe.laender)}</b></div>
       <div><span class="mono">Orte</span><b>${n(d.orte.length)}${d.orte.length >= 20 ? '+' : ''}</b></div></div>
-    <div class="zwei">
+    <div class="zwei zwei--untereinander">
       <div class="stapel">
         <section class="blatt"><header><h3>Länder</h3></header>${balken(d.laender.slice(0, 10), x => esc(land(x.k) || 'Ort nicht bekannt'), null, ges)}</section>
         <section class="blatt"><header><h3>Gekommen über</h3></header>${balken(d.herkunft.slice(0, 8), x => esc(x.k), null, ges)}</section>
@@ -552,7 +552,7 @@ function verlauf() {
       <header><h3>Besuche je Tag</h3><p><span class="punkt"></span>dieser Zeitraum <span class="punkt punkt--hell"></span>davor</p></header>
       ${saeulen(d.je_tag.map(t => t.besuche), i => (viele - 1 - i) % schritt === 0 ? kurzDatum(d.je_tag[i].tag) : '', Object.assign((i, z) => tagWort(d.je_tag[i].tag) + ': ' + mal(z, 'ein Besuch', 'Besuche') + ' · davor ' + n(d.vor_tag[i]), { label: 'Besuche je Tag im Vergleich zum Zeitraum davor' }), 'saeulen--vgl', d.vor_tag)}
     </section>
-    <div class="zwei">
+    <div class="zwei zwei--untereinander">
       <section class="blatt vergleich"><header><h3>Neben dem Zeitraum davor</h3></header>
         <div class="vz vz--kopf"><span></span><b>Jetzt</b><em>Davor</em><small></small></div>
         ${zeile('Besuche', u.besuche, v.besuche)}${zeile('Angesehene Seiten', u.seiten, v.seiten)}
@@ -599,7 +599,7 @@ function buchung() {
     ${k('chat', 'Rezeption im Chat', x => mal_(x.zahl) + ' geöffnet, bei ' + n(x.von) + ' ' + auf(x.von), 'Noch kein Aufruf.')}
     ${k('route', 'Route nach Selden', x => mal_(x.zahl) + ' geöffnet, bei ' + n(x.von) + ' ' + auf(x.von) + ', davon ' + n(x.weg) + ' von Anreise, Weg und Tal', 'Noch kein Aufruf.')}
   </div>
-  <div class="zwei">
+  <div class="zwei zwei--untereinander">
     <section class="blatt"><header><h3>Von welcher Seite gebucht wird</h3></header>
       ${balken(d.seiten.filter(x => x.buchung).sort((a, b) => b.buchung - a.buchung).slice(0, 8).map(x => ({ k: x.s, n: x.buchung })), x => mitBild(x.k), null, d.seiten.reduce((a, x) => a + (x.buchung || 0), 0))}</section>
     <section class="blatt"><header><h3>Der Weg zur Anfrage</h3></header>${trichter(w)}</section>
